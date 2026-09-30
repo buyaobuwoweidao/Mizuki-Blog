@@ -4,8 +4,6 @@ backend:
   name: github
   repo: buyaobuwoweidao/Mizuki-Blog
   branch: main
-  auth_type: implicit
-  app_id: Ov23li32yqUpUMOM5Is5
 
 # 上传图片存放位置（public 下，构建后直接可用）
 media_folder: "public/images/uploads"

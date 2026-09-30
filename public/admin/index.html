@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>博客内容管理</title>
   <style>
-    html, body { margin: 0; padding: 0; background: #f6f6f6; }
+    html, body { margin: 0; padding: 0; background: #f6f6f6; font-family: "Microsoft YaHei", sans-serif; }
     #nc-root { min-height: 100vh; }
     #splash {
       position: fixed; inset: 0; display: flex; flex-direction: column;
@@ -18,19 +18,100 @@
     }
     #splash .msg { font-size: 15px; line-height: 1.8; }
     @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* 登录表单 */
+    #login { max-width: 560px; margin: 8vh auto 0; background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; padding: 28px 32px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+    #login h1 { font-size: 20px; margin: 0 0 6px; color: #333; }
+    #login .sub { font-size: 13px; color: #888; margin-bottom: 18px; line-height: 1.7; }
+    #login ol { font-size: 13px; color: #555; line-height: 1.9; padding-left: 20px; margin: 0 0 16px; }
+    #login ol a { color: #e07b9a; }
+    #login input { width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 14px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 10px; }
+    #login button { width: 100%; padding: 10px; font-size: 15px; border: none; border-radius: 6px; background: #e07b9a; color: #fff; cursor: pointer; }
+    #login button:hover { background: #d56b8b; }
+    #login .note { font-size: 12px; color: #999; margin-top: 12px; line-height: 1.6; }
+    #login .err { color: #c0392b; font-size: 13px; margin-top: 8px; min-height: 18px; }
+
+    /* 退出按钮（CMS 接管页面后仍可用） */
+    #logout {
+      position: fixed; right: 14px; bottom: 14px; z-index: 10000;
+      font-size: 12px; color: #999; background: rgba(255,255,255,.85);
+      border: 1px solid #ddd; border-radius: 16px; padding: 6px 12px; cursor: pointer;
+      display: none;
+    }
   </style>
 </head>
 <body>
-  <!-- Decap CMS 挂载点（nc-root），加载期间显示提示 -->
+  <!-- Decap CMS 挂载点 -->
   <div id="nc-root">
     <div id="splash">
       <div class="ring"></div>
-      <div class="msg">编辑器加载中，首次约需几秒，请稍候…</div>
+      <div class="msg">编辑器加载中，请稍候…</div>
     </div>
   </div>
 
-  <!-- 优先国内镜像加载；失败自动切换本站备用文件 -->
-  <script src="https://registry.npmmirror.com/decap-cms/3.9.0/files/dist/decap-cms.js"
-          onerror="var s=this; s.onerror=function(){document.getElementById('splash').textContent='编辑器加载失败，请检查网络后按 Ctrl+F5 刷新重试。'}; s.src='./decap-cms.js';"></script>
+  <!-- 退出登录（随时可重置令牌） -->
+  <button id="logout" onclick="localStorage.removeItem('decap-cms-user'); location.reload();">退出登录</button>
+
+  <script>
+    (function () {
+      var KEY = "decap-cms-user";
+
+      // 已有令牌：直接加载 CMS（优先国内镜像，失败切本站备用）
+      if (localStorage.getItem(KEY)) {
+        document.getElementById("logout").style.display = "block";
+        var MIRROR = "https://registry.npmmirror.com/decap-cms/3.9.0/files/dist/decap-cms.js";
+        var LOCAL = "./decap-cms.js";
+        function load(src, onFail) {
+          var s = document.createElement("script");
+          s.src = src;
+          s.onload = function () { document.getElementById("splash").style.display = "none"; };
+          s.onerror = onFail;
+          document.body.appendChild(s);
+        }
+        load(MIRROR, function () {
+          load(LOCAL, function () {
+            document.getElementById("splash").querySelector(".msg").textContent =
+              "编辑器加载失败，请检查网络后按 Ctrl+F5 刷新重试。";
+          });
+        });
+        return;
+      }
+
+      // 无令牌：显示令牌登录表单
+      var root = document.getElementById("nc-root");
+      root.innerHTML =
+        '<div id="login">' +
+        '  <h1>欢迎回来，站长大人（・ω・）</h1>' +
+        '  <div class="sub">博客是纯静态网站，登录不走第三方服务器，而是使用你自己的 GitHub 令牌直接读写仓库。按下面步骤创建一个（只授权这个博客仓库，很安全）：</div>' +
+        '  <ol>' +
+        '    <li>打开 <a href="https://github.com/settings/tokens?type=fine_grained" target="_blank">github.com/settings/tokens?type=fine_grained</a>，点 <b>Generate new token</b></li>' +
+        '    <li>Token name 随便填，如 <b>Mizuki-Blog Editor</b></li>' +
+        '    <li>Repository access 选 <b>Only select repositories</b>，勾选 <b>buyaobuwoweidao/Mizuki-Blog</b></li>' +
+        '    <li>Permissions 里找到 <b>Repository permissions → Contents</b>，设为 <b>Read and write</b></li>' +
+        '    <li>点 <b>Generate token</b>，复制生成的令牌（ghp_ 开头或 ghp_ 类似的一长串）</li>' +
+        '    <li>粘贴到下面的输入框，点保存即可进入后台</li>' +
+        '  </ol>' +
+        '  <input type="password" id="token" placeholder="粘贴你的 GitHub 令牌" />' +
+        '  <button onclick="saveToken()">保存并进入后台</button>' +
+        '  <div class="err" id="err"></div>' +
+        '  <div class="note">令牌只保存在你自己的浏览器里（本机 localStorage），不会上传到任何服务器。随时可以点右下角"退出登录"清除，也可以在 GitHub 设置里随时撤销该令牌。</div>' +
+        '</div>';
+
+      window.saveToken = function () {
+        var t = document.getElementById("token").value.trim();
+        if (!t) { document.getElementById("err").textContent = "请先粘贴令牌再保存。"; return; }
+        if (!/^ghp_|^github_pat_/.test(t)) {
+          document.getElementById("err").textContent = "令牌格式看起来不对，请确认复制的是完整的令牌（ghp_ 或 github_pat_ 开头）。";
+          return;
+        }
+        try {
+          localStorage.setItem(KEY, JSON.stringify({ backendName: "github", token: t }));
+          location.reload();
+        } catch (e) {
+          document.getElementById("err").textContent = "保存失败：" + e.message;
+        }
+      };
+    })();
+  </script>
 </body>
 </html>
