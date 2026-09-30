@@ -4,10 +4,12 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true,
 	src: {
 		desktop: [
-			"/assets/desktop-banner/wanfory-bg.jpg",
+			"/assets/desktop-banner/ba-banner.webp",
+			"/assets/desktop-banner/ba-wallpaper-1.webp",
 		],
 		mobile: [
-			"/assets/mobile-banner/wanfory-bg.jpg",
+			"/assets/mobile-banner/ba-banner.webp",
+			"/assets/mobile-banner/ba-wallpaper-1.webp",
 		],
 	},
 	position: "center",

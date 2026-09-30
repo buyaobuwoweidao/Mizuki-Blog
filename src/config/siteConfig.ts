@@ -123,10 +123,12 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/wanfory-bg.jpg",
+				"/assets/desktop-banner/ba-banner.webp",
+				"/assets/desktop-banner/ba-wallpaper-1.webp",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/wanfory-bg.jpg",
+				"/assets/mobile-banner/ba-banner.webp",
+				"/assets/mobile-banner/ba-wallpaper-1.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
