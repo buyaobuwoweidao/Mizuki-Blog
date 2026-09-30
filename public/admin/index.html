@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>博客内容管理</title>
   <style>
-    body { margin: 0; font-family: "Microsoft YaHei", sans-serif; background: #f6f6f6; }
+    html, body { margin: 0; padding: 0; background: #f6f6f6; }
+    #nc-root { min-height: 100vh; }
     #splash {
       position: fixed; inset: 0; display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: 14px; z-index: 9999;
@@ -16,46 +17,20 @@
       border-radius: 50%; animation: spin 0.9s linear infinite;
     }
     #splash .msg { font-size: 15px; line-height: 1.8; }
-    #splash .err { color: #c0392b; font-size: 13px; white-space: pre-wrap; max-width: 560px; }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
-  <div id="splash">
-    <div class="ring"></div>
-    <div class="msg">编辑器加载中，首次约需几秒，请稍候…</div>
-    <div class="err" id="err" style="display:none"></div>
+  <!-- Decap CMS 挂载点（nc-root），加载期间显示提示 -->
+  <div id="nc-root">
+    <div id="splash">
+      <div class="ring"></div>
+      <div class="msg">编辑器加载中，首次约需几秒，请稍候…</div>
+    </div>
   </div>
-  <script>
-    // 优先从国内镜像加载（快），失败则回退到本站文件
-    (function () {
-      var MIRROR = "https://registry.npmmirror.com/decap-cms/3.9.0/files/dist/decap-cms.js";
-      var LOCAL = "./decap-cms.js";
-      var errBox = document.getElementById("err");
 
-      function showError(msg) {
-        errBox.style.display = "block";
-        errBox.textContent = "编辑器加载失败：" + msg +
-          "\n请检查网络后按 Ctrl+F5 刷新重试。";
-      }
-
-      function load(src, onFail) {
-        var s = document.createElement("script");
-        s.src = src;
-        s.onload = function () {
-          document.getElementById("splash").style.display = "none";
-        };
-        s.onerror = onFail;
-        document.body.appendChild(s);
-      }
-
-      load(MIRROR, function () {
-        // 镜像失败，回退本地
-        load(LOCAL, function () {
-          showError("镜像与本地文件均加载失败");
-        });
-      });
-    })();
-  </script>
+  <!-- 优先国内镜像加载；失败自动切换本站备用文件 -->
+  <script src="https://registry.npmmirror.com/decap-cms/3.9.0/files/dist/decap-cms.js"
+          onerror="var s=this; s.onerror=function(){document.getElementById('splash').textContent='编辑器加载失败，请检查网络后按 Ctrl+F5 刷新重试。'}; s.src='./decap-cms.js';"></script>
 </body>
 </html>
