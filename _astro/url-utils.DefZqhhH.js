@@ -1,0 +1,1 @@
+import"./translation.PR6GZxJq.js";import"./config.Cd_7vhGT.js";import"./date-utils.D_06uG5u.js";function a(r,e){return r.replace(/^\/|\/$/g,"").toLowerCase()===e.replace(/^\/|\/$/g,"").toLowerCase()}function o(...r){return r.join("/").replace(/\/+/g,"/")}function u(r){return o("","/Mizuki-Blog/",r)}export{u as n,a as t};
