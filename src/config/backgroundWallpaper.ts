@@ -5,11 +5,9 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
 			"/assets/desktop-banner/ba-banner.webp",
-			"/assets/desktop-banner/ba-wallpaper-1.webp",
 		],
 		mobile: [
 			"/assets/mobile-banner/ba-banner.webp",
-			"/assets/mobile-banner/ba-wallpaper-1.webp",
 		],
 	},
 	position: "center",

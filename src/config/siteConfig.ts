@@ -124,11 +124,9 @@ export const siteConfig: SiteConfig = {
 		src: {
 			desktop: [
 				"/assets/desktop-banner/ba-banner.webp",
-				"/assets/desktop-banner/ba-wallpaper-1.webp",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/ba-banner.webp",
-				"/assets/mobile-banner/ba-wallpaper-1.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
