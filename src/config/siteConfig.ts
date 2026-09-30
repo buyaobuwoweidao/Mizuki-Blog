@@ -162,15 +162,15 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "我的二次元小窝",
+			title: "わたしの部屋へようこそ",
 			switchable: true,
 
 			subtitle: [
-				"欢迎来到流萤的小窝～",
+				"君のことが好きです",
+				"今日もいい一日になりますように",
+				"二次元は最高だぜ！",
 				"星核猎手流萤小姐美貌盖世无双",
-				"今天也是喜欢流萤的一天",
-				"崩铁最強伝說と絶絶のサム！",
-				"愿你能陪伴在我身边",
+				"あなたと出会えてよかった",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果

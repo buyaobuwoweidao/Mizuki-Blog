@@ -1,0 +1,31 @@
+# Decap CMS 配置 - Mizuki 二次元博客
+
+backend:
+  name: github
+  repo: buyaobuwoweidao/Mizuki-Blog
+  branch: main
+  auth_type: implicit
+  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID # 请替换为你的 GitHub OAuth App 的 Client ID
+
+# 上传图片存放位置（public 下，构建后直接可用）
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: posts
+    label: 文章
+    folder: src/content/posts
+    create: true
+    delete: true
+    editor:
+      preview: false
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 发布日期, name: published, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: 描述（摘要）, name: description, widget: text, required: false }
+      - { label: 封面图, name: image, widget: image, required: false, choose_url: true }
+      - { label: 标签, name: tags, widget: list, required: false, field: { label: 标签, name: tag, widget: string } }
+      - { label: 分类, name: category, widget: string, required: false }
+      - { label: 置顶, name: pinned, widget: boolean, default: false, required: false }
+      - { label: 草稿（不发布）, name: draft, widget: boolean, default: false, required: false }
+      - { label: 正文, name: body, widget: markdown }
