@@ -4,7 +4,7 @@ import type { SiteConfig } from "../types/config";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
+	title: "挚爱流萤",
 	subtitle: "我的二次元小窝",
 	siteURL: "https://buyaobuwoweidao.github.io/Mizuki-Blog/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
@@ -35,7 +35,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "𝓕𝓲𝓻𝓮𝓯𝓵𝔂",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
@@ -162,15 +162,15 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "わたしの部屋",
+			title: "我的二次元小窝",
 			switchable: true,
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"欢迎来到流萤的小窝～",
+				"星核猎手流萤小姐美貌盖世无双",
+				"今天也是喜欢流萤的一天",
+				"崩铁最強伝說と絶絶のサム！",
+				"愿你能陪伴在我身边",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
