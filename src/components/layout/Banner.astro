@@ -173,9 +173,19 @@ const bannerFormats = getImageFormats();
 					desktopImages: bannerImages.desktop,
 					mobileImages: bannerImages.mobile,
 					position: siteConfig.banner.position,
+					baseUrl: import.meta.env.BASE_URL,
 				}}
 			>
 				(function () {
+					const withBase = (src) => {
+						if (!src || /^(?:https?:)?\/\//.test(src) || src.startsWith("data:")) return src;
+						if (src.startsWith("/")) {
+							const base = (baseUrl || "/").replace(/\/$/, "");
+							return base + src;
+						}
+						return src;
+					};
+
 					const getRandomImage = (images, storageKey) => {
 						if (Array.isArray(images)) {
 							if (images.length === 0) {return null;}
@@ -201,8 +211,8 @@ const bannerFormats = getImageFormats();
 						return;
 					}
 
-					const desktopSrc = getRandomImage(desktopImages, "banner_desktop_index");
-					const mobileSrc = getRandomImage(mobileImages, "banner_mobile_index");
+					const desktopSrc = withBase(getRandomImage(desktopImages, "banner_desktop_index"));
+					const mobileSrc = withBase(getRandomImage(mobileImages, "banner_mobile_index"));
 
 					if (!desktopSrc && !mobileSrc) return;
 

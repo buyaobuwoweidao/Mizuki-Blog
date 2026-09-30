@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 
 import { formatRelativeTime } from "../../../utils/timeFormat";
+import { publicImageUrl } from "../../../utils/image-source-utils";
 import type { MomentCardProps } from "./types";
 
 const { moment, index, minutesAgo, hoursAgo, daysAgo } =
@@ -43,12 +44,12 @@ const relativeTime = formatRelativeTime(
 						<div class="relative rounded-lg overflow-hidden aspect-square cursor-pointer">
 							<a
 								href="javascript:void(0)"
-								data-src={image}
+								data-src={publicImageUrl(image)}
 								data-fancybox={`diary-${index}-${imgIndex}`}
 								class="block w-full h-full"
 							>
 								<img
-									src={image}
+									src={publicImageUrl(image)}
 									alt="diary moment image"
 									class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 									loading="lazy"

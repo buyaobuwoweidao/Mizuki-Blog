@@ -38,6 +38,7 @@ const diaryApiUrl = siteConfig.diaryApiUrl || "";
 
 const title = i18n(I18nKey.diary);
 const subtitle = i18n(I18nKey.diarySubtitle);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <MainGridLayout title={title} description={subtitle}>
@@ -50,7 +51,7 @@ const subtitle = i18n(I18nKey.diarySubtitle);
 		});
 	</script>
 
-	<script is:inline src="/js/filter-tabs-handler.js"></script>
+	<script is:inline src={baseUrl + "/js/filter-tabs-handler.js"}></script>
 
 	<div
 		class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32"

@@ -2,6 +2,7 @@
 import { i18n } from "@i18n/translation";
 import { Icon } from "astro-icon/components";
 import I18nKey from "../../../i18n/i18nKey";
+import { publicImageUrl } from "../../../utils/image-source-utils";
 import type { AlbumCardProps } from "./types";
 
 const { album } = Astro.props as AlbumCardProps;
@@ -17,7 +18,7 @@ const { album } = Astro.props as AlbumCardProps;
 		{
 			album.cover ? (
 				<img
-					src={album.cover}
+					src={publicImageUrl(album.cover)}
 					alt={album.title}
 					class="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
 					loading="lazy"

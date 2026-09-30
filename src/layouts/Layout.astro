@@ -9,6 +9,7 @@ import DiagramManager from "@/components/features/markdown/DiagramManager.astro"
 import MermaidManager from "@/components/features/markdown/MermaidManager.astro";
 import { pioConfig, profileConfig, siteConfig } from "@/config";
 import { resolveFontMode } from "@/utils/fontMode";
+import { publicImageUrl } from "@/utils/image-source-utils";
 
 const BANNER_HEIGHT = 35;
 const BANNER_HEIGHT_EXTEND = 30;
@@ -123,9 +124,12 @@ if (siteConfig.generateOgImages && postSlug) {
 		: new URL(coverImage, Astro.site).toString();
 } else if (banner) {
 	// For others, use the first banner as OG image
-	ogImageUrl = banner.startsWith("http")
+	const ogBanner = banner.startsWith("http")
 		? banner
-		: new URL(banner, Astro.site).toString();
+		: publicImageUrl(banner);
+	ogImageUrl = ogBanner.startsWith("http")
+		? ogBanner
+		: Astro.site.origin + ogBanner;
 }
 
 // const siteLang = siteConfig.lang.replace('_', '-')

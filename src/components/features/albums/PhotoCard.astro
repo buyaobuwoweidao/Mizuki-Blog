@@ -1,18 +1,20 @@
 ---
+import { publicImageUrl } from "../../../utils/image-source-utils";
 import type { PhotoCardProps } from "./types";
 
 const { src, alt = "", albumId } = Astro.props as PhotoCardProps;
+const resolvedSrc = publicImageUrl(src);
 ---
 
 <div class="gallery-photo-card break-inside-avoid mb-3">
 	<div
 		data-fancybox={`gallery-${albumId}`}
-		data-src={src}
+		data-src={resolvedSrc}
 		data-type="image"
 		class="block rounded-xl overflow-hidden group cursor-pointer"
 	>
 		<img
-			src={src}
+			src={resolvedSrc}
 			alt={alt}
 			loading="lazy"
 			decoding="async"

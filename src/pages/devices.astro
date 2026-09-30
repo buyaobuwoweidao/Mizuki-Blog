@@ -18,6 +18,7 @@ if (!siteConfig.featurePages.devices) {
 const devices = devicesData;
 const brands = Object.keys(devices);
 const viewDetailsText = i18n(I18nKey.devicesViewDetails);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <MainGridLayout title={i18n(I18nKey.devices)}>
@@ -93,7 +94,7 @@ const viewDetailsText = i18n(I18nKey.devicesViewDetails);
 	</div>
 
 	<!-- 使用全局脚本，确保 swup 切换后仍能重新初始化 -->
-	<script is:inline src="/js/devices-page-handler.js"></script>
+	<script is:inline src={baseUrl + "/js/devices-page-handler.js"}></script>
 </MainGridLayout>
 
 <style>

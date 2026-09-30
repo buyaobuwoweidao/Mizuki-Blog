@@ -4,6 +4,7 @@
  */
 import type { SiteConfig } from "../types/config";
 import type { widgetManager } from "./widget-manager";
+import { publicImageUrl } from "./image-source-utils";
 
 /**
  * Banner 图片配置

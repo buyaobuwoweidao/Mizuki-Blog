@@ -26,6 +26,7 @@ if (!friendsPost) {
 const { Content } = await render(friendsPost);
 const friendsList = getShuffledFriendsList();
 const allTags = Array.from(new Set(friendsList.flatMap((item) => item.tags)));
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <MainGridLayout
@@ -102,6 +103,32 @@ const allTags = Array.from(new Set(friendsList.flatMap((item) => item.tags)));
 				{friendsList.map((item) => <FriendCard friend={item} />)}
 			</div>
 
+			{
+				friendsList.length === 0 && (
+					<div class="text-center py-10 mb-4">
+						<svg
+							class="w-16 h-16 mx-auto mb-4 text-black/20 dark:text-white/20"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+							></path>
+						</svg>
+						<p class="text-black/50 dark:text-white/50 text-lg mb-2">
+							友链建设中，敬请期待~
+						</p>
+						<p class="text-black/40 dark:text-white/40 text-sm">
+							与各站点互相确认后，友链会陆续出现在这里
+						</p>
+					</div>
+				)
+			}
+
 			<!-- 无结果提示 -->
 			<div id="no-results" class="hidden text-center py-12">
 				<svg
@@ -135,7 +162,7 @@ const allTags = Array.from(new Set(friendsList.flatMap((item) => item.tags)));
 	</div>
 
 	<!-- 引用全局脚本 -->
-	<script is:inline src="/js/friends-page-handler.js"></script>
+	<script is:inline src={baseUrl + "/js/friends-page-handler.js"}></script>
 
 	<div class="mt-4">
 		<Comment path="/friends/" />
