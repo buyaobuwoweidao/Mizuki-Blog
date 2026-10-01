@@ -133,6 +133,13 @@ export const navBarConfig: NavBarConfig = {
 		// 预设链接：归档
 		LinkPreset.Archive,
 
+		// 留言板（最显眼处直接展示，不放入下拉栏）
+		{
+			name: "留言板",
+			url: "/guestbook/",
+			icon: "material-symbols:forum-rounded",
+		},
+
 		// 个人内容页面
 		{
 			name: "我的",

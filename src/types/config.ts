@@ -46,6 +46,7 @@ export interface SiteConfig {
 		sponsor: boolean; // 打赏页面开关
 		booknav: boolean; // 书签导航页面开关
 		dynamic: boolean; // 动态页面开关
+		guestbook: boolean; // 留言板页面开关
 	};
 
 	// 文章列表布局配置

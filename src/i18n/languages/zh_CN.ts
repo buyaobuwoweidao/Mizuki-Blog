@@ -64,6 +64,12 @@ export const zh_CN: Translation = {
 	[Key.paginationPrev]: "上一页",
 	[Key.paginationNext]: "下一页",
 	[Key.paginationJump]: "跳转到指定页",
+
+	// 留言板页面
+	[Key.guestbook]: "留言板",
+	[Key.guestbookDescription]: "在这里留下你的足迹",
+	[Key.commentNotConfigured]: "评论功能尚未配置",
+	[Key.guestbookCommentHint]: "请在 src/config/commentConfig.ts 中配置评论系统",
 	[Key.untitled]: "无标题",
 	[Key.uncategorized]: "未分类",
 	[Key.noTags]: "无标签",

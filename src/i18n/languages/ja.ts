@@ -56,6 +56,12 @@ export const ja: Translation = {
 	[Key.paginationPrev]: "前のページ",
 	[Key.paginationNext]: "次のページ",
 	[Key.paginationJump]: "指定ページへ移動",
+
+	// 留言板ページ
+	[Key.guestbook]: "留言板",
+	[Key.guestbookDescription]: "ここに足跡を残してください",
+	[Key.commentNotConfigured]: "コメント機能が設定されていません",
+	[Key.guestbookCommentHint]: "src/config/commentConfig.ts でコメントシステムを設定してください",
 	[Key.untitled]: "無題",
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "タグはありません",

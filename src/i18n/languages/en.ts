@@ -64,6 +64,12 @@ export const en: Translation = {
 	[Key.paginationPrev]: "Previous page",
 	[Key.paginationNext]: "Next page",
 	[Key.paginationJump]: "Jump to page",
+
+	// Guestbook page
+	[Key.guestbook]: "Guestbook",
+	[Key.guestbookDescription]: "Leave your footprint here",
+	[Key.commentNotConfigured]: "Comment system not configured",
+	[Key.guestbookCommentHint]: "Configure the comment system in src/config/commentConfig.ts",
 	[Key.untitled]: "Untitled",
 	[Key.uncategorized]: "Uncategorized",
 	[Key.noTags]: "No Tags",

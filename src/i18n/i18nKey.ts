@@ -84,6 +84,12 @@ enum I18nKey {
 	paginationPrev = "paginationPrev",
 	paginationNext = "paginationNext",
 	paginationJump = "paginationJump",
+
+	// 留言板页面
+	guestbook = "guestbook",
+	guestbookDescription = "guestbookDescription",
+	commentNotConfigured = "commentNotConfigured",
+	guestbookCommentHint = "guestbookCommentHint",
 	anime = "anime",
 	diary = "diary",
 

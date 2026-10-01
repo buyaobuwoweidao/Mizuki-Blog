@@ -31,6 +31,7 @@ export const siteConfig: SiteConfig = {
 		sponsor: true, // 打赏页面开关
 		booknav: true, // 书签导航页面开关
 		dynamic: true, // 动态页面开关
+		guestbook: true, // 留言板页面开关
 	},
 
 	// 顶栏标题配置
