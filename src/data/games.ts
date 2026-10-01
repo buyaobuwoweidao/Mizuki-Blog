@@ -94,6 +94,53 @@ export const gamesData: GameItem[] = [
 		tags: ["独立", "恐怖", "心理"],
 		note: "恐怖游戏爱好者，痛并快乐着",
 	},
+	{
+		id: 8,
+		title: "剑星 Stellar Blade",
+		description:
+			"近几年最爱的动作游戏！伊芙太飒了，战斗爽到极致、美术美到极致。最期待续作《血雨》，已经蹲预告蹲到熬夜 (≧▽≦)",
+		category: "action",
+		status: "cleared",
+		rating: 10,
+		tags: ["动作", "Shift Up", "伊芙"],
+		featured: true,
+		note: "愿伊芙的剑永远锋利！血雨快发售吧（嚎）",
+	},
+	{
+		id: 9,
+		title: "寂静岭系列",
+		description:
+			"2025 新年在笔记本上通的系列。雾都、三角头、里世界的压迫感至今难忘——玩的时候是真的手心冒汗 (´；ω；`)",
+		category: "horror",
+		status: "cleared",
+		rating: 9,
+		tags: ["恐怖", "心理", "经典"],
+		featured: true,
+		note: "最喜欢归乡的三角头，压迫感拉满",
+	},
+	{
+		id: 10,
+		title: "生化危机全系列",
+		description:
+			"从 4 到 8 代一路玩过来的卡普空老粉，重制版也没落下。从学生时代玩到毕业，每一代都通关了 (•̀ᴗ•́)و",
+		category: "horror",
+		status: "cleared",
+		rating: 9,
+		tags: ["卡普空", "恐怖", "系列"],
+		featured: true,
+		note: "除了特别老的几代画质劝退，其余全通关",
+	},
+	{
+		id: 11,
+		title: "实质存在 Pragmata",
+		description:
+			"卡普空那个跳票跳了好久的科幻新作！太空、机器人少女、月球基地 2069……画面很有味道，期待值拉满 (´▽`)ﾉ",
+		category: "action",
+		status: "want",
+		rating: 8,
+		tags: ["卡普空", "科幻", "期待"],
+		note: "等了这么多年，快发售吧（双手合十）",
+	},
 ];
 
 // 获取所有游戏数据

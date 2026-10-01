@@ -78,6 +78,30 @@ export const skillsData: Skill[] = [
 		color: "#3776ab",
 	},
 	{
+		id: "svelte",
+		name: "Svelte 组件",
+		description:
+			"移植了动态页与音乐播放器等 Svelte 组件，会改数据接入与交互逻辑。",
+		icon: "devicon:svelte",
+		category: "frontend",
+		level: "beginner",
+		experience: { years: 0, months: 4 },
+		projects: ["mizuki-blog", "firefly-fusion"],
+		color: "#ff3e00",
+	},
+	{
+		id: "tailwind",
+		name: "Tailwind CSS",
+		description:
+			"日常改样式的主力工具，博客的卡片、布局、响应式全靠它。",
+		icon: "devicon:tailwindcss",
+		category: "frontend",
+		level: "intermediate",
+		experience: { years: 1, months: 0 },
+		projects: ["mizuki-blog"],
+		color: "#38bdf8",
+	},
+	{
 		id: "video-editing",
 		name: "视频剪辑",
 		description:

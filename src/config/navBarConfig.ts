@@ -140,6 +140,13 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:forum-rounded",
 		},
 
+		// 公告（最显眼处直接展示，点开就是公告中心）
+		{
+			name: "公告",
+			url: "/announcement/",
+			icon: "material-symbols:notifications-rounded",
+		},
+
 		// 个人内容页面
 		{
 			name: "我的",

@@ -1,0 +1,62 @@
+---
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+
+import { getAnnouncements } from "../data/announcements";
+
+const announcements = getAnnouncements();
+---
+
+<MainGridLayout>
+	<PageHeader title="公告" description="小窝里的新鲜事，都在这里同步 (｡•̀ᴗ-)✧" />
+
+	<div class="mx-auto w-full max-w-3xl px-4 py-8">
+		<!-- 公告列表 -->
+		<div class="space-y-4">
+			{announcements.map((item) => (
+				<article
+					class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-5 shadow-sm"
+				>
+					<div class="flex items-center gap-3 mb-2">
+						{item.pinned && (
+							<span
+								class="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-bold"
+								style="background: oklch(0.85 0.15 var(--hue)); color: oklch(0.25 0.08 var(--hue));"
+							>
+								<Icon
+									name="material-symbols:push-pin"
+									class="text-[0.85em]"
+								/>
+								置顶
+							</span>
+						)}
+						{item.important && (
+							<span
+								class="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-bold"
+								style="background: oklch(0.92 0.05 30); color: oklch(0.4 0.12 30);"
+							>
+								<Icon
+									name="material-symbols:campaign-rounded"
+									class="text-[0.85em]"
+								/>
+								重要
+							</span>
+						)}
+						<time class="text-sm text-neutral-500 dark:text-neutral-400">
+							{item.date}
+						</time>
+					</div>
+					<div class="text-neutral-700 dark:text-neutral-300 leading-relaxed">
+						{item.content}
+					</div>
+				</article>
+			))}
+		</div>
+
+		<!-- 底部提示 -->
+		<div class="mt-8 text-center text-sm text-neutral-400 dark:text-neutral-500">
+			公告会不定期更新，欢迎常来看看 (´▽`)ﾉ
+		</div>
+	</div>
+</MainGridLayout>
