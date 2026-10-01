@@ -3,7 +3,7 @@ import type { AnnouncementConfig } from "../types/config";
 // 公告栏配置
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "欢迎来到我的小窝～本站正在建设中，敬请期待！", // 公告内容
+	content: "欢迎来到我的小窝～本站正在建设中，敬请期待！ (｡•̀ᴗ-)✧ 感谢你的光临，随手逛逛吧～", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: false, // 启用链接
