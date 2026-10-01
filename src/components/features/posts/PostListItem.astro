@@ -46,6 +46,26 @@ const displayDate =
 			class="font-bold text-sm text-black/75 dark:text-white/75 truncate transition group-hover:text-(--primary)"
 		>
 			{post.data.title}
+
+			{
+
+				post.data.hot && (
+
+					<span
+
+						class="shrink-0 px-1.5 py-0.5 rounded text-[10px] font-bold text-white"
+
+						style="background: linear-gradient(135deg, #ff4d4f, #ff7a00);"
+
+					>
+
+						爆
+
+					</span>
+
+				)
+
+			}
 		</div>
 		<div
 			class="flex items-center gap-1.5 text-xs text-black/30 dark:text-white/30 transition mt-1"

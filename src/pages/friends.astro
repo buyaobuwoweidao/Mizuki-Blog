@@ -7,7 +7,7 @@ import Markdown from "@components/misc/Markdown.astro";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
-import { getShuffledFriendsList } from "../data/friends";
+import { getShuffledFriendsList, getRecommendLinksList } from "../data/friends";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 
@@ -25,6 +25,7 @@ if (!friendsPost) {
 
 const { Content } = await render(friendsPost);
 const friendsList = getShuffledFriendsList();
+const recommendLinks = getRecommendLinksList();
 const allTags = Array.from(new Set(friendsList.flatMap((item) => item.tags)));
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
@@ -148,6 +149,77 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 					{i18n(I18nKey.friendsNoResults)}
 				</p>
 			</div>
+
+			<!-- 推荐链接栏目 -->
+			<section class="mt-10 mb-6">
+				<div class="flex items-center gap-2 mb-4">
+					<span
+						class="w-1 h-5 rounded-md bg-(--primary) inline-block"
+					></span>
+					<h2 class="text-xl font-bold text-black/90 dark:text-white/90">
+						推荐链接
+					</h2>
+					<span
+						class="text-xs text-black/40 dark:text-white/40 font-normal"
+					>
+						站主精选，值得收藏
+					</span>
+				</div>
+
+				{
+					recommendLinks.length > 0 ? (
+						<div
+							class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
+						>
+							{recommendLinks.map((link) => (
+								<a
+									href={link.siteurl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="group block p-5 rounded-xl border border-black/10 dark:border-white/10 bg-transparent hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+								>
+									<div class="flex items-center justify-between mb-2">
+										<h3
+											class="font-bold text-black/85 dark:text-white/85 group-hover:text-(--primary) transition-colors truncate"
+										>
+											{link.title}
+										</h3>
+										<svg
+											class="w-4 h-4 shrink-0 text-(--primary) opacity-0 group-hover:opacity-100 transition-opacity"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+											></path>
+										</svg>
+									</div>
+									<p
+										class="text-sm text-black/55 dark:text-white/55 line-clamp-2"
+									>
+										{link.desc}
+									</p>
+								</a>
+							))}
+						</div>
+					) : (
+						<div
+							class="text-center py-8 rounded-xl border border-dashed border-black/15 dark:border-white/15"
+						>
+							<p class="text-black/45 dark:text-white/45 text-sm mb-1">
+								推荐链接整理中，敬请期待~
+							</p>
+							<p class="text-black/30 dark:text-white/30 text-xs">
+								站主会在这里放一些实用、好玩、值得收藏的链接
+							</p>
+						</div>
+					)
+				}
+			</section>
 
 			<!-- 说明文档 -->
 			<Markdown class="mt-8 prose dark:prose-invert max-w-none">
