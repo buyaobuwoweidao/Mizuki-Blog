@@ -1,0 +1,134 @@
+---
+import { FilterTabs } from "@components/atoms/filter-tabs";
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+
+import { siteConfig } from "../config";
+import { getGamesList, getGameStats } from "../data/games";
+import GameCard from "@components/features/games/GameCard.astro";
+
+const gamesData = getGamesList();
+const stats = getGameStats();
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const categories = [
+	...new Set(gamesData.map((game) => game.category)),
+];
+
+const getCategoryText = (category: string) => {
+	switch (category) {
+		case "mc":
+			return "我的世界";
+		case "action":
+			return "动作竞技";
+		case "horror":
+			return "恐怖";
+		case "mobile":
+			return "手游";
+		case "other":
+			return "其他";
+		default:
+			return category;
+	}
+};
+
+const getCategoryIcon = (category: string) => {
+	switch (category) {
+		case "mc":
+			return "material-symbols:widgets-rounded";
+		case "action":
+			return "material-symbols:sports-esports-rounded";
+		case "horror":
+			return "material-symbols:nightlight-rounded";
+		case "mobile":
+			return "material-symbols:smartphone";
+		case "other":
+			return "material-symbols:cruelty-free-rounded";
+		default:
+			return "material-symbols:folder";
+	}
+};
+
+const filterTabs = [
+	{
+		value: "all",
+		label: "全部",
+		icon: "material-symbols:apps",
+		count: gamesData.length,
+	},
+	...categories.map((category) => ({
+		value: category,
+		label: getCategoryText(category),
+		icon: getCategoryIcon(category),
+		count: gamesData.filter((g) => g.category === category).length,
+	})),
+];
+---
+
+<MainGridLayout title="游戏分享" description="站主的游戏收藏与心得分享">
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+		import { loadIconify } from "../utils/icon-loader";
+
+		loadIconify().catch((error) => {
+			console.error("Failed to load Iconify:", error);
+		});
+	</script>
+
+	<script is:inline src={baseUrl + "/js/filter-tabs-handler.js"}></script>
+
+	<div
+		class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32"
+	>
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="游戏分享"
+				subtitle="站主玩过的、在玩的、想玩的游戏们 (๑•̀ㅂ•́)و✧"
+			/>
+
+			<!-- 游戏统计 -->
+			<div class="grid grid-cols-3 gap-4 mb-8">
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-4 text-center">
+					<p class="text-2xl font-bold text-(--primary)">{stats.total}</p>
+					<p class="text-xs text-black/50 dark:text-white/50 mt-1">收录游戏</p>
+				</div>
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-4 text-center">
+					<p class="text-2xl font-bold text-emerald-500">{stats.playing}</p>
+					<p class="text-xs text-black/50 dark:text-white/50 mt-1">正在玩</p>
+				</div>
+				<div class="rounded-xl border border-black/10 dark:border-white/10 p-4 text-center">
+					<p class="text-2xl font-bold text-amber-500">{stats.cleared}</p>
+					<p class="text-xs text-black/50 dark:text-white/50 mt-1">已通关</p>
+				</div>
+			</div>
+
+			<div class="mb-8">
+				<FilterTabs tabs={filterTabs} dataAttr="category" />
+			</div>
+
+			<div
+				id="games-grid"
+				class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start"
+			>
+				{gamesData.map((game) => <GameCard game={game} />)}
+			</div>
+
+			<div id="no-results" class="hidden text-center py-16">
+				<Icon
+					name="material-symbols:search-off-rounded"
+					class="text-6xl text-black/15 dark:text-white/15 mb-4"
+				/>
+				<p class="text-black/40 dark:text-white/40 text-lg">
+					这个分类下还没有游戏呢 (´･ω･`)
+				</p>
+			</div>
+
+			<p
+				class="mt-8 text-center text-xs text-black/35 dark:text-white/35"
+			>
+				游戏分享持续更新中，喜欢的话常来看看哦 (｡•̀ᴗ-)✧
+			</p>
+		</div>
+	</div>
+</MainGridLayout>

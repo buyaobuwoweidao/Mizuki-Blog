@@ -1,0 +1,145 @@
+---
+import { Icon } from "astro-icon/components";
+
+import type { GameItem } from "../../../data/games";
+
+const { game } = Astro.props as { game: GameItem };
+
+const statusMap: Record<GameItem["status"], { text: string; cls: string }> = {
+	playing: { text: "在玩", cls: "bg-(--primary)/10 text-(--primary)" },
+	cleared: { text: "通关", cls: "bg-emerald-500/10 text-emerald-500" },
+	dropped: { text: "弃坑", cls: "bg-black/10 dark:bg-white/10 text-black/50 dark:text-white/50" },
+	want: { text: "想玩", cls: "bg-amber-500/10 text-amber-500" },
+};
+
+const catMap: Record<GameItem["category"], { text: string; icon: string }> = {
+	mc: { text: "我的世界", icon: "material-symbols:widgets-rounded" },
+	action: { text: "动作竞技", icon: "material-symbols:sports-esports-rounded" },
+	horror: { text: "恐怖", icon: "material-symbols:nightlight-rounded" },
+	mobile: { text: "手游", icon: "material-symbols:smartphone" },
+	other: { text: "其他", icon: "material-symbols:cruelty-free-rounded" },
+};
+
+const status = statusMap[game.status];
+const cat = catMap[game.category];
+---
+
+<div
+	class="game-card group relative rounded-xl border border-black/10 dark:border-white/10 p-5 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+	data-category={game.category}
+>
+	<div class="flex items-start justify-between gap-2 mb-3">
+		<div class="flex items-center gap-2 min-w-0">
+			<Icon
+				name={cat.icon}
+				class="shrink-0 text-xl text-(--primary)"
+			/>
+			<h3
+				class="text-lg font-bold text-black/90 dark:text-white/90 truncate group-hover:text-(--primary) transition-colors"
+			>
+				{game.title}
+			</h3>
+		</div>
+		<span
+			class:list={[
+				"shrink-0 px-2 py-0.5 text-xs rounded-md font-medium",
+				status.cls,
+			]}
+		>
+			{status.text}
+		</span>
+	</div>
+
+	<div class="flex items-center gap-2 mb-3">
+		<span
+			class="px-2 py-0.5 text-xs rounded-md bg-(--btn-regular-bg) text-black/50 dark:text-white/50 font-medium"
+		>
+			{cat.text}
+		</span>
+		{game.rating && (
+			<span
+				class="flex items-center gap-1 px-2 py-0.5 text-xs rounded-md bg-amber-500/10 text-amber-500 font-medium"
+			>
+				<Icon name="material-symbols:star-rounded" class="text-sm" />
+				{game.rating}/10
+			</span>
+		)}
+	</div>
+
+	<p
+		class="text-sm text-black/60 dark:text-white/60 mb-3 line-clamp-3"
+	>
+		{game.description}
+	</p>
+
+	{game.note && (
+		<p
+			class="text-xs text-(--primary)/70 mb-3 border-l-2 border-(--primary)/30 pl-2"
+		>
+			{game.note}
+		</p>
+	)}
+
+	{game.tags.length > 0 && (
+		<div class="flex flex-wrap gap-2">
+			{game.tags.map((tag) => (
+				<span class="px-2 py-0.5 text-xs rounded-md bg-(--primary)/10 text-(--primary) font-medium">
+					{tag}
+				</span>
+			))}
+		</div>
+	)}
+
+	<div
+		class="absolute inset-0 bg-linear-to-br from-(--primary)/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-xl"
+	>
+	</div>
+</div>
+
+<style>
+	.game-card {
+		animation: fadeInUp 0.5s ease-out forwards;
+		opacity: 0;
+	}
+
+	.game-card.filtered-out {
+		display: none;
+	}
+
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.game-card:nth-child(1) {
+		animation-delay: 0.05s;
+	}
+	.game-card:nth-child(2) {
+		animation-delay: 0.1s;
+	}
+	.game-card:nth-child(3) {
+		animation-delay: 0.15s;
+	}
+	.game-card:nth-child(4) {
+		animation-delay: 0.2s;
+	}
+	.game-card:nth-child(5) {
+		animation-delay: 0.25s;
+	}
+	.game-card:nth-child(6) {
+		animation-delay: 0.3s;
+	}
+
+	.line-clamp-3 {
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+</style>

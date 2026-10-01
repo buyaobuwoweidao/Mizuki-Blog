@@ -189,6 +189,11 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:more-horiz",
 			children: [
 				{
+					name: "游戏",
+					url: "/games/",
+					icon: "material-symbols:sports-esports-rounded",
+				},
+				{
 					name: "项目",
 					url: "/projects/",
 					icon: "material-symbols:work",
