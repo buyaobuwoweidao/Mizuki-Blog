@@ -37,11 +37,11 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
-		mode: "logo",
+		mode: "text-icon",
 		// 顶栏标题文本
 		text: "𝓕𝓲𝓻𝓮𝓯𝓵𝔂",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "assets/home/home.webp",
+		icon: "assets/home/firefly-logo.webp",
 		// 网站Logo图片路径
 		logo: "assets/home/firefly-blog-logo.png",
 	},
