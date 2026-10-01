@@ -1,5 +1,8 @@
 # Decap CMS 配置 - Mizuki 二次元博客
 
+# 后台界面语言：简体中文
+locale: zh_Hans
+
 backend:
   name: github
   repo: buyaobuwoweidao/Mizuki-Blog
