@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 6 月 6 日夏日游戏节，剑星2《血雨》首支预告终于来了！新主角伊薇短发登场，重庆取景，官方预告直接嵌在文章里，随时可以重温 (≧▽≦)
 tags: [剑星, 剑星2, 血雨, 游戏, 视频]
 category: 游戏
+image: /assets/games/stellar-blade/sb-03-eve-yoga.webp
 draft: false
 ---
 

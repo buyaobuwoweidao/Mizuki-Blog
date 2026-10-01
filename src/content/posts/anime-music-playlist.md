@@ -4,6 +4,7 @@ published: 2026-09-14
 description: 从入坑到现在，攒下了一张舍不得删的歌单。聊聊那些单曲循环过的动漫歌曲。
 tags: [音乐, 歌单, 番剧]
 category: 随笔
+image: /assets/anime/gdgc.webp
 draft: false
 ---
 

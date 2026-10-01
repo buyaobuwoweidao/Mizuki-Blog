@@ -4,6 +4,7 @@ published: 2026-09-28
 description: 从基沃托斯到我的桌面背景，聊聊 Blue Archive 这款游戏带给我的感动与日常。
 tags: [游戏, 蔚蓝档案, Blue Archive, 二次元]
 category: 游戏
+image: /assets/desktop-banner/ba-wallpaper-1.webp
 draft: false
 ---
 

@@ -4,6 +4,7 @@ published: 2026-09-29
 description: 从第一个手办到满柜子的谷子，聊聊我为热爱花钱的那些年，以及一些理性收藏的小建议。
 tags: [收藏, 手办, 谷子, 日常]
 category: 日常
+image: /assets/covers/gacha-collection.jpg
 draft: false
 hot: true
 ---

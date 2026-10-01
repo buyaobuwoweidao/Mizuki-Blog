@@ -4,6 +4,7 @@ published: 2026-09-29
 description: 一个声优控的碎碎念：从入坑到认声，聊聊那些一开口就能认出来的声音。
 tags: [声优, 二次元, 音乐, 随笔]
 category: 随笔
+image: /assets/music/cover/dazbee.webp
 draft: false
 ---
 

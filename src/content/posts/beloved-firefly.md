@@ -4,6 +4,7 @@ published: 2026-09-24
 description: 为什么说"星核猎手流萤小姐美貌盖世无双"？这篇写写我最爱的崩铁角色。
 tags: [崩坏星穹铁道, 流萤, 萨姆]
 category: 游戏
+image: /assets/about/firefly-desk.webp
 draft: false
 hot: true
 ---

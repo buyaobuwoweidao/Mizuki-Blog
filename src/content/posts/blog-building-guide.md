@@ -4,6 +4,7 @@ published: 2026-09-12
 description: 用了几天时间，把博客从零搭到上线。记录一下完整过程，给想自己建站的朋友参考。
 tags: [技术, 博客, Astro, GitHub]
 category: 技术
+image: /assets/projects/folkpatch.webp
 draft: false
 ---
 

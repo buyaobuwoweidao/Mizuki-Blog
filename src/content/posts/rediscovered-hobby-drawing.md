@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 画画是我高中才开始学的，一直藏着没说，从没给别人画过。毕业后兼职攒了几个月钱买了平板，才把这件事捡回来。今天终于写出来了。
 tags: [绘画, 回忆, 日常, 二次元, 随笔]
 category: 随笔
+image: /assets/covers/drawing-sketch.jpg
 draft: false
 ---
 

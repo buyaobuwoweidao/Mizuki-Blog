@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 如果要我选一款"为它疯狂"的游戏，那一定是剑星。战斗爽、美术神、伊芙美——这篇聊聊我的剑星游玩体验，以及对剑星2的无限期待 (≧▽≦)
 tags: [剑星, 游戏, 动作游戏, 科幻, 评测]
 category: 游戏
+image: /assets/games/stellar-blade/sb-01-official-drink.webp
 draft: false
 ---
 

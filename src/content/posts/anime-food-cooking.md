@@ -4,6 +4,7 @@ published: 2026-09-30
 description: 看完动画里的美食就想自己做来吃，这是不是一种病？聊聊我这些年复刻过的动漫料理，从蛋包饭到拉面，从失败到真香。
 tags: [美食, 日常, 二次元, 厨房]
 category: 日常
+image: /assets/covers/anime-food.jpg
 draft: false
 ---
 

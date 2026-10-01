@@ -4,6 +4,7 @@ published: 2026-09-10
 description: 因为流萤入坑了《崩坏：星穹铁道》，记录一下这两个月的游戏日常和入坑心路。
 tags: [游戏, 星穹铁道, 流萤]
 category: 游戏
+image: /assets/about/firefly-hero.webp
 draft: false
 hot: true
 ---

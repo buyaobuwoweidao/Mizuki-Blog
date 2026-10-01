@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 十月一日，把最真诚的祝福写给祖国。山河无恙，盛世如愿；愿岁月静好，愿你我都能记得来时的路。
 tags: [国庆, 祝福, 种花家, 随笔]
 category: 随笔
+image: /assets/covers/national-day-red.jpg
 draft: false
 pinned: true
 priority: 1

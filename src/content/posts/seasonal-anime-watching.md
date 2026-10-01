@@ -4,6 +4,7 @@ published: 2026-09-22
 description: 春天看治愈、夏天看热血、秋天看文艺、冬天看温暖——追番这么多年，我发现自己一直在"跟着季节换口味"。聊聊四季追番的仪式感。
 tags: [番剧, 季节, 日常, 二次元]
 category: 番剧
+image: /assets/anime/rynh.webp
 draft: false
 ---
 

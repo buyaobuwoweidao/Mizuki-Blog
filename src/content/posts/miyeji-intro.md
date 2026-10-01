@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 一个叫"谜页集"的网站，收集了各种网页互动解谜与互动游戏，不用下载、打开就能玩。聊聊它是什么，以及我是怎么入坑的。
 tags: [网页游戏, 互动解谜, 谜页集, 推荐]
 category: 游戏
+image: /assets/mobile-banner/1.webp
 draft: false
 ---
 

@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 如果说生化危机教会我"恐惧是怪物"，那寂静岭教会我的就是"恐惧是人心"。一个胆小玩家的寂静岭全系列回忆录，含大量颜文字与吐槽 (｡•́︿•̀｡)
 tags: [寂静岭, 恐怖, 游戏, 回忆, 心理恐怖]
 category: 游戏
+image: /assets/games/silent-hill/sh-robbie-rabbit.webp
 draft: false
 ---
 

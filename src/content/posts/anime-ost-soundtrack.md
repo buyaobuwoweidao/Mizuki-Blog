@@ -4,6 +4,7 @@ published: 2026-09-27
 description: 一部好的动画，一半功劳要记在配乐头上。聊聊那些一响前奏就让人起鸡皮疙瘩的 OST、我私藏的歌单，以及配乐是怎么让画面发光的。
 tags: [音乐, OST, 番剧, 二次元]
 category: 音乐
+image: /assets/music/cover/xryx.webp
 draft: false
 ---
 

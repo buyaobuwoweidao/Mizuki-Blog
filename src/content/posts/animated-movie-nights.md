@@ -4,6 +4,7 @@ published: 2026-09-30
 description: 一部好的动画电影，值得在深夜反复回味。整理了几部我看过很多遍、每次都有新感受的作品。
 tags: [动画电影, 剧场版, 推荐, 观影]
 category: 番剧
+image: /assets/anime/zsfl.webp
 draft: false
 ---
 

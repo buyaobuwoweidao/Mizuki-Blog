@@ -4,6 +4,7 @@ published: 2026-09-30
 description: 从壁纸、灯带到小摆件，手把手教你打造一个属于自己的二次元治愈系房间。
 tags: [生活, 房间布置, 二次元, 氛围]
 category: 日常
+image: /assets/desktop-banner/3.webp
 draft: false
 ---
 

@@ -4,6 +4,7 @@ published: 2026-09-30
 description: 这里是只有知道密码的人才能进来的秘密房间，藏着一些小秘密和碎碎念。
 tags: [私密, 流萤]
 category: 日常
+image: /assets/home/home.webp
 draft: false
 encrypted: true
 password: firefly

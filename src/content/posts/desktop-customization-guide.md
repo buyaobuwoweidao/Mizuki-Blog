@@ -4,6 +4,7 @@ published: 2026-09-08
 description: 把桌面一点点打造成流萤主题的小窝，记录一下这趟折腾之路，顺便分享几个好用的工具。
 tags: [桌面, 美化, 流萤, Rainmeter]
 category: 日常
+image: /assets/desktop-banner/ba-banner.webp
 draft: false
 ---
 

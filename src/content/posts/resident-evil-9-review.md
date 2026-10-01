@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 里昂和格蕾丝的故事结束了。作为一个从生化4玩到现在的老玩家，聊聊生化危机9的爽点、痛点，以及它值不值得你掏钱。
 tags: [生化危机, 游戏, 恐怖, 评测, 卡普空]
 category: 游戏
+image: /assets/games/resident-evil/re-2-claire.webp
 draft: false
 hot: true
 ---

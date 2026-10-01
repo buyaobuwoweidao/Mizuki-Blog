@@ -4,6 +4,7 @@ published: 2026-09-23
 description: 我家附近有一只小猫，我给它起了个名字叫团子。它不是我养的猫，但每次在路上遇见它，心情都会变好。聊聊我和团子的日常，和一个没养猫人的二次元视角。
 tags: [猫, 日常, 二次元, 生活]
 category: 日常
+image: /assets/covers/cat-friend.jpg
 draft: false
 ---
 

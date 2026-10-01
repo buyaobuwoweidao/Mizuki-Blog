@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 月球、宇航员、机器人小女孩、反乌托邦都市——卡普空这部跳票多年的科幻新作《实质存在》，我玩过之后只想说：这游戏是真的怪，也是真的酷 (ﾉ◕ヮ◕)ﾉ
 tags: [实质存在, 卡普空, 游戏, 科幻, 评测]
 category: 游戏
+image: /assets/games/pragmata/pg-04-space.webp
 draft: false
 ---
 

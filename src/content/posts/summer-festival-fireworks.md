@@ -4,6 +4,7 @@ published: 2026-09-29
 description: 浴衣、苹果糖、捞金鱼、夜空里的花火——夏日祭大概是二次元作品里最经典的场景了。聊聊我心中的夏日祭情结，以及为什么它永远看不腻。
 tags: [夏日祭, 烟花, 日常, 二次元]
 category: 日常
+image: /assets/covers/summer-fireworks.jpg
 draft: false
 ---
 

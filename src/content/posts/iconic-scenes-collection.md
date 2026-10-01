@@ -4,6 +4,7 @@ published: 2026-09-30
 description: 那些让我笑出声、哭出声、或者起鸡皮疙瘩的动画名场面，每一帧都是经典。
 tags: [番剧, 名场面, 盘点, 二次元]
 category: 番剧
+image: /assets/anime/gmzn.webp
 draft: false
 ---
 

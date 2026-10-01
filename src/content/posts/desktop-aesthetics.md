@@ -4,6 +4,7 @@ published: 2026-09-18
 description: 分享我的桌面壁纸收藏与美化心得，让每天打开电脑都像走进二次元世界。
 tags: [壁纸, 桌面, 美化]
 category: 日常
+image: /assets/desktop-banner/1.webp
 draft: false
 ---
 

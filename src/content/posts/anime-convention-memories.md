@@ -4,6 +4,7 @@ published: 2026-09-26
 description: 从第一次进漫展的不知所措，到后来熟门熟路地逛展、集邮、看舞台。聊聊我这些年漫展上的故事，和那些藏在人群里的温柔瞬间。
 tags: [漫展, 日常, 二次元, 回忆]
 category: 日常
+image: /assets/anime/gyrd.webp
 draft: false
 ---
 

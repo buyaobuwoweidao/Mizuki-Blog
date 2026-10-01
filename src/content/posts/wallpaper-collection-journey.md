@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 从随手存图到建立自己的壁纸图库，聊聊我这些年在收藏二次元壁纸这件事上的执念、方法论与一些小秘密。
 tags: [壁纸, 日常, 二次元, 桌面美化]
 category: 日常
+image: /assets/mobile-banner/3.webp
 draft: false
 hot: true
 ---

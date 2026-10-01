@@ -4,6 +4,7 @@ published: 2026-09-21
 description: 整理了几部个人非常喜欢的番剧，涵盖治愈、日常、剧情向，给想补番的你。
 tags: [番剧, 推荐]
 category: 番剧
+image: /assets/anime/zshz.webp
 draft: false
 hot: true
 ---

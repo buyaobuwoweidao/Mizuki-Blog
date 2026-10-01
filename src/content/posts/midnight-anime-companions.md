@@ -4,6 +4,7 @@ published: 2026-09-24
 description: 失眠的夜晚总是很长，而我很早就学会了一件事：把那些睡不着的时刻，交给动画和音乐。聊聊深夜档的陪伴，和那些只在凌晨两点出现的温柔。
 tags: [深夜, 失眠, 日常, 二次元]
 category: 日常
+image: /assets/covers/midnight-phone.jpg
 draft: false
 ---
 

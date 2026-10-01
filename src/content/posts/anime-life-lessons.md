@@ -4,6 +4,7 @@ published: 2026-09-17
 description: 看番不只是娱乐，那些屏幕里的故事，真的教会了我很多。聊聊动画带给我的几个道理，和那些悄悄改变我生活的瞬间。
 tags: [感悟, 番剧, 二次元, 成长]
 category: 杂谈
+image: /assets/anime/qfcf.webp
 draft: false
 ---
 

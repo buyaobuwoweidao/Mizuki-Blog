@@ -4,6 +4,7 @@ published: 2026-09-04
 description: 深夜睡不着，爬起来写点碎碎念。聊聊二次元带给我的东西，以及为什么想坚持记录。
 tags: [随笔, 碎碎念, 二次元]
 category: 随笔
+image: /assets/desktop-banner/4.webp
 draft: false
 ---
 

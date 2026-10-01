@@ -4,6 +4,7 @@ published: 2026-09-16
 description: 天气转凉最适合窝在被子里补番，整理了一份秋天想看的片单，顺便聊聊为什么喜欢这些作品。
 tags: [番剧, 推荐, 补番]
 category: 番剧
+image: /assets/anime/yyl.webp
 draft: false
 ---
 

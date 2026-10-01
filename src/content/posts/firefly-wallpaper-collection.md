@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 四张流萤官方插画壁纸，从樱花春日到星夜都市，每一张都想拿来当桌面！顺便聊聊怎么在文章里嵌入视频 (｡•ᴗ•｡)
 tags: [流萤, 崩坏星穹铁道, 壁纸, 插画]
 category: 壁纸
+image: /assets/home/girl-1131.png
 draft: false
 hot: true
 ---

@@ -4,6 +4,7 @@ published: 2026-09-28
 description: 动画不够看？那就去读原作。聊聊轻小说的魅力、入坑的第一本书、以及那些改编成动画之后依然值得一读的原作。
 tags: [轻小说, 阅读, 二次元, 安利]
 category: 阅读
+image: /assets/anime/lkls.webp
 draft: false
 ---
 

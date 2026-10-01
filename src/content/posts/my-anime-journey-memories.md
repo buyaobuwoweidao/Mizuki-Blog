@@ -4,6 +4,7 @@ published: 2026-09-18
 description: 回望入坑二次元的这些年，从第一部番到第一次漫展，聊聊那些改变我的瞬间。
 tags: [随笔, 回忆, 入坑]
 category: 随笔
+image: /assets/anime/lxh.webp
 draft: false
 ---
 

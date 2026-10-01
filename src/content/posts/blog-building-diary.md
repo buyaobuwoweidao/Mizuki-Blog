@@ -4,6 +4,7 @@ published: 2026-09-15
 description: 从零开始，用 Astro + Mizuki 主题在 GitHub Pages 上搭起了这个二次元博客。
 tags: [博客, Astro, GitHub Pages]
 category: 技术
+image: /assets/projects/mizuki.webp
 draft: false
 ---
 

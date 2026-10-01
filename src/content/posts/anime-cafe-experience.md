@@ -4,6 +4,7 @@ published: 2026-09-18
 description: 女仆咖啡厅、主题联动咖啡厅、角色主题店——二次元咖啡厅是现实世界里最接近二次元的空间。聊聊我的探店经历，和那些"不小心走进动画"的瞬间。
 tags: [咖啡厅, 日常, 二次元, 探店]
 category: 日常
+image: /assets/anime/tz1.webp
 draft: false
 ---
 

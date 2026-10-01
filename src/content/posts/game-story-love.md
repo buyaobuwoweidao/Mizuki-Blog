@@ -4,6 +4,7 @@ published: 2026-09-20
 description: 有人说游戏就是游戏，剧情只是添头。但对我来说，好的剧情才是游戏最贵的东西。聊聊那些让我愿意为故事买单的游戏，和游戏叙事带给我的感动。
 tags: [游戏, 剧情, 二次元, 日常]
 category: 游戏
+image: /assets/anime/ll.webp
 draft: false
 ---
 

@@ -4,6 +4,7 @@ published: 2026-09-27
 description: 从放学后的电视机到深夜追番，聊聊我入坑二次元的那些年。
 tags: [二次元, 回忆, 入坑]
 category: 随笔
+image: /assets/anime/cmmn.webp
 draft: false
 ---
 

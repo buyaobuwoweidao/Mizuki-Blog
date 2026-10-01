@@ -4,6 +4,7 @@ published: 2026-09-29
 description: 这里是留言板！欢迎留下你的足迹、吐槽或者一句简单的问候。
 tags: [碎碎念, 留言板, 欢迎]
 category: 日常
+image: /assets/covers/firefly-stars.jpg
 draft: false
 hot: true
 ---

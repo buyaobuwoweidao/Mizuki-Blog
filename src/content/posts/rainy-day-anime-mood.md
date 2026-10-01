@@ -4,6 +4,7 @@ published: 2026-09-25
 description: 下雨天总是和二次元很配——窗外的雨声、屏幕里的故事、耳机里的 OST。聊聊我眼中最适合下雨天做的事，和那些雨里的名场面。
 tags: [雨天, 日常, 二次元, 心情]
 category: 日常
+image: /assets/covers/rainy-day.jpg
 draft: false
 ---
 

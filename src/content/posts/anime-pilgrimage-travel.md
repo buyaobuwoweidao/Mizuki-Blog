@@ -4,6 +4,7 @@ published: 2026-09-19
 description: 有些动画，看着看着就想去看看它的取景地。聊聊那些让我看完就想收拾行李出发的动画圣地，和"圣地巡礼"这件事的魅力。
 tags: [旅行, 圣地巡礼, 番剧, 二次元]
 category: 番剧
+image: /assets/anime/laxxx.webp
 draft: false
 ---
 

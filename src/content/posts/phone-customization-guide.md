@@ -4,6 +4,7 @@ published: 2026-09-21
 description: 桌面要二次元，手机当然也要。聊聊我是怎么把手机主题、壁纸、图标、小组件全部二次元化的，以及踩过的一些坑。
 tags: [手机, 主题, 二次元, 桌面美化]
 category: 日常
+image: /assets/mobile-banner/wanfory-bg.jpg
 draft: false
 ---
 

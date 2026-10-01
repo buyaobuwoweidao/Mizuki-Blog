@@ -4,6 +4,7 @@ published: 2026-10-01
 description: 从第一次接触里昂开始，生化危机系列我几乎一部没落下（除了几部画质太老的）。这篇记录我和这个恐怖系列的老交情，内含大量颜文字和碎碎念 (´▽`)ﾉ
 tags: [生化危机, 游戏, 恐怖, 回忆, 卡普空]
 category: 游戏
+image: /assets/games/resident-evil/re-05-chris-sheva.webp
 draft: false
 ---
 
