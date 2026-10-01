@@ -10,7 +10,7 @@ import {
 } from "@/components/widgets/music-player/constants";
 import type { RepeatMode, Song } from "@/components/widgets/music-player/types";
 import { musicPlayerConfig } from "@/config";
-import { resolveAssetUrl } from "@/utils/asset-url";
+import { publicImageUrl } from "@/utils/image-source-utils";
 
 export interface MusicPlayerState {
 	currentSong: Song;
@@ -383,7 +383,7 @@ class MusicPlayerStore {
 			return false;
 		}
 
-		const sourceUrl = resolveAssetUrl(this.state.currentSong.url);
+		const sourceUrl = publicImageUrl(this.state.currentSong.url);
 		if (sourceUrl === this.loadedSourceUrl) {
 			return true;
 		}
