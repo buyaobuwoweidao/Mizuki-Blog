@@ -64,20 +64,22 @@ const memos = dynamicConfig.memos;
 				</label>
 			</div>
 
-			<DynamicFeed
-				client:load
-				source={dataUrl}
-				{itemsPerPage}
-				showComments={showInlineComments}
-				emptyText={i18n(I18nKey.dynamicEmpty)}
-				noResultsText={i18n(I18nKey.dynamicNoResults)}
-				loadingText={i18n(I18nKey.dynamicLoading)}
-				allYearsText={i18n(I18nKey.dynamicAllYears)}
-				timezone={siteConfig.timeZone || "UTC"}
-				{memos}
-			/>
+			<div class="page-shell">
+				<DynamicFeed
+					client:load
+					source={dataUrl}
+					{itemsPerPage}
+					showComments={showInlineComments}
+					emptyText={i18n(I18nKey.dynamicEmpty)}
+					noResultsText={i18n(I18nKey.dynamicNoResults)}
+					loadingText={i18n(I18nKey.dynamicLoading)}
+					allYearsText={i18n(I18nKey.dynamicAllYears)}
+					timezone={siteConfig.timeZone || "UTC"}
+					{memos}
+				/>
 
-			<DynamicItemTemplate />
+				<DynamicItemTemplate />
+			</div>
 		</div>
 	</div>
 </MainGridLayout>

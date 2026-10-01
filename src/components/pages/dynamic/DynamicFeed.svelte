@@ -269,7 +269,7 @@ $effect(() => {
 onMount(() => {
 	registerDynamicGallery();
 	registerDynamicInlineComments();
-	const page = list.closest(".page-shell");
+	const page = list.closest(".page-shell") ?? list.parentElement;
 	template =
 		page?.querySelector<HTMLTemplateElement>("[data-dynamic-item-template]") ??
 		null;
