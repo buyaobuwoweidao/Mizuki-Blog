@@ -66,7 +66,7 @@ export const sponsorConfig: SponsorConfig = {
 			name: "爱发电",
 			icon: "simple-icons:afdian",
 			qrCode: "",
-			link: "https://afdian.com",
+			link: "https://afdian.com/u/7c6750a2c6cf11f0921452540025c377",
 			description: "通过爱发电平台打赏，支持月度赞助 (๑•̀ㅂ•́)و✧",
 			enabled: true,
 		},
