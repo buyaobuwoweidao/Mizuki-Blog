@@ -1,5 +1,6 @@
 import clCover from "../../../assets/music/cover/cl.webp?url";
 import dazbeeCover from "../../../assets/music/cover/dazbee.webp?url";
+import fireflyCover from "../../../assets/music/cover/firefly.webp?url";
 import hitoriCover from "../../../assets/music/cover/hitori.webp?url";
 import xryxCover from "../../../assets/music/cover/xryx.webp?url";
 import type { Song } from "./types";
@@ -13,6 +14,14 @@ export const DEFAULT_COVER_URL = "/favicon/favicon.ico";
 export const LOCAL_PLAYLIST: Song[] = [
 	{
 		id: 1,
+		title: "使一颗心免于哀伤（哼唱版）",
+		artist: "流萤·星穹铁道",
+		cover: fireflyCover,
+		url: "/assets/music/url/firefly.mp3",
+		duration: 229,
+	},
+	{
+		id: 2,
 		title: "口笛で愛は歌えない",
 		artist: "Dazbee",
 		cover: dazbeeCover,
@@ -20,7 +29,7 @@ export const LOCAL_PLAYLIST: Song[] = [
 		duration: 241,
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "ひとり上手",
 		artist: "Kaya",
 		cover: hitoriCover,
@@ -28,15 +37,15 @@ export const LOCAL_PLAYLIST: Song[] = [
 		duration: 253,
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "眩耀夜行",
-		artist: "ス리즈ブーケ",
+		artist: "スリズブーケ",
 		cover: xryxCover,
 		url: "/assets/music/url/xryx.mp3",
 		duration: 245,
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "春雷の頃",
 		artist: "22/7",
 		cover: clCover,

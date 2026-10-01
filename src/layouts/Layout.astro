@@ -2,6 +2,7 @@
 import { Font } from "astro:assets";
 import { PageProgressBar } from "@components/control/PageProgressBar";
 import Pio from "@components/features/pio/Pio.astro";
+import SpineModel from "@/components/widget/SpineModel.astro";
 import ConfigCarrier from "@components/misc/ConfigCarrier.astro";
 import MusicPlayer from "@components/widgets/music-player/MusicPlayer.svelte";
 import CodeGroupManager from "@/components/features/markdown/CodeGroupManager.astro";
@@ -256,6 +257,9 @@ const bannerOffset =
 
 		<!-- Pio 看板娘组件 - 仅在进入视口时加载 -->
 		{pioConfig.enable && <Pio config={pioConfig} />}
+
+		<!-- 流萤 Spine 看板娘（移植自 Firefly 主题） -->
+		<SpineModel />
 
 		<CodeGroupManager />
 		<DiagramManager />
