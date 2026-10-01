@@ -1,6 +1,7 @@
 ---
 import FloatingControls from "@components/control/FloatingControls.astro";
 import { SidebarTOC } from "@components/features/toc";
+import BackgroundPlayer from "@components/features/BackgroundPlayer.astro";
 import Banner from "@components/layout/Banner.astro";
 import RightSideBar from "@components/layout/RightSideBar.astro";
 import FullscreenWallpaper from "@components/misc/FullscreenWallpaper.astro";
@@ -129,6 +130,9 @@ const defaultPostListLayout = siteConfig.postListLayout?.defaultMode || "list";
 
 	<!-- 全屏壁纸 - 始终渲染，通过 JS 控制显示隐藏 -->
 	<FullscreenWallpaper config={fullscreenWallpaperConfig} />
+
+	<!-- 背景视频播放器（导航栏播放按钮控制，覆盖图片壁纸） -->
+	<BackgroundPlayer />
 
 	<!-- 全局图标加载器 -->
 	<IconifyLoader />
