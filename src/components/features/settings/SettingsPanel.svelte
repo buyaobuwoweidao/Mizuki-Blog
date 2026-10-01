@@ -38,6 +38,12 @@ import {
 } from "@utils/setting-utils";
 import { onMount } from "svelte";
 import { fullscreenWallpaperConfig, sakuraConfig, siteConfig } from "@/config";
+import {
+	applyFontStyle,
+	getStoredFontStyle,
+	setFontStyle,
+	type FontStyle,
+} from "@utils/setting-utils";
 
 import type { WALLPAPER_MODE } from "@/types/config";
 
@@ -86,6 +92,8 @@ const isSakuraSwitchable =
 const isUltrawidePostLayoutSwitchable =
 	siteConfig.ultrawidePostLayout?.allowSwitch ?? true;
 
+const isFontStyleSwitchable = siteConfig.font?.runtimeSwitch ?? false;
+
 const showModeValue = siteConfig.wallpaperMode.showModeSwitchOnMobile;
 let isMobile = $state(false);
 
@@ -104,7 +112,8 @@ const hasAnyContent = $derived(
 		hasOverlaySettings ||
 		hasBannerSettings ||
 		isSakuraSwitchable ||
-		isUltrawidePostLayoutSwitchable,
+		isUltrawidePostLayoutSwitchable ||
+		isFontStyleSwitchable,
 );
 
 let hue = $state(getHue());
@@ -125,6 +134,7 @@ let sakuraEnabled = $state(getDefaultSakuraEnabled());
 const defaultSakuraEnabled = getDefaultSakuraEnabled();
 let ultrawidePostLayout = $state(getDefaultUltrawidePostLayout());
 
+let fontStyle = $state<FontStyle>(getStoredFontStyle());
 let overlaySettingsIsDefault = $derived(
 	(!isOverlayOpacitySwitchable || overlayOpacity === defaultOverlayOpacity) &&
 		(!isOverlayBlurSwitchable || overlayBlur === defaultOverlayBlur) &&
@@ -211,6 +221,11 @@ function toggleUltrawidePostLayout() {
 	setUltrawidePostLayout(ultrawidePostLayout);
 }
 
+function switchFontStyle(newStyle: FontStyle) {
+	fontStyle = newStyle;
+	setFontStyle(newStyle);
+}
+
 function switchWallpaperMode(newMode: WALLPAPER_MODE) {
 	wallpaperMode = newMode;
 	setWallpaperMode(newMode);
@@ -262,6 +277,8 @@ onMount(() => {
 	bannerTitleEnabled = getStoredBannerTitleEnabled();
 	sakuraEnabled = getStoredSakuraEnabled();
 	ultrawidePostLayout = getStoredUltrawidePostLayout();
+	fontStyle = getStoredFontStyle();
+	applyFontStyle(fontStyle);
 
 	const savedLayout = siteConfig.postListLayout?.enable
 		? sessionStorage.getItem("postListLayout") ||
@@ -684,6 +701,56 @@ $effect(() => {
 							class:left-0.5={!ultrawidePostLayout}
 							class:left-5={ultrawidePostLayout}></div>
 					</div>
+				</button>
+			</div>
+		</div>
+	{/if}
+
+	{#if isFontStyleSwitchable}
+		<div class="mt-2 mb-2">
+			<div
+				class="flex gap-2 font-bold text-lg text-neutral-900 dark:text-neutral-100 transition relative ml-3 mb-2
+				before:w-1 before:h-4 before:rounded-md before:bg-(--primary)
+				before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2"
+			>
+				{i18n(I18nKey.settingsFont)}
+			</div>
+			<div class="space-y-1">
+				<button
+					class="w-full btn-regular rounded-md py-2 px-3 flex items-center gap-3 text-left active:scale-95 transition-all relative overflow-hidden"
+					class:opacity-60={fontStyle !== "round"}
+					class:bg-(--btn-regular-bg-hover)={fontStyle === "round"}
+					onclick={() => switchFontStyle("round")}
+				>
+					<Icon icon="material-symbols:format-size-rounded" class="text-[1.25rem] shrink-0" />
+					<span class="text-sm flex-1">圆体（默认）</span>
+					{#if fontStyle === "round"}
+						<Icon icon="material-symbols:check-circle" class="text-[1rem] shrink-0 text-(--primary)" />
+					{/if}
+				</button>
+				<button
+					class="w-full btn-regular rounded-md py-2 px-3 flex items-center gap-3 text-left active:scale-95 transition-all relative overflow-hidden"
+					class:opacity-60={fontStyle !== "system"}
+					class:bg-(--btn-regular-bg-hover)={fontStyle === "system"}
+					onclick={() => switchFontStyle("system")}
+				>
+					<Icon icon="material-symbols:computer-rounded" class="text-[1.25rem] shrink-0" />
+					<span class="text-sm flex-1">系统字体</span>
+					{#if fontStyle === "system"}
+						<Icon icon="material-symbols:check-circle" class="text-[1rem] shrink-0 text-(--primary)" />
+					{/if}
+				</button>
+				<button
+					class="w-full btn-regular rounded-md py-2 px-3 flex items-center gap-3 text-left active:scale-95 transition-all relative overflow-hidden"
+					class:opacity-60={fontStyle !== "mono"}
+					class:bg-(--btn-regular-bg-hover)={fontStyle === "mono"}
+					onclick={() => switchFontStyle("mono")}
+				>
+					<Icon icon="material-symbols:terminal-rounded" class="text-[1.25rem] shrink-0" />
+					<span class="text-sm flex-1">等宽</span>
+					{#if fontStyle === "mono"}
+						<Icon icon="material-symbols:check-circle" class="text-[1rem] shrink-0 text-(--primary)" />
+					{/if}
 				</button>
 			</div>
 		</div>

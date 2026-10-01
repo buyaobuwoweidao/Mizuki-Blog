@@ -1,0 +1,215 @@
+---
+import Comment from "@components/comment/index.astro";
+import { PageHeader } from "@components/features/page-header";
+import { Icon } from "astro-icon/components";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+import { siteConfig, sponsorConfig } from "../config";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+
+export const prerender = true;
+
+// 检查页面是否启用
+if (!siteConfig.featurePages.sponsor) {
+	return Astro.redirect("/404/");
+}
+
+const title = sponsorConfig.title || i18n(I18nKey.sponsorTitle);
+const description =
+	sponsorConfig.description || i18n(I18nKey.sponsorDescription);
+const enabledMethods = sponsorConfig.methods.filter((method) => method.enabled);
+const sponsors = sponsorConfig.sponsors || [];
+const showSponsorsList = sponsorConfig.showSponsorsList !== false;
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<MainGridLayout title={title} description={description}>
+	<div
+		class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32"
+	>
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle={description} />
+
+			{sponsorConfig.usage && (
+				<div
+					class="mb-8 mt-4 p-4 rounded-lg bg-(--primary)/8 dark:bg-(--btn-regular-bg) border border-(--primary)/30 dark:border-none backdrop-blur-xs shadow-xs"
+				>
+					<div class="flex items-start gap-2">
+						<Icon
+							name="material-symbols:favorite-rounded"
+							class="text-(--primary) text-lg shrink-0 mt-0.5"
+						/>
+						<p
+							class="text-sm text-neutral-700 dark:text-neutral-200 leading-relaxed"
+						>
+							{sponsorConfig.usage}
+						</p>
+					</div>
+				</div>
+			)}
+
+			<!-- 打赏方式 -->
+			<div class="mb-8">
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+					{
+						enabledMethods.map((method) => (
+							<div
+								class="flex flex-col items-center card-base p-6 rounded-lg bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-800 hover:border-(--primary) transition-colors"
+							>
+								<div class="flex items-center gap-3 mb-4">
+									{method.icon && (
+										<Icon
+											name={method.icon}
+											class="text-2xl text-neutral-900 dark:text-neutral-100 transition-colors"
+										/>
+									)}
+									<h3
+										class="text-xl font-semibold text-neutral-900 dark:text-neutral-100"
+									>
+										{method.name}
+									</h3>
+								</div>
+
+								{method.description && (
+									<p
+										class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 text-center"
+									>
+										{method.description}
+									</p>
+								)}
+
+								{method.qrCode && (
+									<div
+										class="relative w-full max-w-[200px] aspect-square bg-white rounded-lg p-4 shadow-md mb-4 overflow-hidden"
+									>
+										<img
+											src={baseUrl + method.qrCode}
+											alt={`${method.name} 打赏二维码`}
+											class="relative w-full h-full object-contain"
+											loading="lazy"
+										/>
+									</div>
+								)}
+
+								{method.link && (
+									<a
+										href={method.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="inline-flex items-center gap-2 px-4 py-2 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium hover:bg-(--primary)/90 active:scale-95 transition-all"
+									>
+										<span>前往打赏</span>
+										<Icon
+											name="material-symbols:arrow-outward-rounded"
+											class="text-sm"
+										/>
+									</a>
+								)}
+							</div>
+						))
+					}
+				</div>
+			</div>
+
+			<!-- 打赏者列表 -->
+			{showSponsorsList && (
+				<div class="mb-8">
+					<div class="flex items-center gap-2 mb-4">
+						<span
+							class="w-1 h-5 rounded-md bg-(--primary) inline-block"
+						></span>
+						<h2
+							class="text-xl font-bold text-black/90 dark:text-white/90"
+						>
+							感谢墙
+						</h2>
+						{sponsors.length > 0 && (
+							<span
+								class="text-xs text-black/40 dark:text-white/40 font-normal"
+							>
+								{sponsors.length} 位小伙伴
+							</span>
+						)}
+					</div>
+
+					{sponsors.length > 0 ? (
+						<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+							{
+								sponsors.map((sponsor) => (
+									<div
+										class="group flex items-center gap-3 p-3 rounded-xl border border-black/10 dark:border-white/10 hover:border-(--primary) transition-all duration-200"
+									>
+										{sponsor.avatar ? (
+											<img
+												src={sponsor.avatar}
+												alt={sponsor.name}
+												class="w-9 h-9 rounded-full object-cover shrink-0"
+												loading="lazy"
+											/>
+										) : (
+											<div
+												class="w-9 h-9 rounded-full bg-(--primary)/10 flex items-center justify-center shrink-0"
+											>
+												<span
+													class="text-sm font-bold text-(--primary)"
+												>
+													{sponsor.name.charAt(0)}
+												</span>
+											</div>
+										)}
+										<div class="flex-1 min-w-0">
+											<div class="flex items-center gap-2">
+												<span
+													class="font-semibold text-sm text-neutral-900 dark:text-neutral-100 truncate"
+												>
+													{sponsor.name}
+												</span>
+												{sponsor.amount && (
+													<span
+														class="shrink-0 text-xs font-bold text-(--primary)"
+													>
+														{sponsor.amount}
+													</span>
+												)}
+											</div>
+											{sponsor.date && (
+												<span
+													class="text-[0.65rem] text-neutral-400 dark:text-neutral-500"
+												>
+													{new Date(
+														sponsor.date,
+													).toLocaleDateString()}
+												</span>
+											)}
+										</div>
+									</div>
+								))
+							}
+						</div>
+					) : (
+						<div
+							class="text-center py-10 rounded-xl border border-dashed border-black/15 dark:border-white/15"
+						>
+							<Icon
+								name="material-symbols:volunteer-activism-outline-rounded"
+								class="text-5xl text-black/20 dark:text-white/20 mx-auto mb-3"
+							/>
+							<p class="text-black/50 dark:text-white/50 text-sm mb-1">
+								感谢墙还空空的 (｡•́︿•̀｡)
+							</p>
+							<p class="text-black/35 dark:text-white/35 text-xs">
+								第一个支持博客的小天使会是谁呢 (´∀｀)♡
+							</p>
+						</div>
+					)}
+				</div>
+			)}
+		</div>
+	</div>
+
+	<div class="mt-4">
+		<Comment path="/sponsor/" />
+	</div>
+</MainGridLayout>

@@ -25,6 +25,10 @@ export interface PostCoverOptions {
 		enable?: boolean;
 		url?: string;
 	};
+	randomCoverImage?: {
+		enable?: boolean;
+		apis?: string[];
+	};
 }
 
 const apiImageCache = new Map<string, Promise<string[]>>();
@@ -108,9 +112,30 @@ export async function resolvePostCoverSource(
 	) {
 		apiImages = await fetchApiImages(options.imageApi.url);
 	}
-	if (apiImages.length === 0) return { kind: "none" };
+	if (apiImages.length > 0) {
+		const src =
+			apiImages[stableIndex(options.identity ?? image, apiImages.length)];
+		return { ...classifyPostCoverSource(src, options), kind: "api", src };
+	}
 
-	const src =
-		apiImages[stableIndex(options.identity ?? image, apiImages.length)];
-	return { ...classifyPostCoverSource(src, options), kind: "api", src };
+	// 公开随机图 API：返回重定向式图片 URL，按文章 id 加 seed 参数保证每篇不同
+	const randomApis = options.randomCoverImage?.apis?.filter(
+		(value) => value && value.trim().length > 0,
+	);
+	if (options.randomCoverImage?.enable !== false && randomApis?.length) {
+		const seed =
+			stableIndex(options.identity ?? image, 65536).toString(36) +
+			(options.identity ?? image);
+		let hash = 2166136261;
+		for (const character of seed) {
+			hash ^= character.codePointAt(0) ?? 0;
+			hash = Math.imul(hash, 16777619);
+		}
+		const api = randomApis[(hash >>> 0) % randomApis.length];
+		const separator = api.includes("?") ? "&" : "?";
+		const src = `${api}${separator}v=${(hash >>> 0).toString(36)}`;
+		return { kind: "remote", src };
+	}
+
+	return { kind: "none" };
 }

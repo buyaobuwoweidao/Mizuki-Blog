@@ -1,0 +1,75 @@
+---
+// 最新动态侧边栏组件（移植自 Firefly 主题的动态板块设计）
+import { Icon } from "astro-icon/components";
+
+import { getDiaryList } from "@/data/diary";
+import { i18n } from "@/i18n/translation";
+import I18nKey from "@/i18n/i18nKey";
+import WidgetLayout from "../common/WidgetLayout.astro";
+
+interface Props {
+	class?: string;
+	style?: string;
+	limit?: number;
+}
+
+const { class: className, style } = Astro.props;
+
+// 最新动态：取最近的 5 条
+const limit = Astro.props.limit ?? 5;
+const moments = getDiaryList(limit);
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+// 格式化日期为「月-日」风格
+function formatShortDate(dateStr: string): string {
+	const d = new Date(dateStr);
+	if (Number.isNaN(d.getTime())) return dateStr;
+	const month = String(d.getMonth() + 1).padStart(2, "0");
+	const day = String(d.getDate()).padStart(2, "0");
+	return `${month}-${day}`;
+}
+---
+
+<WidgetLayout
+	name="最新动态"
+	id="diary-sidebar"
+	class={className}
+	style={style}
+>
+	<div class="flex flex-col gap-1">
+		{moments.map((moment) => (
+			<a
+				href={`${baseUrl}/diary/`}
+				class="group flex flex-col gap-0.5 px-2 py-2 rounded-lg hover:bg-(--primary)/5 transition-colors duration-200"
+			>
+				<div class="flex items-center justify-between gap-2">
+					<span class="text-xs text-(--primary) font-medium shrink-0">
+						{formatShortDate(moment.date)}
+					</span>
+					{moment.tags && moment.tags.length > 0 && (
+						<span class="text-[10px] text-neutral-400 dark:text-neutral-500 truncate">
+							{moment.tags[0]}
+						</span>
+					)}
+				</div>
+				<p class="text-sm text-neutral-700 dark:text-neutral-300 leading-snug line-clamp-2 group-hover:text-(--primary) transition-colors duration-200">
+					{moment.content}
+				</p>
+			</a>
+		))}
+	</div>
+
+	<div class="mt-1 pt-2 border-t border-black/5 dark:border-white/5">
+		<a
+			href={`${baseUrl}/diary/`}
+			class="flex items-center justify-center gap-1 text-xs text-neutral-500 dark:text-neutral-400 hover:text-(--primary) transition-colors duration-200 py-1"
+		>
+			<Icon
+				name="material-symbols:arrow-forward-rounded"
+				class="w-3.5 h-3.5"
+			/>
+			<span>更多动态</span>
+		</a>
+	</div>
+</WidgetLayout>

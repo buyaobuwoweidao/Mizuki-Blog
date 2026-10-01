@@ -136,6 +136,48 @@ export function setWallpaperMode(mode: WALLPAPER_MODE): void {
 	);
 }
 
+// ─── 字体风格 ────────────────────────────────────────────────
+// 风格: "round" 默认圆体 | "system" 系统字体 | "mono" 等宽
+export type FontStyle = "round" | "system" | "mono";
+
+const FONT_STYLE_KEY = "fontStyle";
+
+export function getStoredFontStyle(): FontStyle {
+	const stored = localStorage.getItem(FONT_STYLE_KEY) as FontStyle | null;
+	return stored === "round" || stored === "system" || stored === "mono"
+		? stored
+		: "round";
+}
+
+export function applyFontStyle(style: FontStyle): void {
+	const root = document.documentElement;
+	if (style === "round") {
+		root.style.removeProperty("--font-body");
+		root.style.removeProperty("--font-sans");
+		return;
+	}
+	if (style === "system") {
+		root.style.setProperty(
+			"--font-body",
+			"ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+		);
+		root.style.removeProperty("--font-sans");
+		return;
+	}
+	root.style.setProperty(
+		"--font-sans",
+		"var(--font-jetbrains-mono, 'JetBrains Mono'), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+	);
+}
+
+export function setFontStyle(style: FontStyle): void {
+	localStorage.setItem(FONT_STYLE_KEY, style);
+	applyFontStyle(style);
+	window.dispatchEvent(
+		new CustomEvent("font-style-change", { detail: { style } }),
+	);
+}
+
 function getConfigDefault(key: string, fallback: string): string {
 	const configCarrier = document.getElementById("config-carrier");
 	if (!configCarrier) return fallback;

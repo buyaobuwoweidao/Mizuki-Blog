@@ -77,6 +77,8 @@ export { relatedPostsConfig } from "./relatedPostsConfig";
 export { shareConfig } from "./shareConfig";
 // ─── 布局 ───────────────────────────────────────────────────
 export { sidebarLayoutConfig } from "./sidebarConfig";
+// ─── 打赏 ───────────────────────────────────────────────────
+export { sponsorConfig } from "./sponsorConfig";
 // ─── Spine 看板娘（流萤）────────────────────────────────────
 export { spineModelConfig } from "./spineConfig";
 // ─── 站点核心 ───────────────────────────────────────────────

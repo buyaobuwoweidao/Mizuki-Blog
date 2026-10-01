@@ -111,6 +111,7 @@ const cover = await resolvePostCoverSource(entry.data, {
 	basePath: getFileDirFromPath(entry.filePath || ""),
 	identity: entry.id,
 	imageApi: siteConfig.banner.imageApi,
+	randomCoverImage: siteConfig.banner.randomCoverImage,
 });
 const coverSrc = cover.src ?? "";
 

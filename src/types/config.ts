@@ -43,6 +43,7 @@ export interface SiteConfig {
 		albums: boolean; // 相册页面开关
 		devices: boolean; // 设备页面开关
 		aiTools: boolean; // AI 工具页面开关
+		sponsor: boolean; // 打赏页面开关
 	};
 
 	// 文章列表布局配置
@@ -77,6 +78,7 @@ export interface SiteConfig {
 
 	font?: {
 		mode?: "custom" | "system"; // custom=加载 ZenMaruGothic、Loli 和 JetBrains Mono；system=不请求自定义字体
+		runtimeSwitch?: boolean; // 设置面板运行时字体风格切换
 	};
 
 	// 添加bangumi配置
@@ -135,6 +137,10 @@ export interface SiteConfig {
 		imageApi?: {
 			enable: boolean;
 			url: string;
+		};
+		randomCoverImage?: {
+			enable: boolean;
+			apis: string[];
 		};
 		homeText?: {
 			enable: boolean;
@@ -395,6 +401,7 @@ export type WidgetComponentType =
 	| "pio" // 添加 pio 组件类型
 	| "site-stats" // 站点统计组件
 	| "calendar" // 日历组件
+	| "diary-sidebar" // 最新动态组件
 	| "custom";
 
 export interface WidgetComponentConfig {

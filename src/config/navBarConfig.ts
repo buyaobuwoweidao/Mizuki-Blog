@@ -179,6 +179,11 @@ export const navBarConfig: NavBarConfig = {
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
+				{
+					name: "打赏",
+					url: "/sponsor/",
+					icon: "material-symbols:favorite-rounded",
+				},
 			],
 		},
 

@@ -86,6 +86,16 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			animationDelay: 200,
 		},
 		{
+			// 组件类型：最新动态组件
+			type: "diary-sidebar",
+			// 组件位置
+			position: "top",
+			// CSS 类名
+			class: "onload-animation",
+			// 动画延迟时间
+			animationDelay: 220,
+		},
+		{
 			// 组件类型：日历组件(移动端不显示)
 			type: "calendar",
 			// 组件位置
@@ -100,7 +110,13 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	// 侧栏组件布局配置
 	components: {
 		left: ["profile", "announcement", "tags", "card-toc"],
-		right: ["site-stats", "calendar", "categories", "music-sidebar"],
+		right: [
+			"site-stats",
+			"diary-sidebar",
+			"calendar",
+			"categories",
+			"music-sidebar",
+		],
 		drawer: ["profile", "announcement", "music-sidebar", "categories", "tags"],
 	},
 

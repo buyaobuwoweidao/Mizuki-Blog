@@ -35,7 +35,9 @@ import { licenseConfig } from "src/config";
 
 import { permalinkConfig } from "@/config";
 
-import { profileConfig, siteConfig } from "../config";
+import { profileConfig, siteConfig, sponsorConfig } from "../config";
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
@@ -83,6 +85,7 @@ const cover = await resolvePostCoverSource(entry.data, {
 	basePath: getFileDirFromPath(entry.filePath || ""),
 	identity: entry.id,
 	imageApi: siteConfig.banner.imageApi,
+	randomCoverImage: siteConfig.banner.randomCoverImage,
 });
 const coverSrc = cover.src ?? "";
 
@@ -265,6 +268,37 @@ const jsonLd = {
 								class="mb-6 rounded-xl license-container onload-animation"
 							/>
 						)}
+						{
+							sponsorConfig.showButtonInPost &&
+							siteConfig.featurePages.sponsor && (
+								<div
+									class="mb-6 rounded-xl flex items-center justify-between gap-4 p-4 border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.03] onload-animation"
+								>
+									<div class="min-w-0">
+										<p
+											class="font-medium text-sm text-black/80 dark:text-white/80 mb-0.5"
+										>
+											喜欢这篇就支持一下呗 (´∀｀)♡
+										</p>
+										<p
+											class="text-xs text-black/45 dark:text-white/45"
+										>
+											你的每一份心意都是小窝持续更新的动力
+										</p>
+									</div>
+									<a
+										href={baseUrl + "/sponsor/"}
+										class="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium text-sm hover:bg-(--primary)/90 active:scale-95 transition-all"
+									>
+										<Icon
+											name="material-symbols:favorite-rounded"
+											class="text-base"
+										/>
+										打赏
+									</a>
+								</div>
+							)
+						}
 					</>
 				)
 			}

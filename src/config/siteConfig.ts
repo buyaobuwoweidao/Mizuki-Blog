@@ -28,6 +28,7 @@ export const siteConfig: SiteConfig = {
 		albums: true, // 相册页面开关
 		devices: true, // 设备页面开关
 		aiTools: true, // AI 工具页面开关
+		sponsor: true, // 打赏页面开关
 	},
 
 	// 顶栏标题配置
@@ -51,6 +52,8 @@ export const siteConfig: SiteConfig = {
 	font: {
 		// custom 保持 ZenMaruGothic -> Loli -> 系统字体的显示顺序；system 不加载任何自定义字体
 		mode: "custom",
+		// 运行时字体风格切换（设置面板）：圆体/系统/等宽
+		runtimeSwitch: true,
 	},
 
 	bangumi: {
@@ -149,6 +152,16 @@ export const siteConfig: SiteConfig = {
 		imageApi: {
 			enable: false, // 启用图片API
 			url: "http://domain.com/api_v2.php?format=text&count=4", // API地址，返回每行一个图片链接的文本
+		},
+		// 随机封面图支持：文章 frontmatter 写 image: "api" 即可启用
+		// 使用公开二次元随机图 API，自动按文章 id 加 seed 参数保证每篇不同
+		randomCoverImage: {
+			enable: true,
+			apis: [
+				"https://t.alcy.cc/pc",
+				"https://www.dmoe.cc/random.php",
+				"https://uapis.cn/api/v1/random/image?category=acg&type=pc",
+			],
 		},
 		// 这里需要使用PicFlow API的Text返回类型,所以我们需要format=text参数
 		// 项目地址:https://github.com/matsuzaka-yuki/PicFlow-API
