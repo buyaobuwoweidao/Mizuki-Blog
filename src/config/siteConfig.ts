@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
 	title: "挚爱流萤",
 	subtitle: "我的二次元小窝",
 	siteURL: "https://buyaobuwoweidao.github.io/Mizuki-Blog/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	siteStartDate: "2026-09-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 	timeZone: "Asia/Shanghai", // 文章日期使用的 IANA 时区，可改为 Asia/Tokyo、Europe/Berlin 等
 
 	lang: SITE_LANG,
