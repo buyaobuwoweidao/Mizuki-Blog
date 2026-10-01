@@ -204,6 +204,11 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:bookmarks-rounded",
 				},
 				{
+					name: "动态",
+					url: "/dynamic/",
+					icon: "material-symbols:dynamic-feed-rounded",
+				},
+				{
 					name: "项目",
 					url: "/projects/",
 					icon: "material-symbols:work",

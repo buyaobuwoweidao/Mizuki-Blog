@@ -50,7 +50,18 @@ const specCollection = defineCollection({
 	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/spec" }),
 	schema: z.object({}),
 });
+const dynamicCollection = defineCollection({
+	loader: glob({ pattern: "**/*.md", base: "./src/content/dynamic" }),
+	schema: z.object({
+		title: z.string().optional().default(""),
+		published: z.date(),
+		pinned: z.boolean().optional().default(false),
+		location: z.string().optional().default(""),
+		comment: z.boolean().optional().default(true),
+	}),
+});
 export const collections = {
 	posts: postsCollection,
 	spec: specCollection,
+	dynamic: dynamicCollection,
 };

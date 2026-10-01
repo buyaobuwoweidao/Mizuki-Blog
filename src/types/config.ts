@@ -45,6 +45,7 @@ export interface SiteConfig {
 		aiTools: boolean; // AI 工具页面开关
 		sponsor: boolean; // 打赏页面开关
 		booknav: boolean; // 书签导航页面开关
+		dynamic: boolean; // 动态页面开关
 	};
 
 	// 文章列表布局配置

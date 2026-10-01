@@ -1,0 +1,83 @@
+---
+import { Icon } from "astro-icon/components";
+import { PageHeader } from "@components/features/page-header";
+import DynamicFeed from "@/components/pages/dynamic/DynamicFeed.svelte";
+import DynamicItemTemplate from "@/components/pages/dynamic/DynamicItemTemplate.astro";
+import { commentConfig, dynamicConfig, siteConfig } from "@/config";
+import I18nKey from "@/i18n/i18nKey";
+import { i18n } from "@/i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import "@/styles/pages/dynamic.css";
+import { url } from "@/utils/url-utils";
+
+// 检查页面是否启用
+if (!siteConfig.featurePages.dynamic) {
+	return Astro.redirect("/404/");
+}
+
+const title = dynamicConfig.title || i18n(I18nKey.dynamic);
+const description =
+	dynamicConfig.description || i18n(I18nKey.dynamicDescription);
+const itemsPerPage = Math.max(1, dynamicConfig.itemsPerPage ?? 10);
+// 动态页内联评论依赖 Firefly 的 iframe 评论端点，Mizuki 评论系统为 giscus/twikoo，
+// 因此动态页保持关闭评论，按 dynamicConfig.showComment 显式控制
+const showInlineComments = Boolean(dynamicConfig.showComment === true);
+const dataUrl = dynamicConfig.apiUrl?.startsWith("http")
+	? dynamicConfig.apiUrl
+	: url(dynamicConfig.apiUrl || "/api/dynamic.json");
+const memos = dynamicConfig.memos;
+---
+
+<MainGridLayout title={title} description={description}>
+	<div
+		class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32"
+	>
+		<div class="card-base z-10 px-9 py-6 relative w-full">
+			<!-- 页面标题和描述 -->
+			<div class="mb-4 flex items-start justify-between gap-4">
+				<PageHeader title={title} subtitle={description || undefined} />
+				<div
+					class="page-count shrink-0"
+					aria-label={i18n(I18nKey.dynamic)}
+				>
+					<Icon name="material-symbols:dynamic-feed-rounded" />
+					<strong data-dynamic-page-count>0</strong>
+					<span>{i18n(I18nKey.dynamic)}</span>
+				</div>
+			</div>
+
+			<div class="page-filter">
+				<label class="page-search">
+					<Icon name="material-symbols:search-rounded" />
+					<input
+						type="search"
+						data-dynamic-search
+						placeholder={i18n(I18nKey.dynamicSearchPlaceholder)}
+					/>
+				</label>
+				<label class="page-year-select">
+					<Icon name="material-symbols:calendar-month-rounded" />
+					<select data-year-select aria-label={i18n(I18nKey.dynamic)}>
+						<option value="all">{i18n(I18nKey.dynamicAllYears)}</option>
+					</select>
+					<Icon name="material-symbols:arrow-drop-down-rounded" />
+				</label>
+			</div>
+
+			<DynamicFeed
+				client:load
+				source={dataUrl}
+				{itemsPerPage}
+				showComments={showInlineComments}
+				emptyText={i18n(I18nKey.dynamicEmpty)}
+				noResultsText={i18n(I18nKey.dynamicNoResults)}
+				loadingText={i18n(I18nKey.dynamicLoading)}
+				allYearsText={i18n(I18nKey.dynamicAllYears)}
+				timezone={siteConfig.timeZone || "UTC"}
+				{memos}
+			/>
+
+			<DynamicItemTemplate />
+		</div>
+	</div>
+</MainGridLayout>
