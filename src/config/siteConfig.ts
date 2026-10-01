@@ -29,6 +29,7 @@ export const siteConfig: SiteConfig = {
 		devices: true, // 设备页面开关
 		aiTools: true, // AI 工具页面开关
 		sponsor: true, // 打赏页面开关
+		booknav: true, // 书签导航页面开关
 	},
 
 	// 顶栏标题配置

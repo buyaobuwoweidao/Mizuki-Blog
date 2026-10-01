@@ -51,6 +51,7 @@
  */
 
 export { announcementConfig } from "./announcementConfig";
+export { booknavConfig, booknavPageConfig } from "./booknavConfig";
 
 // ─── 外观与壁纸 ─────────────────────────────────────────────
 export { fullscreenWallpaperConfig } from "./backgroundWallpaper";

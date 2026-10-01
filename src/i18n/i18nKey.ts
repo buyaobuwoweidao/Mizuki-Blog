@@ -58,6 +58,11 @@ enum I18nKey {
 	sponsorTitle = "sponsorTitle",
 	sponsorDescription = "sponsorDescription",
 	settingsFont = "settingsFont",
+	booknav = "booknav",
+	booknavDescription = "booknavDescription",
+	searchBooknav = "searchBooknav",
+	searchNoResults = "searchNoResults",
+	booknavEmpty = "booknavEmpty",
 	anime = "anime",
 	diary = "diary",
 
