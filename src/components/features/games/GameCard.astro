@@ -14,8 +14,12 @@ const statusMap: Record<GameItem["status"], { text: string; cls: string }> = {
 
 const catMap: Record<GameItem["category"], { text: string; icon: string }> = {
 	mc: { text: "我的世界", icon: "material-symbols:widgets-rounded" },
-	action: { text: "动作竞技", icon: "material-symbols:sports-esports-rounded" },
+	single: { text: "单机大作", icon: "material-symbols:desktop-windows-rounded" },
 	horror: { text: "恐怖", icon: "material-symbols:nightlight-rounded" },
+	action: { text: "动作竞技", icon: "material-symbols:sports-esports-rounded" },
+	mihoyo: { text: "米哈游", icon: "material-symbols:auto-awesome-rounded" },
+	netease: { text: "网易", icon: "material-symbols:gamepad-rounded" },
+	tencent: { text: "腾讯", icon: "material-symbols:stadia-controller-rounded" },
 	mobile: { text: "手游", icon: "material-symbols:smartphone" },
 	other: { text: "其他", icon: "material-symbols:cruelty-free-rounded" },
 };

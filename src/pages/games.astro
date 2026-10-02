@@ -20,10 +20,18 @@ const getCategoryText = (category: string) => {
 	switch (category) {
 		case "mc":
 			return "我的世界";
-		case "action":
-			return "动作竞技";
+		case "single":
+			return "单机大作";
 		case "horror":
 			return "恐怖";
+		case "action":
+			return "动作竞技";
+		case "mihoyo":
+			return "米哈游";
+		case "netease":
+			return "网易";
+		case "tencent":
+			return "腾讯";
 		case "mobile":
 			return "手游";
 		case "other":
@@ -37,10 +45,18 @@ const getCategoryIcon = (category: string) => {
 	switch (category) {
 		case "mc":
 			return "material-symbols:widgets-rounded";
-		case "action":
-			return "material-symbols:sports-esports-rounded";
+		case "single":
+			return "material-symbols:desktop-windows-rounded";
 		case "horror":
 			return "material-symbols:nightlight-rounded";
+		case "action":
+			return "material-symbols:sports-esports-rounded";
+		case "mihoyo":
+			return "material-symbols:auto-awesome-rounded";
+		case "netease":
+			return "material-symbols:gamepad-rounded";
+		case "tencent":
+			return "material-symbols:stadia-controller-rounded";
 		case "mobile":
 			return "material-symbols:smartphone";
 		case "other":
