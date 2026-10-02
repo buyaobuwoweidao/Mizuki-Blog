@@ -1,0 +1,148 @@
+---
+import { Icon } from "astro-icon/components";
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+// PVZ 资源站分组
+const pvzGroups = [
+	{
+		id: "wiki",
+		name: "百科与资料",
+		icon: "material-symbols:menu-book-rounded",
+		desc: "查植物、查僵尸、查机制",
+		items: [
+			{ title: "植物大战僵尸中文维基", desc: "社区共建的完整百科，资料最全", url: "https://wiki.crescb.com", tag: "强烈推荐" },
+			{ title: "植物大战僵尸中文百科 (灰机)", desc: "阳光、植物、僵尸图鉴一应俱全", url: "https://pvz.huijiwiki.com", tag: "" },
+			{ title: "PvZ 2 Wiki (B 站)", desc: "植物大战僵尸 2 的攻略与数据图鉴", url: "https://wiki.biligame.com/pvzz/", tag: "" },
+			{ title: "Plants vs. Zombies Wiki", desc: "Fandom 上的系列百科，含国际服资料", url: "https://pvz.fandom.com/zh/wiki/植物大战僵尸百科", tag: "" },
+		],
+	},
+	{
+		id: "tools",
+		name: "工具与资源",
+		icon: "material-symbols:build-rounded",
+		desc: "下载、修改、开荒帮手",
+		items: [
+			{ title: "囧姨资源下载站", desc: "PVZ2 版本资源下载，玩家为爱发电", url: "http://jspvz.com/", tag: "" },
+			{ title: "植僵工具箱", desc: "PVZ 玩家常用工具集合", url: "https://pvz.tools/", tag: "" },
+			{ title: "植物大战僵尸中文网", desc: "资讯、攻略与资源分享", url: "http://pvz.booen.vip/", tag: "" },
+			{ title: "江南游戏开发社", desc: "PVZ 同人游戏开发社团主页", url: "http://jiangnangame.com/", tag: "" },
+		],
+	},
+	{
+		id: "community",
+		name: "社区与同人",
+		icon: "material-symbols:groups-rounded",
+		desc: "找同好、看攻略、玩同人",
+		items: [
+			{ title: "PVZ 同人论坛", desc: "植物大战僵尸同人与交流社区", url: "https://www.pvzhome.com/", tag: "" },
+			{ title: "B 站 PVZ 攻略区", desc: "搜索「植物大战僵尸」看攻略视频", url: "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8", tag: "" },
+			{ title: "B 站 PVZ2 攻略专栏", desc: "萌新必备攻略与技巧合集", url: "https://www.bilibili.com/opus/1172497372878471193", tag: "" },
+		],
+	},
+];
+---
+
+<MainGridLayout title="植物大战僵尸专区" description="PVZ 百科、工具与社区收藏">
+
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="植物大战僵尸专区"
+				subtitle="童年回忆杀！PVZ 的资料、工具、社区都收在这里 (๑•̀ㅂ•́)و✧"
+			/>
+
+			<!-- 顶部横幅：经典回顾 -->
+			<div
+				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+			>
+				<div class="shrink-0 w-12 h-12 rounded-xl bg-(--primary)/15 flex items-center justify-center">
+					<Icon name="material-symbols:yard-rounded" class="text-3xl text-(--primary)" />
+				</div>
+				<div class="grow min-w-0">
+					<p class="font-bold text-black/85 dark:text-white/85 mb-1">
+						童年回忆：植物大战僵尸 (｡•̀ᴗ-)✧
+					</p>
+					<p class="text-sm text-black/50 dark:text-white/50">
+						豌豆射手、向日葵、坚果墙……09 年的经典塔防，种菜收阳光的日子谁没经历过！
+					</p>
+				</div>
+			</div>
+
+			<!-- 资源站分组 -->
+			<div class="space-y-8">
+				{
+					pvzGroups.map((group) => (
+						<section id={group.id}>
+							<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+								<Icon name={group.icon} class="text-(--primary) text-xl shrink-0" />
+								<div class="flex items-baseline gap-2 min-w-0">
+									<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+										{group.name}
+									</h2>
+									<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+										{group.desc}
+									</span>
+								</div>
+							</div>
+
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+								{group.items.map((item) => (
+									<a
+										href={item.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="group flex items-center gap-3 p-3 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
+									>
+										<div
+											class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"
+										/>
+										<div
+											class="w-11 h-11 shrink-0 rounded-xl bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 flex items-center justify-center"
+										>
+											<Icon
+												name="material-symbols:link-rounded"
+												class="text-xl text-(--primary) group-hover:scale-110 transition-transform duration-300"
+											/>
+										</div>
+										<div class="grow min-w-0 flex flex-col justify-center">
+											<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate flex items-center gap-2">
+												{item.title}
+												{item.tag && (
+													<span class="shrink-0 text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 font-normal">
+														{item.tag}
+													</span>
+												)}
+											</div>
+											<div class="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-2 mt-0.5">
+												{item.desc}
+											</div>
+										</div>
+										<Icon
+											name="material-symbols:arrow-outward-rounded"
+											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+										/>
+									</a>
+								))}
+							</div>
+						</section>
+					))
+				}
+			</div>
+
+			<!-- 来源说明 -->
+			<p class="mt-8 text-center text-[11px] text-black/30 dark:text-white/30">
+				资源整理自 B 站 PVZ 玩家社区与各站站长，侵删致歉 (人´∀｀)
+			</p>
+		</div>
+	</div>
+
+	<style>
+		.line-clamp-2 {
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	</style>
+</MainGridLayout>

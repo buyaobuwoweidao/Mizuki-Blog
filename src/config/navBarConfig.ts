@@ -226,6 +226,16 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:bookmarks-rounded",
 				},
 				{
+					name: "小说",
+					url: "/novel/",
+					icon: "material-symbols:auto-stories-rounded",
+				},
+				{
+					name: "软件分享",
+					url: "/software/",
+					icon: "material-symbols:download-rounded",
+				},
+				{
 					name: "动态",
 					url: "/dynamic/",
 					icon: "material-symbols:dynamic-feed-rounded",

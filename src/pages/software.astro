@@ -1,0 +1,154 @@
+---
+import { Icon } from "astro-icon/components";
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+// 软件分享分组数据
+const groups = [
+	{
+		id: "download",
+		name: "软件下载渠道",
+		icon: "material-symbols:download-rounded",
+		desc: "安全靠谱的软件获取渠道",
+		items: [
+			{ title: "SourceForge", desc: "老牌开源软件下载平台，收录海量开源项目", url: "https://sourceforge.net" },
+			{ title: "FossHub", desc: "无广告、纯净的开源软件分发站，下载放心", url: "https://www.fosshub.com" },
+			{ title: "F-Droid", desc: "只收录免费开源软件的安卓应用商店", url: "https://f-droid.org" },
+			{ title: "华军软件园", desc: "老牌绿色免费软件下载站", url: "https://www.onlinedown.net" },
+			{ title: "GitHub Releases", desc: "很多软件的官方发布页都在 GitHub", url: "https://github.com" },
+			{ title: "AlternativeTo", desc: "想找某款软件的替代品？这里全有", url: "https://alternativeto.net" },
+		],
+	},
+	{
+		id: "media",
+		name: "影音娱乐",
+		icon: "material-symbols:movie-rounded",
+		desc: "看剧、听歌、追番的软件",
+		items: [
+			{ title: "PotPlayer", desc: "轻量强大的本地视频播放器，解码全", url: "https://potplayer.daum.net" },
+			{ title: "VLC", desc: "开源跨平台播放器，什么格式都能放", url: "https://www.videolan.org/vlc/" },
+			{ title: "foobar2000", desc: "经典无损音乐播放器，发烧友最爱", url: "https://www.foobar2000.org" },
+			{ title: "OBS Studio", desc: "开源录屏推流软件，直播必备", url: "https://obsproject.com" },
+		],
+	},
+	{
+		id: "dev",
+		name: "开发与效率",
+		icon: "material-symbols:terminal-rounded",
+		desc: "写代码、提效率的工具",
+		items: [
+			{ title: "Visual Studio Code", desc: "最流行的开源代码编辑器", url: "https://code.visualstudio.com" },
+			{ title: "Git", desc: "版本控制之神，人手必备", url: "https://git-scm.com" },
+			{ title: "Everything", desc: "秒搜全盘文件的 Windows 神器", url: "https://www.voidtools.com" },
+			{ title: "7-Zip", desc: "免费开源压缩软件，解压无敌", url: "https://www.7-zip.org" },
+			{ title: "PowerToys", desc: "微软官方效率工具箱", url: "https://github.com/microsoft/PowerToys" },
+			{ title: "Scoop", desc: "Windows 命令行包管理器，装软件全靠它", url: "https://scoop.sh" },
+		],
+	},
+	{
+		id: "game",
+		name: "游戏相关",
+		icon: "material-symbols:sports-esports-rounded",
+		desc: "游戏平台与工具",
+		items: [
+			{ title: "Steam", desc: "PC 玩家的大本营，买游戏先看它", url: "https://store.steampowered.com" },
+			{ title: "Epic Games", desc: "每周免费送游戏，懂的都懂", url: "https://store.epicgames.com" },
+			{ title: "MC 启动器 HMCL", desc: "我的世界第三方启动器，离线皮肤都能玩", url: "https://hmcl.huangyuhui.net" },
+			{ title: "Blockbench", desc: "Minecraft 模型制作工具，插件丰富", url: "https://blockbench.net" },
+		],
+	},
+];
+---
+
+<MainGridLayout title="软件分享" description="站长用过的、推荐的软件们">
+
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="软件分享"
+				subtitle="站长亲测好用的软件与下载渠道 (๑•̀ㅂ•́)و✧"
+			/>
+
+			<!-- 提示横幅 -->
+			<div
+				class="mb-8 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 flex items-start gap-3"
+			>
+				<Icon name="material-symbols:shield-rounded" class="text-2xl text-amber-500 shrink-0 mt-0.5" />
+				<p class="text-sm text-black/60 dark:text-white/60 leading-relaxed">
+					本栏目只推荐官方渠道或知名开源社区下载，安全第一 (｡•̀ᴗ-)✧
+					下载软件时注意核对官网域名，别从不明网站下"破解版"，容易中招。
+				</p>
+			</div>
+
+			<!-- 软件分组 -->
+			<div class="space-y-8">
+				{
+					groups.map((group) => (
+						<section id={group.id}>
+							<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+								<Icon name={group.icon} class="text-(--primary) text-xl shrink-0" />
+								<div class="flex items-baseline gap-2 min-w-0">
+									<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+										{group.name}
+									</h2>
+									<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+										{group.desc}
+									</span>
+								</div>
+							</div>
+
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+								{group.items.map((item) => (
+									<a
+										href={item.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="group flex items-center gap-3 p-3 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
+									>
+										<div
+											class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"
+										/>
+										<div
+											class="w-11 h-11 shrink-0 rounded-xl bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 flex items-center justify-center"
+										>
+											<Icon
+												name="material-symbols:link-rounded"
+												class="text-xl text-(--primary) group-hover:scale-110 transition-transform duration-300"
+											/>
+										</div>
+										<div class="grow min-w-0 flex flex-col justify-center">
+											<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
+												{item.title}
+											</div>
+											<div class="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-2 mt-0.5">
+												{item.desc}
+											</div>
+										</div>
+										<Icon
+											name="material-symbols:arrow-outward-rounded"
+											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+										/>
+									</a>
+								))}
+							</div>
+						</section>
+					))
+				}
+			</div>
+
+			<!-- 来源说明 -->
+			<p class="mt-8 text-center text-[11px] text-black/30 dark:text-white/30">
+				持续收录中，有好软件欢迎来留言板安利给站长 (´▽`)ﾉ
+			</p>
+		</div>
+	</div>
+
+	<style>
+		.line-clamp-2 {
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	</style>
+</MainGridLayout>

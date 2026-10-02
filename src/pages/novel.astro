@@ -1,0 +1,79 @@
+---
+import { Icon } from "astro-icon/components";
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+---
+
+<MainGridLayout title="小说" description="小说推荐与读书笔记">
+
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="小说"
+				subtitle="网络小说、轻小说、读书笔记都在路上 (´▽`)ﾉ"
+			/>
+
+			<!-- 建设中横幅 -->
+			<div
+				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-6 text-center"
+			>
+				<div
+					class="mx-auto w-16 h-16 rounded-2xl bg-(--primary)/15 flex items-center justify-center mb-4"
+				>
+					<Icon name="material-symbols:auto-stories-rounded" class="text-4xl text-(--primary)" />
+				</div>
+				<p class="text-xl font-bold text-black/85 dark:text-white/85 mb-2">
+					正在建设中 (๑•̀ㅂ•́)و
+				</p>
+				<p class="text-sm text-black/50 dark:text-white/50 max-w-lg mx-auto leading-relaxed">
+					从小学传遍一个班的斗罗大陆、斗破苍穹、龙族开始，
+					站长也算个老书虫啦。这个栏目会慢慢放上
+					看过的网络小说推荐、轻小说书评和读书碎碎念，
+					敬请期待 (｡•̀ᴗ-)✧
+				</p>
+				<p class="mt-4 text-xs text-black/35 dark:text-white/35">
+					有想安利给站长的书？去留言板说一声就行～
+				</p>
+			</div>
+
+			<!-- 未来栏目规划 -->
+			<section>
+				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+					<Icon name="material-symbols:menu-book-rounded" class="text-(--primary) text-xl shrink-0" />
+					<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">
+						计划中的栏目
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+					<div class="p-4 rounded-xl border border-(--line-divider) bg-(--card-bg)">
+						<Icon name="material-symbols:recommend-rounded" class="text-2xl text-(--primary) mb-2" />
+						<p class="font-bold text-sm mb-1">小说推荐</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							看过的网络小说、轻小说安利，附一句入坑理由
+						</p>
+					</div>
+					<div class="p-4 rounded-xl border border-(--line-divider) bg-(--card-bg)">
+						<Icon name="material-symbols:edit-note-rounded" class="text-2xl text-(--primary) mb-2" />
+						<p class="font-bold text-sm mb-1">读书笔记</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							读完一本记一点，攒成自己的阅读时间线
+						</p>
+					</div>
+					<div class="p-4 rounded-xl border border-(--line-divider) bg-(--card-bg)">
+						<Icon name="material-symbols:forum-rounded" class="text-2xl text-(--primary) mb-2" />
+						<p class="font-bold text-sm mb-1">书友闲聊</p>
+						<p class="text-xs text-neutral-500 dark:text-neutral-400">
+							书荒互助、求书推荐，都在留言板见
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- 来源说明 -->
+			<p class="mt-8 text-center text-[11px] text-black/30 dark:text-white/30">
+				栏目施工中，站长正在努力填坑 (´･ω･`)
+			</p>
+		</div>
+	</div>
+</MainGridLayout>
