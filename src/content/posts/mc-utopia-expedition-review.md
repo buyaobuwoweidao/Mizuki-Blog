@@ -4,7 +4,7 @@ published: 2026-10-02
 description: 一篇关于《乌托邦探险之旅》的深度安利：小火柴用 270+ 模组搭出来的养老与冒险并存的世界。优点槽点都说，推荐人群都给你列好了。
 tags: [我的世界, 整合包, 乌托邦探险之旅, 小火柴, 推荐]
 category: 游戏
-image: /assets/covers/slice-of-life-cozy.jpg
+image: /assets/covers/utopia-expedition.jpg
 draft: false
 hot: true
 ---
@@ -147,6 +147,8 @@ hot: true
 
 ## 我的实际游玩体验 (´▽`)
 
+![乌托邦的彩色渐变树林与海岸](/assets/games/utopia-shot-tropical.jpg)
+
 说说我自己吧。我玩的是 3.2 版本（后来升到 3.5 重开了一个档）。
 
 开局出生在村庄里，手上那本引导书真的救了我这种"大型整合包恐惧症"患者——不用查攻略，不用看视频，跟着任务一章一章走就行。第一天我就把村里的田翻了，种了点土豆，然后坐在房顶上看了个日出（光影下是真的好看）。
@@ -221,6 +223,8 @@ hot: true
 - [ ] 记得开拍照模式，记录你的乌托邦 (๑˃̵ᴗ˂̵)و
 
 ## 你可能不知道的 5 个细节 (・ω・)ノ
+
+![乌托邦里的方块生物群](/assets/games/utopia-shot-bio.jpg)
 
 玩乌托邦越久，越能发现作者藏在里面的心思。分享几个我注意到的细节：
 
