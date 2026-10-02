@@ -8,6 +8,50 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 // 资源站分组数据
 const groups = [
 	{
+		id: "skin",
+		name: "皮肤",
+		desc: "换皮肤、找皮肤，就这几家",
+		icon: "material-symbols:face-6-rounded",
+		items: [
+			{
+				title: "LittleSkin ★站主首推",
+				desc: "最常用的皮肤站！快速可靠、支持第三方登录，离线皮肤在线皮肤都能挂，PCL/HMCL 都行",
+				url: "https://littleskin.cn/",
+				tag: "首推",
+			},
+			{
+				title: "NameMC",
+				desc: "国外皮肤站，收录大部分正版玩家皮肤。国内能直连、速度不慢、有中文，可下载还能改皮肤",
+				url: "https://namemc.com/",
+				tag: "有中文",
+			},
+			{
+				title: "SkinMC",
+				desc: "皮肤站，兼纳服务器列表和 ID 查询，内含头像、披风和不死图腾制作器",
+				url: "https://skinmc.net/",
+				tag: "",
+			},
+			{
+				title: "Skindex",
+				desc: "老牌皮肤站，皮肤量大，按热门/最新/收藏筛选很方便",
+				url: "https://www.minecraftskins.com/",
+				tag: "",
+			},
+			{
+				title: "皮肤挂载站 (prinzeugen)",
+				desc: "可以挂载到 PCL2 / HMCL 的皮肤站，离线皮肤在线皮肤都可以，其它启动器没试过",
+				url: "https://skin.prinzeugen.net/auth/login",
+				tag: "可挂载",
+			},
+			{
+				title: "红石皮肤站",
+				desc: "免费自由的 MC 皮肤站，内含一些皮肤小工具",
+				url: "https://mcskin.com.cn/",
+				tag: "",
+			},
+		],
+	},
+	{
 		id: "modpack",
 		name: "整合包下载",
 		desc: "找整合包，认准这几个站就够了",
@@ -52,6 +96,12 @@ const groups = [
 		icon: "material-symbols:map-rounded",
 		items: [
 			{
+				title: "VMCT 汉化组 ★",
+				desc: "VMCT 汉化组的地图站，里面很多地图可以直接安装，站主的地图就是在这下的",
+				url: "https://vmct-cn.top/map/",
+				tag: "站主用过",
+			},
+			{
 				title: "Planet Minecraft",
 				desc: "国外老牌地图/建筑站，红石机械、恐怖地图、冒险地图应有尽有",
 				url: "https://www.planetminecraft.com",
@@ -64,9 +114,71 @@ const groups = [
 				tag: "需科学上网",
 			},
 			{
+				title: "TITAIKE 地图站",
+				desc: "集合国内外优质地图的中文地图站",
+				url: "https://www.titaike.cn/",
+				tag: "",
+			},
+			{
+				title: "Minecraft Maps",
+				desc: "专门收录定制存档/地图的国外站点",
+				url: "https://www.minecraftmaps.com/",
+				tag: "",
+			},
+			{
+				title: "像素茶艺地图站",
+				desc: "用最简单的方式传播好作品，中文地图分享",
+				url: "https://pixelmap.minegraph.cn/blog/",
+				tag: "",
+			},
+			{
 				title: "苦力怕论坛·地图版块",
 				desc: "国内玩家自制的优质地图分享，汉化过的不少",
 				url: "https://www.klpbbs.com",
+				tag: "",
+			},
+		],
+	},
+	{
+		id: "tools",
+		name: "指令与工具箱",
+		desc: "指令生成、地图辅助、日志分析",
+		icon: "material-symbols:handyman-rounded",
+		items: [
+			{
+				title: "CB Creator 指令生成器 ★",
+				desc: "MC百科出品的指令生成工具，指令怎么打、直接生成都有。想制作地图是很好的辅助，国内访问快",
+				url: "https://www.mcmod.cn/tools/cbcreator/#/home/",
+				tag: "站主常用",
+			},
+			{
+				title: "misode",
+				desc: "图形化数据包/指令/结构生成器，做地图必备",
+				url: "https://misode.github.io/",
+				tag: "",
+			},
+			{
+				title: "/tellraw 生成器",
+				desc: "图形化生成 tellraw 彩色富文本指令（Java 版）",
+				url: "https://www.minecraftjson.com/",
+				tag: "",
+			},
+			{
+				title: "命令自动补全",
+				desc: "mcisee 站主的命令自动补全工具",
+				url: "https://mact.mcisee.top/",
+				tag: "",
+			},
+			{
+				title: "ChunkBase",
+				desc: "查种子、找要塞/史莱姆区块/村庄位置，地图辅助神器",
+				url: "https://www.chunkbase.com/",
+				tag: "",
+			},
+			{
+				title: "mclo.gs",
+				desc: "日志分析工具，报错日志贴上去就能看懂问题",
+				url: "https://mclo.gs/",
 				tag: "",
 			},
 		],
@@ -92,7 +204,7 @@ const groups = [
 		],
 	},
 	{
-		id: "tools",
+		id: "launchers",
 		name: "启动器工具",
 		desc: "装好包之后，用它们来启动",
 		icon: "material-symbols:rocket-launch-rounded",
@@ -117,6 +229,58 @@ const groups = [
 			},
 		],
 	},
+	{
+		id: "nav",
+		name: "MC 导航",
+		desc: "一站找到所有 MC 网站",
+		icon: "material-symbols:travel-explore-rounded",
+		items: [
+			{
+				title: "mcisee.top ★",
+				desc: "所见皆是 Minecraft，超全的 MC 导航站！站主很多网站都是在这上面找到的，强烈推荐逛逛",
+				url: "https://mcisee.top/",
+				tag: "强烈推荐",
+			},
+			{
+				title: "中文 Minecraft Wiki",
+				desc: "完全公开、可自由编辑的中文 MC Wiki，查合成表/机制必备",
+				url: "https://zh.minecraft.wiki/",
+				tag: "",
+			},
+			{
+				title: "MC百科 mcmod.cn",
+				desc: "国内最大的模组百科，查整合包/模组/下载一站式",
+				url: "https://www.mcmod.cn",
+				tag: "",
+			},
+		],
+	},
+	{
+		id: "community",
+		name: "社区论坛",
+		desc: "国内 MC 玩家聚集地",
+		icon: "material-symbols:forum-rounded",
+		items: [
+			{
+				title: "MineBBS",
+				desc: "综合性 MC 论坛，以基岩版资源为特色，Java 版也在发展",
+				url: "https://www.minebbs.com/",
+				tag: "",
+			},
+			{
+				title: "九域资源社区",
+				desc: "主营服务器插件的中文资源社区",
+				url: "https://bbs.mc9y.net/",
+				tag: "",
+			},
+			{
+				title: "红石中继站",
+				desc: "前身是 MCBBS（2024 年关闭后转生），综合 MC 资源论坛",
+				url: "https://www.mczwlt.net/",
+				tag: "",
+			},
+		],
+	},
 ];
 
 // 站主推荐整合包（详细清单见飞书表格）
@@ -135,7 +299,7 @@ const recommended = [
 		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
 			<PageHeader
 				title="我的世界专区"
-				subtitle="整合包、地图、模组、资源站，都给你收在这里了 (๑•̀ㅂ•́)و✧"
+				subtitle="整合包、皮肤、地图、工具、导航，都给你收在这里了 (๑•̀ㅂ•́)و✧"
 			/>
 
 			<!-- 顶部横幅：常用入口 -->
