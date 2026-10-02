@@ -2,6 +2,12 @@
 import { Icon } from "astro-icon/components";
 import { PageHeader } from "@components/features/page-header";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getCollection } from "astro:content";
+
+// 拉取小说分类的文章
+const novelPosts = (await getCollection("posts"))
+	.filter((post) => post.data.category === "小说" && !post.data.draft)
+	.sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
 ---
 
 <MainGridLayout title="小说" description="小说推荐与读书笔记">
@@ -10,33 +16,55 @@ import MainGridLayout from "@layouts/MainGridLayout.astro";
 		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
 			<PageHeader
 				title="小说"
-				subtitle="网络小说、轻小说、读书笔记都在路上 (´▽`)ﾉ"
+				subtitle="网络小说、轻小说、读书笔记 (´▽`)ﾉ"
 			/>
 
-			<!-- 建设中横幅 -->
-			<div
-				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-6 text-center"
-			>
-				<div
-					class="mx-auto w-16 h-16 rounded-2xl bg-(--primary)/15 flex items-center justify-center mb-4"
-				>
-					<Icon name="material-symbols:auto-stories-rounded" class="text-4xl text-(--primary)" />
-				</div>
-				<p class="text-xl font-bold text-black/85 dark:text-white/85 mb-2">
-					正在建设中 (๑•̀ㅂ•́)و
-				</p>
-				<p class="text-sm text-black/50 dark:text-white/50 max-w-lg mx-auto leading-relaxed">
-					从小学传遍一个班的斗罗大陆、斗破苍穹、龙族开始，
-					站长也算个老书虫啦。这个栏目会慢慢放上
-					看过的网络小说推荐、轻小说书评和读书碎碎念，
-					敬请期待 (｡•̀ᴗ-)✧
-				</p>
-				<p class="mt-4 text-xs text-black/35 dark:text-white/35">
-					有想安利给站长的书？去留言板说一声就行～
-				</p>
-			</div>
+			<!-- 文章列表 -->
+			{
+				novelPosts.length > 0 && (
+					<section class="mb-8">
+						<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+							<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
+							<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">
+								小说文章
+							</h2>
+							<span class="text-xs text-neutral-500 dark:text-neutral-400">
+								已收录 {novelPosts.length} 篇
+							</span>
+						</div>
 
-			<!-- 未来栏目规划 -->
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+							{
+								novelPosts.map((post) => (
+									<a
+										href={"/Mizuki-Blog/posts/" + post.slug + "/"}
+										class="group flex items-center gap-3 p-3 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
+									>
+										<div class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none" />
+										<div class="w-11 h-11 shrink-0 rounded-xl bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 flex items-center justify-center">
+											<Icon name="material-symbols:menu-book-rounded" class="text-xl text-(--primary) group-hover:scale-110 transition-transform duration-300" />
+										</div>
+										<div class="grow min-w-0 flex flex-col justify-center">
+											<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors line-clamp-2">
+												{post.data.title}
+											</div>
+											<div class="text-xs text-neutral-500 dark:text-neutral-400 truncate mt-0.5">
+												{post.data.description}
+											</div>
+										</div>
+										<Icon
+											name="material-symbols:arrow-outward-rounded"
+											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+										/>
+									</a>
+								))
+							}
+						</div>
+					</section>
+				)
+			}
+
+			<!-- 计划中的栏目 -->
 			<section>
 				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
 					<Icon name="material-symbols:menu-book-rounded" class="text-(--primary) text-xl shrink-0" />
@@ -72,8 +100,17 @@ import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 			<!-- 来源说明 -->
 			<p class="mt-8 text-center text-[11px] text-black/30 dark:text-white/30">
-				栏目施工中，站长正在努力填坑 (´･ω･`)
+				栏目持续更新中，有想安利给站长的书，去留言板说一声 (´･ω･`)
 			</p>
 		</div>
 	</div>
+
+	<style>
+		.line-clamp-2 {
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	</style>
 </MainGridLayout>
