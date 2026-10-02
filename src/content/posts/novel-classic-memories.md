@@ -3,7 +3,7 @@ title: 那些年班里传遍的玄幻小说：斗罗、斗破与龙族 (｡•̀
 published: 2026-10-02
 description: 从小学一路看到大学的网文回忆：一本小说在班里传一圈的日子，斗罗大陆、斗破苍穹、龙族……那些被窝里打手电筒看完的故事。
 tags: [小说, 网络小说, 斗罗大陆, 斗破苍穹, 龙族, 回忆]
-category: 小说
+category: 随笔
 image: /assets/covers/novel-memories.jpg
 draft: false
 hot: true

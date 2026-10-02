@@ -2,70 +2,133 @@
 import { Icon } from "astro-icon/components";
 import { PageHeader } from "@components/features/page-header";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
-import { getCollection } from "astro:content";
 
-// 拉取小说分类的文章
-const novelPosts = (await getCollection("posts"))
-	.filter((post) => post.data.category === "小说" && !post.data.draft)
-	.sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+// 小说书单：站长推荐的火书
+// 每本书 = 封面图 + 一段介绍 + 跳转链接（免费阅读 + 支持正版）
+const bookShelf = [
+	{
+		title: "龙族",
+		author: "江南",
+		recommended: true,
+		cover: "/assets/covers/novel-dragon-raja.jpg",
+		desc: "一封来自卡塞尔学院的录取通知书，把普通高中生路明非拉进了一个龙与混血种的隐秘世界。「东方《哈利·波特》」级别的青春幻想神作，绘梨衣、楚子航、夏弥……每个角色都让人记一辈子。站长最爱的网文，没有之一 (๑•̀ㅂ•́)و✧",
+		freeUrl: "https://m.ziwx.cc/book/461252/",
+		freeLabel: "免费阅读（紫色文学）",
+		supportUrl: "https://weread.qq.com/web/reader/2be32e205e3dd02be3a12bck33e3289021c33e75ff09694",
+		supportLabel: "支持正版（微信读书）",
+	},
+	{
+		title: "斗破苍穹",
+		author: "天蚕土豆",
+		recommended: false,
+		cover: "/assets/covers/novel-battle-break.jpg",
+		desc: "「三十年河东，三十年河西，莫欺少年穷！」废柴萧炎从乌坦城一路逆袭成斗帝。斗气大陆的等级制度、异火榜、炼药师……当年的班里传阅神书，起点百亿点击的玄幻经典。",
+		freeUrl: "https://read.qidian.com/chapter/2R9G_ziBVg41/MyEcwtk5i8Iex0RJOkJclQ2/",
+		freeLabel: "起点免费试读",
+		supportUrl: "https://m.qidian.com/book/1048736491/?_trace=doubao",
+		supportLabel: "支持正版（起点中文网）",
+	},
+	{
+		title: "斗罗大陆",
+		author: "唐家三少",
+		recommended: false,
+		cover: "/assets/covers/novel-memories.jpg",
+		desc: "双生武魂的唐三从唐门外门弟子，一步步成为魂师界的传说。魂环、魂技、武魂真身……小学时代班里传得最凶的玄幻，是多少人看的第一本「长篇连载」。",
+		freeUrl: "https://www.qidian.com/",
+		freeLabel: "起点中文网",
+		supportUrl: "https://www.qidian.com/",
+		supportLabel: "支持正版（起点中文网）",
+	},
+];
 ---
 
-<MainGridLayout title="小说" description="小说推荐与读书笔记">
+<MainGridLayout title="小说" description="站长推荐的小说书单">
 
 	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
 		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
 			<PageHeader
-				title="小说"
-				subtitle="网络小说、轻小说、读书笔记 (´▽`)ﾉ"
+				title="小说书单"
+				subtitle="站长看过的、推荐的书，点卡片就能读 (๑•̀ㅂ•́)و✧"
 			/>
 
-			<!-- 文章列表 -->
-			{
-				novelPosts.length > 0 && (
-					<section class="mb-8">
-						<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
-							<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
-							<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">
-								小说文章
-							</h2>
-							<span class="text-xs text-neutral-500 dark:text-neutral-400">
-								已收录 {novelPosts.length} 篇
-							</span>
-						</div>
+			<!-- 提示横幅 -->
+			<div
+				class="mb-8 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 flex items-start gap-3"
+			>
+				<Icon name="material-symbols:info-rounded" class="text-2xl text-amber-500 shrink-0 mt-0.5" />
+				<p class="text-sm text-black/60 dark:text-white/60 leading-relaxed">
+					这里的书籍整理自公开网络，仅供个人阅读交流 (｡•̀ᴗ-)✧
+					如果喜欢一部作品，欢迎去正版平台支持作者，网文作者不容易。
+				</p>
+			</div>
 
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-							{
-								novelPosts.map((post) => (
+			<!-- 书单卡片 -->
+			<div class="space-y-6">
+				{
+					bookShelf.map((book) => (
+						<div
+							class="group flex flex-col sm:flex-row gap-5 p-5 rounded-2xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
+						>
+							<div class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none" />
+
+							{/* 封面 */}
+							<div class="shrink-0 w-full sm:w-40 h-56 sm:h-48 rounded-xl overflow-hidden border border-black/5 dark:border-white/5 bg-zinc-100 dark:bg-zinc-800">
+								<img
+									src={book.cover}
+									alt={book.title}
+									loading="lazy"
+									decoding="async"
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								/>
+							</div>
+
+							{/* 内容 */}
+							<div class="grow min-w-0 flex flex-col">
+								<div class="flex items-center gap-2 mb-1 flex-wrap">
+									<h2 class="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+										{book.title}
+									</h2>
+									<span class="text-sm text-neutral-500 dark:text-neutral-400">
+										{book.author}
+									</span>
+									{book.recommended && (
+										<span class="shrink-0 text-[11px] px-2 py-0.5 rounded-full bg-(--primary)/10 text-(--primary) font-medium">
+											站长推荐 ★
+										</span>
+									)}
+								</div>
+								<p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-4 line-clamp-4">
+									{book.desc}
+								</p>
+
+								<div class="mt-auto flex flex-wrap gap-2">
 									<a
-										href={"/Mizuki-Blog/posts/" + post.slug + "/"}
-										class="group flex items-center gap-3 p-3 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
+										href={book.freeUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
 									>
-										<div class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none" />
-										<div class="w-11 h-11 shrink-0 rounded-xl bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 flex items-center justify-center">
-											<Icon name="material-symbols:menu-book-rounded" class="text-xl text-(--primary) group-hover:scale-110 transition-transform duration-300" />
-										</div>
-										<div class="grow min-w-0 flex flex-col justify-center">
-											<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors line-clamp-2">
-												{post.data.title}
-											</div>
-											<div class="text-xs text-neutral-500 dark:text-neutral-400 truncate mt-0.5">
-												{post.data.description}
-											</div>
-										</div>
-										<Icon
-											name="material-symbols:arrow-outward-rounded"
-											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
-										/>
+										<Icon name="material-symbols:menu-book-rounded" class="text-base" />
+										{book.freeLabel}
 									</a>
-								))
-							}
+									<a
+										href={book.supportUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-(--line-divider) text-sm font-medium hover:border-(--primary) hover:text-(--primary) transition-all duration-200"
+									>
+										<Icon name="material-symbols:favorite-rounded" class="text-base" />
+										{book.supportLabel}
+									</a>
+								</div>
+							</div>
 						</div>
-					</section>
-				)
-			}
+					))
+				}
+			</div>
 
 			<!-- 计划中的栏目 -->
-			<section>
+			<section class="mt-10">
 				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
 					<Icon name="material-symbols:menu-book-rounded" class="text-(--primary) text-xl shrink-0" />
 					<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100">
@@ -78,7 +141,7 @@ const novelPosts = (await getCollection("posts"))
 						<Icon name="material-symbols:recommend-rounded" class="text-2xl text-(--primary) mb-2" />
 						<p class="font-bold text-sm mb-1">小说推荐</p>
 						<p class="text-xs text-neutral-500 dark:text-neutral-400">
-							看过的网络小说、轻小说安利，附一句入坑理由
+							书单持续扩充中，每本附一句入坑理由
 						</p>
 					</div>
 					<div class="p-4 rounded-xl border border-(--line-divider) bg-(--card-bg)">
@@ -98,17 +161,17 @@ const novelPosts = (await getCollection("posts"))
 				</div>
 			</section>
 
-			<!-- 来源说明 -->
+			<!-- 声明 -->
 			<p class="mt-8 text-center text-[11px] text-black/30 dark:text-white/30">
-				栏目持续更新中，有想安利给站长的书，去留言板说一声 (´･ω･`)
+				书单收录自公开网络，侵删致歉；有想安利给站长的书，去留言板说一声 (人´∀｀)
 			</p>
 		</div>
 	</div>
 
 	<style>
-		.line-clamp-2 {
+		.line-clamp-4 {
 			display: -webkit-box;
-			-webkit-line-clamp: 2;
+			-webkit-line-clamp: 4;
 			-webkit-box-orient: vertical;
 			overflow: hidden;
 		}
