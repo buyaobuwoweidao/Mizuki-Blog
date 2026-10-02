@@ -37,6 +37,8 @@ export const mcGroups = [
 			{ title: "MCPELIFE", desc: "基岩版资源社区，含版本库", url: "https://mcpelife.com/", tag: "" },
 			{ title: "mcpe-planet", desc: "基岩版地球资源社区", url: "https://mcpe-planet.com/", tag: "" },
 			{ title: "VMCT 汉化组 ★", desc: "汉化组的地图站，里面很多地图可以直接安装，站主的地图就是在这下的", url: "https://vmct-cn.top/map/", tag: "站主用过" },
+			{ title: "梦想之都工作室 DreamCity", desc: "台湾团队，2015 年成立，20+ 公开地图（解谜/RPG/节庆）。童年实况主们玩的圣诞合集很多出自他们，VTuber 活动制作也超强", url: "https://www.dreamcity.studio/", tag: "童年回忆" },
+			{ title: "棱彩维度 PURIZUMU", desc: "《解密公司》系列（1~55 部！）作者，基岩版 UGC 老牌团队，童年解密回忆基本是他们，还有《棱镜国度 Online》服务器", url: "https://www.purizumu.cn/", tag: "童年回忆" },
 			{ title: "TITAIKE 地图站", desc: "集合国内外优质地图的中文地图站", url: "https://www.titaike.cn/", tag: "" },
 			{ title: "Resource Pack", desc: "资源包列表站", url: "https://resourcepack.net/", tag: "" },
 			{ title: "中国版官网", desc: "网易代理的中国大陆版本 MC", url: "https://mc.163.com/", tag: "" },
@@ -112,6 +114,7 @@ export const mcGroups = [
 		icon: "material-symbols:handyman-rounded",
 		items: [
 			{ title: "CB Creator 指令生成器 ★", desc: "MC百科出品的指令生成工具，指令怎么打、直接生成。做地图很好的辅助，国内访问快", url: "https://www.mcmod.cn/tools/cbcreator/#/home/", tag: "站主常用" },
+			{ title: "BlockBench 插件", desc: "BlockBench 的插件商店：实体向导、方块/物品向导、CustomPlayerModels 联动等，建模党必备", url: "https://blockbench.net/plugins", tag: "建模" },
 			{ title: "misode", desc: "图形化数据包/指令/结构生成器，做地图必备", url: "https://misode.github.io/", tag: "" },
 			{ title: "/tellraw 生成器", desc: "图形化生成 tellraw 彩色富文本指令（Java 版）", url: "https://www.minecraftjson.com/", tag: "" },
 			{ title: "命令自动补全", desc: "mcisee 站主的命令自动补全工具", url: "https://mact.mcisee.top/", tag: "" },
@@ -203,6 +206,24 @@ export const mcGroups = [
 			{ title: "香港社区", desc: "交流最新资讯、专业教学、游戏伺服器及心得", url: "https://www.minecraft-hk.com/", tag: "" },
 			{ title: "台湾巴哈姆特", desc: "巴哈姆特 MC 版，创作交流讨论", url: "https://forum.gamer.com.tw/A.php?bsn=18673", tag: "" },
 			{ title: "繁中方塊社", desc: "MCBBS 转生社区", url: "https://mcbbs.space/", tag: "" },
+		],
+	},
+	// ============ 9. 作弊客户端（站主不推荐） ============
+	{
+		id: "hackclients",
+		name: "作弊客户端",
+		desc: "仅供学习交流，站主不推荐使用 (｡•̀ᴗ-)✧",
+		icon: "material-symbols:gpp-bad-rounded",
+		items: [
+			{ title: "LiquidBounce", desc: "开源作弊客户端，功能强大但站主不推荐。拒绝开挂，公平游戏", url: "https://liquidbounce.net/", tag: "站主不推荐" },
+			{ title: "Meteor Client", desc: "知名 utility 客户端，生存/飞行等功能齐全。玩玩可以，PVP 别用", url: "https://meteorclient.com/", tag: "站主不推荐" },
+			{ title: "Vape", desc: "付费作弊客户端，效果隐蔽但破坏游戏体验，不推荐", url: "https://www.vape.gg/", tag: "站主不推荐" },
+			{ title: "Soar Client", desc: "PVP 辅助客户端，站主不推荐", url: "https://www.soarclient.com/", tag: "站主不推荐" },
+			{ title: "Salwyrr Launcher", desc: "辅助客户端启动器，站主不推荐", url: "https://www.salwyrr.com/", tag: "站主不推荐" },
+			{ title: "CMCLIENT", desc: "基岩版 DLL 注入器（仅 Windows），站主不推荐", url: "https://www.cm-pack.pl/", tag: "站主不推荐" },
+			{ title: "Horion", desc: "基岩版 DLL 作弊（仅 Windows），站主不推荐", url: "https://horion.download/", tag: "站主不推荐" },
+			{ title: "Borion", desc: "Horion 的更新版，基岩版作弊，站主不推荐", url: "https://borion-updated.github.io/", tag: "站主不推荐" },
+			{ title: "Atlas Client", desc: "基岩版辅助客户端启动器（仅 Android），站主不推荐", url: "https://atlasclient.net/", tag: "站主不推荐" },
 		],
 	},
 ];
