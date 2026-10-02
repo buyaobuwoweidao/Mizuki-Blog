@@ -1,0 +1,281 @@
+---
+import { Icon } from "astro-icon/components";
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+// 资源站分组数据
+const groups = [
+	{
+		id: "modpack",
+		name: "整合包下载",
+		desc: "找整合包，认准这几个站就够了",
+		icon: "material-symbols:package-2-rounded",
+		items: [
+			{
+				title: "CurseForge",
+				desc: "全球最大整合包/模组/地图站，ATM、RLCraft、SkyFactory 都在这里",
+				url: "https://www.curseforge.com/minecraft",
+				tag: "需科学上网",
+			},
+			{
+				title: "Modrinth",
+				desc: "开源整合包平台，Fabric/Quilt 生态多，下载干净无广告",
+				url: "https://modrinth.com/modpacks",
+				tag: "",
+			},
+			{
+				title: "MC百科 mcmod.cn",
+				desc: "国内最大的模组/整合包百科，中文界面，查模组资料必备",
+				url: "https://www.mcmod.cn",
+				tag: "",
+			},
+			{
+				title: "苦力怕论坛 klpbbs",
+				desc: "国内老牌 MC 社区，整合包/地图/材质免费分享，没门槛",
+				url: "https://www.klpbbs.com",
+				tag: "",
+			},
+			{
+				title: "PCL2 启动器",
+				desc: "国内最火的启动器，内置整合包下载，装包一键搞定",
+				url: "https://github.com/Hex-Dragon/PCL2/releases",
+				tag: "",
+			},
+		],
+	},
+	{
+		id: "maps",
+		name: "地图下载",
+		desc: "找地图、找建筑存档，来这几个站",
+		icon: "material-symbols:map-rounded",
+		items: [
+			{
+				title: "Planet Minecraft",
+				desc: "国外老牌地图/建筑站，红石机械、恐怖地图、冒险地图应有尽有",
+				url: "https://www.planetminecraft.com",
+				tag: "需科学上网",
+			},
+			{
+				title: "CurseForge 地图分类",
+				desc: "CurseForge 专门的地图区，按版本/类型筛选很方便",
+				url: "https://www.curseforge.com/minecraft/search?class=minecraft-maps",
+				tag: "需科学上网",
+			},
+			{
+				title: "苦力怕论坛·地图版块",
+				desc: "国内玩家自制的优质地图分享，汉化过的不少",
+				url: "https://www.klpbbs.com",
+				tag: "",
+			},
+		],
+	},
+	{
+		id: "shaders",
+		name: "材质光影",
+		desc: "让 MC 变好看的秘诀",
+		icon: "material-symbols:auto-awesome-rounded",
+		items: [
+			{
+				title: "OptiFine",
+				desc: "老牌优化+光影加载器，装光影的经典选择",
+				url: "https://optifine.net",
+				tag: "",
+			},
+			{
+				title: "Iris Shaders",
+				desc: "现代光影加载器，配合 Sodium 性能更好",
+				url: "https://irisshaders.dev",
+				tag: "",
+			},
+		],
+	},
+	{
+		id: "tools",
+		name: "启动器工具",
+		desc: "装好包之后，用它们来启动",
+		icon: "material-symbols:rocket-launch-rounded",
+		items: [
+			{
+				title: "PCL2",
+				desc: "界面好看、内置整合包下载，国内玩家首选",
+				url: "https://github.com/Hex-Dragon/PCL2/releases",
+				tag: "",
+			},
+			{
+				title: "HMCL (Hello Minecraft Launcher)",
+				desc: "开源启动器，支持多版本多加载器管理",
+				url: "https://github.com/HMCL-dev/HMCL",
+				tag: "",
+			},
+			{
+				title: "Prism Launcher",
+				desc: "国外开源启动器，CurseForge/Modrinth 整合包直接导入",
+				url: "https://prismlauncher.org",
+				tag: "需科学上网",
+			},
+		],
+	},
+];
+
+// 站主推荐整合包（详细清单见飞书表格）
+const recommended = [
+	{ name: "All the Mods 10", desc: "2025 年度最火，约 500 个模组的大杂烩", icon: "material-symbols:all-inclusive-rounded" },
+	{ name: "RLCraft", desc: "公认最难，真实生存硬核挑战", icon: "material-symbols:local-fire-department-rounded" },
+	{ name: "群峦格雷：现代", desc: "群峦传说×格雷科技，深度科技玩家的天堂", icon: "material-symbols:settings-rounded" },
+	{ name: "愚者 The Fool", desc: "国产剧情挑战，愚弄、伪装、欺诈", icon: "material-symbols:theater-comedy-rounded" },
+	{ name: "机械动力整合包", desc: "齿轮党的浪漫，黄铜协奏曲、齿轮盛宴", icon: "material-symbols:settings-input-hdmi-rounded" },
+];
+---
+
+<MainGridLayout title="我的世界专区" description="MC 整合包、地图、资源站收藏">
+
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="我的世界专区"
+				subtitle="整合包、地图、模组、资源站，都给你收在这里了 (๑•̀ㅂ•́)و✧"
+			/>
+
+			<!-- 顶部横幅：常用入口 -->
+			<div
+				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+			>
+				<div class="shrink-0 w-12 h-12 rounded-xl bg-(--primary)/15 flex items-center justify-center">
+					<Icon name="material-symbols:widgets-rounded" class="text-3xl text-(--primary)" />
+				</div>
+				<div class="grow min-w-0">
+					<p class="font-bold text-black/85 dark:text-white/85 mb-1">
+						站主整理的「热门整合包清单」
+					</p>
+					<p class="text-sm text-black/50 dark:text-white/50">
+						26 个当前市面上火的整合包，版本、加载器、难度、下载量都列好了，收藏慢慢挑 (｡•̀ᴗ-)✧
+					</p>
+				</div>
+				<a
+					href="https://my.feishu.cn/sheets/XwMOsH30XhDiPEt4PDHchzyynob"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
+				>
+					打开清单
+					<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
+				</a>
+			</div>
+
+			<!-- 资源站分组 -->
+			<div class="space-y-8">
+				{
+					groups.map((group) => (
+						<section id={group.id}>
+							<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+								<Icon name={group.icon} class="text-(--primary) text-xl shrink-0" />
+								<div class="flex items-baseline gap-2 min-w-0">
+									<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+										{group.name}
+									</h2>
+									<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+										{group.desc}
+									</span>
+								</div>
+							</div>
+
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+								{group.items.map((item) => (
+									<a
+										href={item.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="group flex items-center gap-3 p-3 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
+									>
+										<div
+											class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"
+										/>
+										<div
+											class="w-11 h-11 shrink-0 rounded-xl bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 flex items-center justify-center"
+										>
+											<Icon
+												name="material-symbols:link-rounded"
+												class="text-xl text-(--primary) group-hover:scale-110 transition-transform duration-300"
+											/>
+										</div>
+										<div class="grow min-w-0 flex flex-col justify-center">
+											<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate flex items-center gap-2">
+												{item.title}
+												{item.tag && (
+													<span class="shrink-0 text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 font-normal">
+														{item.tag}
+													</span>
+												)}
+											</div>
+											<div class="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-2 mt-0.5">
+												{item.desc}
+											</div>
+										</div>
+										<Icon
+											name="material-symbols:arrow-outward-rounded"
+											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+										/>
+									</a>
+								))}
+							</div>
+						</section>
+					))
+				}
+			</div>
+
+			<!-- 站主推荐整合包 -->
+			<section class="mt-8">
+				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+					<Icon name="material-symbols:favorite-rounded" class="text-(--primary) text-xl shrink-0" />
+					<div class="flex items-baseline gap-2 min-w-0">
+						<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+							站主推荐
+						</h2>
+						<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+							亲自玩过/在玩的整合包 (｡•̀ᴗ-)✧
+						</span>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+					{
+						recommended.map((rec) => (
+							<div
+								class="flex items-center gap-3 p-3 rounded-xl border border-(--line-divider) bg-(--card-bg) transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+							>
+								<div
+									class="w-11 h-11 shrink-0 rounded-xl bg-(--primary)/10 flex items-center justify-center"
+								>
+									<Icon name={rec.icon} class="text-xl text-(--primary)" />
+								</div>
+								<div class="min-w-0">
+									<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 truncate">
+										{rec.name}
+									</div>
+									<div class="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-2 mt-0.5">
+										{rec.desc}
+									</div>
+								</div>
+							</div>
+						))
+					}
+				</div>
+
+				<p class="mt-4 text-center text-xs text-black/35 dark:text-white/35">
+					完整 26 个整合包清单，点上方「打开清单」直达表格，持续更新中 (´▽`)ﾉ
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<style>
+		.line-clamp-2 {
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	</style>
+</MainGridLayout>

@@ -87,6 +87,30 @@ const filterTabs = [
 				subtitle="站主玩过的、在玩的、想玩的游戏们 (๑•̀ㅂ•́)و✧"
 			/>
 
+			<!-- MC 专区入口横幅 -->
+			<div
+				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+			>
+				<div class="shrink-0 w-12 h-12 rounded-xl bg-(--primary)/15 flex items-center justify-center">
+					<Icon name="material-symbols:widgets-rounded" class="text-3xl text-(--primary)" />
+				</div>
+				<div class="grow min-w-0">
+					<p class="font-bold text-black/85 dark:text-white/85 mb-1">
+						我的世界专区 (๑•̀ㅂ•́)و✧
+					</p>
+					<p class="text-sm text-black/50 dark:text-white/50">
+						整合包去哪下、地图去哪找、光影怎么装，都给你整理好了
+					</p>
+				</div>
+				<a
+					href={baseUrl + "/mc/"}
+					class="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
+				>
+					进入专区
+					<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
+				</a>
+			</div>
+
 			<!-- 游戏统计 -->
 			<div class="grid grid-cols-3 gap-4 mb-8">
 				<div class="rounded-xl border border-black/10 dark:border-white/10 p-4 text-center">

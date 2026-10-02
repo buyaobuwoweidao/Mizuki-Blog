@@ -11,6 +11,7 @@ export interface GameItem {
 	tags: string[];
 	featured?: boolean;
 	note?: string;
+	link?: string; // 可选：跳转到专区的链接（相对路径或完整URL）
 }
 
 // 游戏分享数据
@@ -26,6 +27,7 @@ export const gamesData: GameItem[] = [
 		tags: ["沙盒", "建造", "生存"],
 		featured: true,
 		note: "最喜欢开创造模式搭建筑，红石至今没学会（笑）",
+		link: "/mc/",
 	},
 	{
 		id: 2,
