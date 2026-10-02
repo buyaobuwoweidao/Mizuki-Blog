@@ -3,6 +3,8 @@ import { Icon } from "astro-icon/components";
 import { PageHeader } from "@components/features/page-header";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 // 小说书单：站长推荐的火书
 // 每本书 = 封面图 + 一段介绍 + 跳转链接（免费阅读 + 支持正版）
 const bookShelf = [
@@ -10,10 +12,10 @@ const bookShelf = [
 		title: "龙族",
 		author: "江南",
 		recommended: true,
-		cover: "/assets/covers/novel-dragon-raja.jpg",
+		cover: baseUrl + "/assets/covers/novel-dragon-raja.jpg",
 		desc: "一封来自卡塞尔学院的录取通知书，把普通高中生路明非拉进了一个龙与混血种的隐秘世界。「东方《哈利·波特》」级别的青春幻想神作，绘梨衣、楚子航、夏弥……每个角色都让人记一辈子。站长最爱的网文，没有之一 (๑•̀ㅂ•́)و✧",
-		freeUrl: "https://m.ziwx.cc/book/461252/",
-		freeLabel: "免费阅读（紫色文学）",
+		freeUrl: "https://m.qidian.com/bookrecommend/sqbcf9a15545a348dc",
+		freeLabel: "在线免费阅读（起点官方）",
 		supportUrl: "https://weread.qq.com/web/reader/2be32e205e3dd02be3a12bck33e3289021c33e75ff09694",
 		supportLabel: "支持正版（微信读书）",
 	},
@@ -21,7 +23,7 @@ const bookShelf = [
 		title: "斗破苍穹",
 		author: "天蚕土豆",
 		recommended: false,
-		cover: "/assets/covers/novel-battle-break.jpg",
+		cover: baseUrl + "/assets/covers/novel-battle-break.jpg",
 		desc: "「三十年河东，三十年河西，莫欺少年穷！」废柴萧炎从乌坦城一路逆袭成斗帝。斗气大陆的等级制度、异火榜、炼药师……当年的班里传阅神书，起点百亿点击的玄幻经典。",
 		freeUrl: "https://read.qidian.com/chapter/2R9G_ziBVg41/MyEcwtk5i8Iex0RJOkJclQ2/",
 		freeLabel: "起点免费试读",
@@ -32,7 +34,7 @@ const bookShelf = [
 		title: "斗罗大陆",
 		author: "唐家三少",
 		recommended: false,
-		cover: "/assets/covers/novel-memories.jpg",
+		cover: baseUrl + "/assets/covers/novel-memories.jpg",
 		desc: "双生武魂的唐三从唐门外门弟子，一步步成为魂师界的传说。魂环、魂技、武魂真身……小学时代班里传得最凶的玄幻，是多少人看的第一本「长篇连载」。",
 		freeUrl: "https://www.qidian.com/",
 		freeLabel: "起点中文网",
