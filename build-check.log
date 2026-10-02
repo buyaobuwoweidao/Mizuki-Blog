@@ -11,159 +11,159 @@
 
 内容目录不存在：C:\Users\刘成毅\Doubao\chats\2026-09-30\new-chat\Mizuki-Blog\content
 将使用独立仓库模式
-提示：请设置 CONTENT_REPO_URL 环境变量，或手动创建内容目录
 警告：未设置 CONTENT_REPO_URL，将使用本地内容
+提示：请设置 CONTENT_REPO_URL 环境变量，或手动创建内容目录
 $ node scripts/update-anime.mjs && astro build && node scripts/check-global-style-loading.mjs && pagefind --site dist &
 & node scripts/check-font-loading.mjs
 Anime mode is "local", skipping data update.
-[33m[1m11:26:51[22m [WARN] [vite][39m warning: Module "node:path" has been externalized for browser compatibility, imported by "C:/Users/刘成毅/Doubao/chats/2026-09-30/new-chat/Mizuki-Blog/src/utils/image-source-utils.ts". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
-[2m11:26:51[22m [34m[content][39m Syncing content
-[2m11:26:51[22m [34m[content][39m Synced content
-[2m11:26:51[22m [34m[types][39m Generated [2m1.42s[22m
-[2m11:26:51[22m [34m[build][39m output: [34m"static"[39m
-[2m11:26:51[22m [34m[build][39m mode: [34m"static"[39m
-[2m11:26:51[22m [34m[build][39m directory: [34mC:\Users\刘成毅\Doubao\chats\2026-09-30\new-chat\Mizuki-Blog\dist\[39m
-[2m11:26:51[22m [34m[build][39m Collecting build info...
-[2m11:26:51[22m [34m[build][39m [32m✓ Completed in 1.88s.[39m
-[2m11:26:53[22m [34m[build][39m Building static entrypoints...
+[33m[1m11:38:13[22m [WARN] [vite][39m warning: Module "node:path" has been externalized for browser compatibility, imported by "C:/Users/刘成毅/Doubao/chats/2026-09-30/new-chat/Mizuki-Blog/src/utils/image-source-utils.ts". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+[2m11:38:14[22m [34m[content][39m Syncing content
+[2m11:38:14[22m [34m[content][39m Synced content
+[2m11:38:14[22m [34m[types][39m Generated [2m1.36s[22m
+[2m11:38:14[22m [34m[build][39m output: [34m"static"[39m
+[2m11:38:14[22m [34m[build][39m mode: [34m"static"[39m
+[2m11:38:14[22m [34m[build][39m directory: [34mC:\Users\刘成毅\Doubao\chats\2026-09-30\new-chat\Mizuki-Blog\dist\[39m
+[2m11:38:14[22m [34m[build][39m Collecting build info...
+[2m11:38:14[22m [34m[build][39m [32m✓ Completed in 1.81s.[39m
+[2m11:38:16[22m [34m[build][39m Building static entrypoints...
 [astro-icon] "material-symbols" failed to load at least one of the specified icons! Verify the icon names are included 
 in the icon collection.
-[2m11:26:58[22m [34m[assets][39m Copying fonts (4 files)...
-[2m11:27:00[22m [34m[vite][39m [32m✓ built in 6.62s[39m
-[33m[1m11:27:01[22m [WARN] [vite][39m [33m[plugin rolldown:vite-resolve] Module "node:path" has been externalized for browser compatibility, imported by "C:/Users/刘成毅/Doubao/chats/2026-09-30/new-chat/Mizuki-Blog/src/utils/image-source-utils.ts". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
-[2m11:27:02[22m [34m[vite][39m [32m✓ built in 1.68s[39m
-[2m11:27:02[22m [34m[build][39m Rearranging server assets...
+[2m11:38:21[22m [34m[assets][39m Copying fonts (4 files)...
+[2m11:38:23[22m [34m[vite][39m [32m✓ built in 6.14s[39m
+[33m[1m11:38:23[22m [WARN] [vite][39m [33m[plugin rolldown:vite-resolve] Module "node:path" has been externalized for browser compatibility, imported by "C:/Users/刘成毅/Doubao/chats/2026-09-30/new-chat/Mizuki-Blog/src/utils/image-source-utils.ts". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[2m11:38:24[22m [34m[vite][39m [32m✓ built in 1.53s[39m
+[2m11:38:24[22m [34m[build][39m Rearranging server assets...
 
 [42m[30m generating static routes [39m[49m
-[2m11:27:05[22m   [34m├─[39m [2m/404.html[22m [2m(+71ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/about/index.html[22m [2m(+28ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/ai-tools/index.html[22m [2m(+29ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/anime-wallpapers/index.html[22m [2m(+22ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/art-collection/index.html[22m [2m(+20ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/bilibili-official/index.html[22m [2m(+22ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/cat-diary/index.html[22m [2m(+21ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/firefly/index.html[22m [2m(+21ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/firefly-collection/index.html[22m [2m(+20ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/girls-last-tour/index.html[22m [2m(+20ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/glasses-girl/index.html[22m [2m(+19ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/sunset-walk/index.html[22m [2m(+19ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/albums/index.html[22m [2m(+31ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/anime/index.html[22m [2m(+28ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/announcement/index.html[22m [2m(+21ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/api/allPostMeta.json[22m [2m(+4ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/api/calendar-data.json[22m [2m(+4ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/api/dynamic.json[22m [2m(+13ms)[22m 
-[2m11:27:05[22m   [34m├─[39m [2m/archive/index.html[22m [2m(+24ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/atom/index.html[22m [2m(+25ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/atom.xml[22m [2m(+127ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/booknav/index.html[22m [2m(+24ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/devices/index.html[22m [2m(+21ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/diary/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/dynamic/index.html[22m [2m(+62ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/editor-gate/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/friends/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/games/index.html[22m [2m(+24ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/guestbook/index.html[22m [2m(+22ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/mc/index.html[22m [2m(+22ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/national-day-blessing/index.html[22m [2m(+53ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/national-day-rabbit/index.html[22m [2m(+28ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/firefly-wallpaper-collection/index.html[22m [2m(+29ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/miyeji-intro/index.html[22m [2m(+33ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/pragmata-impressions/index.html[22m [2m(+27ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/rediscovered-hobby-drawing/index.html[22m [2m(+27ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/resident-evil-9-review/index.html[22m [2m(+29ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/resident-evil-saga/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/silent-hill-memories/index.html[22m [2m(+27ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/stellar-blade-blood-rain-trailer/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/stellar-blade-waiting/index.html[22m [2m(+30ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/wallpaper-collection-journey/index.html[22m [2m(+28ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/animated-movie-nights/index.html[22m [2m(+27ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/anime-food-cooking/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/cozy-anime-room/index.html[22m [2m(+31ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/iconic-scenes-collection/index.html[22m [2m(+26ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/secret-room/index.html[22m [2m(+63ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/gacha-collection-journey/index.html[22m [2m(+27ms)[22m 
-[2m11:27:06[22m   [34m├─[39m [2m/posts/summer-festival-fireworks/index.html[22m [2m(+30ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/voice-actors-appreciation/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/welcome-to-my-corner/index.html[22m [2m(+28ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/blue-archive-first-contact/index.html[22m [2m(+27ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/light-novel-reading-guide/index.html[22m [2m(+30ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-ost-soundtrack/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/my-anime-journey/index.html[22m [2m(+29ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-convention-memories/index.html[22m [2m(+27ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/rainy-day-anime-mood/index.html[22m [2m(+27ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/beloved-firefly/index.html[22m [2m(+25ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/midnight-anime-companions/index.html[22m [2m(+28ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/cat-and-anime-life/index.html[22m [2m(+27ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/seasonal-anime-watching/index.html[22m [2m(+27ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-recommendation-2026/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/phone-customization-guide/index.html[22m [2m(+28ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/game-story-love/index.html[22m [2m(+25ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-pilgrimage-travel/index.html[22m [2m(+28ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-cafe-experience/index.html[22m [2m(+25ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/desktop-aesthetics/index.html[22m [2m(+30ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/my-anime-journey-memories/index.html[22m [2m(+25ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-life-lessons/index.html[22m [2m(+28ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/autumn-watchlist/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/blog-building-diary/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/anime-music-playlist/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/blog-building-guide/index.html[22m [2m(+32ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/honkai-star-rail-journey/index.html[22m [2m(+25ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/desktop-customization-guide/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/why-i-love-slice-of-life/index.html[22m [2m(+26ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/posts/midnight-rambling/index.html[22m [2m(+30ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/projects/index.html[22m [2m(+22ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/robots.txt[22m [2m(+4ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/rss/index.html[22m [2m(+19ms)[22m 
-[2m11:27:07[22m   [34m├─[39m [2m/rss.xml[22m [2m(+214ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/skills/index.html[22m [2m(+27ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/sponsor/index.html[22m [2m(+23ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/timeline/index.html[22m [2m(+26ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/index.html[22m [2m(+22ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/2/index.html[22m [2m(+21ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/3/index.html[22m [2m(+20ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/4/index.html[22m [2m(+21ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/5/index.html[22m [2m(+19ms)[22m 
-[2m11:27:08[22m   [34m├─[39m [2m/6/index.html[22m [2m(+20ms)[22m 
-[2m11:27:08[22m [32m✓ Completed in 3.51s.
+[2m11:38:27[22m   [34m├─[39m [2m/404.html[22m [2m(+65ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/about/index.html[22m [2m(+30ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/ai-tools/index.html[22m [2m(+32ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/anime-wallpapers/index.html[22m [2m(+24ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/art-collection/index.html[22m [2m(+22ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/bilibili-official/index.html[22m [2m(+22ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/cat-diary/index.html[22m [2m(+25ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/firefly/index.html[22m [2m(+23ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/firefly-collection/index.html[22m [2m(+23ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/girls-last-tour/index.html[22m [2m(+21ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/glasses-girl/index.html[22m [2m(+22ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/sunset-walk/index.html[22m [2m(+19ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/albums/index.html[22m [2m(+34ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/anime/index.html[22m [2m(+29ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/announcement/index.html[22m [2m(+23ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/api/allPostMeta.json[22m [2m(+4ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/api/calendar-data.json[22m [2m(+4ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/api/dynamic.json[22m [2m(+14ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/archive/index.html[22m [2m(+25ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/atom/index.html[22m [2m(+25ms)[22m 
+[2m11:38:27[22m   [34m├─[39m [2m/atom.xml[22m [2m(+138ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/booknav/index.html[22m [2m(+27ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/devices/index.html[22m [2m(+22ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/diary/index.html[22m [2m(+27ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/dynamic/index.html[22m [2m(+67ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/editor-gate/index.html[22m [2m(+24ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/friends/index.html[22m [2m(+25ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/games/index.html[22m [2m(+24ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/guestbook/index.html[22m [2m(+23ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/mc/index.html[22m [2m(+28ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/national-day-blessing/index.html[22m [2m(+39ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/national-day-rabbit/index.html[22m [2m(+31ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/firefly-wallpaper-collection/index.html[22m [2m(+28ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/miyeji-intro/index.html[22m [2m(+35ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/pragmata-impressions/index.html[22m [2m(+27ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/rediscovered-hobby-drawing/index.html[22m [2m(+31ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/resident-evil-9-review/index.html[22m [2m(+29ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/resident-evil-saga/index.html[22m [2m(+30ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/silent-hill-memories/index.html[22m [2m(+31ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/stellar-blade-blood-rain-trailer/index.html[22m [2m(+32ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/stellar-blade-waiting/index.html[22m [2m(+30ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/wallpaper-collection-journey/index.html[22m [2m(+32ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/animated-movie-nights/index.html[22m [2m(+29ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/anime-food-cooking/index.html[22m [2m(+30ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/cozy-anime-room/index.html[22m [2m(+30ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/iconic-scenes-collection/index.html[22m [2m(+28ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/secret-room/index.html[22m [2m(+67ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/gacha-collection-journey/index.html[22m [2m(+34ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/summer-festival-fireworks/index.html[22m [2m(+28ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/voice-actors-appreciation/index.html[22m [2m(+28ms)[22m 
+[2m11:38:28[22m   [34m├─[39m [2m/posts/welcome-to-my-corner/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/blue-archive-first-contact/index.html[22m [2m(+29ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/light-novel-reading-guide/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-ost-soundtrack/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/my-anime-journey/index.html[22m [2m(+26ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-convention-memories/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/rainy-day-anime-mood/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/beloved-firefly/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/midnight-anime-companions/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/cat-and-anime-life/index.html[22m [2m(+36ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/seasonal-anime-watching/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-recommendation-2026/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/phone-customization-guide/index.html[22m [2m(+29ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/game-story-love/index.html[22m [2m(+29ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-pilgrimage-travel/index.html[22m [2m(+25ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-cafe-experience/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/desktop-aesthetics/index.html[22m [2m(+30ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/my-anime-journey-memories/index.html[22m [2m(+29ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-life-lessons/index.html[22m [2m(+25ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/autumn-watchlist/index.html[22m [2m(+26ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/blog-building-diary/index.html[22m [2m(+26ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/anime-music-playlist/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/blog-building-guide/index.html[22m [2m(+27ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/honkai-star-rail-journey/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/desktop-customization-guide/index.html[22m [2m(+26ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/why-i-love-slice-of-life/index.html[22m [2m(+29ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/posts/midnight-rambling/index.html[22m [2m(+28ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/projects/index.html[22m [2m(+26ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/robots.txt[22m [2m(+4ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/rss/index.html[22m [2m(+30ms)[22m 
+[2m11:38:29[22m   [34m├─[39m [2m/rss.xml[22m [2m(+263ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/skills/index.html[22m [2m(+27ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/sponsor/index.html[22m [2m(+22ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/timeline/index.html[22m [2m(+25ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/index.html[22m [2m(+22ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/2/index.html[22m [2m(+24ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/3/index.html[22m [2m(+22ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/4/index.html[22m [2m(+21ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/5/index.html[22m [2m(+22ms)[22m 
+[2m11:38:30[22m   [34m├─[39m [2m/6/index.html[22m [2m(+21ms)[22m 
+[2m11:38:30[22m [32m✓ Completed in 3.64s.
 [39m
 [42m[30m generating optimized images [39m[49m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z2tdVmP.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(1/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__2vSujS.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(2/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_1tHsK6.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(3/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.CDMGxzMp_Z2fwKzc.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(4/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.Dx4M_8s7_2ldEb.webp [2m(reused cache entry)[22m [2m(+5ms)[22m [2m(5/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z2u12NQ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(6/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__27gD9L.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(7/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_ZuwWlE.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(8/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.CDMGxzMp_ssCGq.webp [2m(reused cache entry)[22m [2m(+4ms)[22m [2m(9/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.Dx4M_8s7_1N6x32.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(10/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.SdUNinQ4_1zueRP.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(11/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__2emK0d.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(12/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_1MiXMt.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(13/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.Dx4M_8s7_Z23L0VL.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(14/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.CDMGxzMp_28gxNJ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(15/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.SdUNinQ4_2pzy0t.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(16/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__Z32YhN.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(17/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_1Ba0Ih.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(18/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.CDMGxzMp_ZobKzc.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(19/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.Dx4M_8s7_1bOvyH.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(20/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.SdUNinQ4_ZuRSs2.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(21/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__ZkS2LX.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(22/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.CDMGxzMp_1PhShv.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(23/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_ZKOJMM.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(24/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.Dx4M_8s7_Z1rsQQR.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(25/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z1gBDz7.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(26/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__Bxfls.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(27/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_Z1WftfP.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(28/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/4.QDTqOXV__21Wf3u.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(29/30)[22m
-[2m11:27:08[22m   [32m▶[39m /_astro/1.VsNU6eh0_Wvj9E.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(30/30)[22m
-[2m11:27:08[22m [32m✓ Completed in 19ms.
+[2m11:38:30[22m   [32m▶[39m /_astro/1.Dx4M_8s7_2ldEb.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(1/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_1tHsK6.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(2/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.CDMGxzMp_Z2fwKzc.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(3/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z2tdVmP.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(4/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__2vSujS.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(5/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.Dx4M_8s7_1N6x32.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(6/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_ZuwWlE.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(7/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.CDMGxzMp_ssCGq.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(8/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z2u12NQ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(9/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__27gD9L.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(10/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.Dx4M_8s7_Z23L0VL.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(11/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_1MiXMt.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(12/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.CDMGxzMp_28gxNJ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(13/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.SdUNinQ4_1zueRP.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(14/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__2emK0d.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(15/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.Dx4M_8s7_1bOvyH.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(16/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_1Ba0Ih.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(17/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.CDMGxzMp_ZobKzc.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(18/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.SdUNinQ4_2pzy0t.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(19/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__Z32YhN.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(20/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_ZKOJMM.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(21/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.Dx4M_8s7_Z1rsQQR.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(22/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.CDMGxzMp_1PhShv.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(23/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.SdUNinQ4_ZuRSs2.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(24/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_Z1WftfP.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(25/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__ZkS2LX.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(26/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/3.SdUNinQ4_Z1gBDz7.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(27/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__Bxfls.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(28/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/1.VsNU6eh0_Wvj9E.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(29/30)[22m
+[2m11:38:30[22m   [32m▶[39m /_astro/4.QDTqOXV__21Wf3u.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(30/30)[22m
+[2m11:38:30[22m [32m✓ Completed in 18ms.
 [39m
-[2m11:27:14[22m [34m[build][39m [32m✓ Completed in 20.94s.[39m
-[2m11:27:14[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
-[2m11:27:14[22m [34m[build][39m 84 page(s) built in [1m24.64s[22m
-[2m11:27:14[22m [34m[build][39m [1mComplete![22m
+[2m11:38:36[22m [34m[build][39m [32m✓ Completed in 20.06s.[39m
+[2m11:38:36[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m11:38:36[22m [34m[build][39m 84 page(s) built in [1m23.57s[22m
+[2m11:38:36[22m [34m[build][39m [1mComplete![22m
 Verified homepage styles across 11 linked stylesheet(s).
 Verified about page styles across 13 linked stylesheet(s).
 
@@ -194,5 +194,5 @@ Search will still work, but will not match across root words.
 Note: Pagefind doesn't support stemming for the language zh-cn. 
 Search will still work, but will not match across root words.
 
-Finished in 0.866 seconds
+Finished in 0.855 seconds
 Font loading check passed: 336 references, 4 files, 6498480 bytes.
