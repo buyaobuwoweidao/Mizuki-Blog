@@ -76,9 +76,14 @@ hot: true
 
 ## 怎么关注她 (´▽`)ﾉ
 
-如果这篇文章让你心动了，很简单：
+如果这篇文章让你心动了，很简单——点下面的按钮直接跳转，去 B 站关注柠娜，看她的保姆级教程：
 
-- 去 **B 站**搜索"**柠娜**"，关注她的个人空间
+<p style="text-align:center;margin:1.75rem 0;display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
+  <a class="btn-gradient btn-gradient-primary btn-gradient-lg" href="https://space.bilibili.com/383989569" target="_blank" rel="noopener noreferrer">去 B 站关注柠娜 (人´∀｀)</a>
+  <a class="btn-gradient btn-gradient-lg" style="background:linear-gradient(135deg,#fb7299,#e0467f);color:#fff;" href="https://www.bilibili.com/video/BV1MKuRzgEK7/" target="_blank" rel="noopener noreferrer">看保姆级汉化教程 (´▽`)</a>
+</p>
+
+- 去 **B 站**搜索"**柠娜**"，关注她的个人空间（或直接点上面的粉色按钮）
 - 置顶动态里有汉化补丁的获取方式（在线表格和汉化站）
 - 看完教程觉得有用，记得三连——她自己都说"三连+关注不要再白嫖啦，MC 的白嫖率真的好高"（笑）
 
@@ -93,6 +98,10 @@ MC 圈有很多默默付出的人——整合包作者、材质作者、汉化�
 她一个人在宿舍（或者家里）敲着代码做 AI 汉化，然后把成果免费分享给几百万 MC 玩家。这种"用爱发电"的浪漫，真的很戳我。
 
 如果你也曾经被整合包的英文折磨过，去关注一下柠娜吧。**哪怕只是点一个赞，也是对汉化者最大的温柔** (｡•̀ᴗ-)✧
+
+<p style="text-align:center;margin:1.75rem 0;">
+  <a class="btn-gradient btn-gradient-primary btn-gradient-lg" href="https://space.bilibili.com/383989569" target="_blank" rel="noopener noreferrer">跳转柠娜 B 站主页 (´▽`)ﾉ</a>
+</p>
 
 ---
 
