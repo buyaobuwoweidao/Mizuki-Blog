@@ -8,6 +8,27 @@ image: /assets/games/pragmata/pg-04-space.webp
 draft: false
 ---
 
+<style>
+h2{color:#2a6fd4;text-shadow:0 0 8px rgba(42,111,212,.5),0 0 22px rgba(42,111,212,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#38bdf8;text-shadow:0 0 7px rgba(56,189,248,.5),0 0 18px rgba(56,189,248,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(42,111,212,.35),0 0 14px rgba(42,111,212,.2)}to{text-shadow:0 0 11px rgba(42,111,212,.65),0 0 26px rgba(42,111,212,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#2a6fd4;font-weight:600}
+.gentle-open{color:#2a6fd4;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(42,111,212,.08);border-left:4px solid #2a6fd4;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(56,189,248,.08);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(42,111,212,.06);border:1px solid rgba(42,111,212,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#2a6fd4}
+.credit-box{background:rgba(56,189,248,.07);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(42,111,212,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌙 月球、宇航员和机器人小女孩，深夜来聊聊卡普空这步又怪又酷的棋。</div>
+
 ## 先说点背景：卡普空最神秘的项目 (・ω・`)
 
 《实质存在》（Pragmata）是卡普空这些年最"神神秘秘"的项目。
@@ -16,7 +37,7 @@ draft: false
 
 然后它就跳票了。一而再，再而三。 (；一_一)
 
-但越是跳票，我越是心痒。终于玩到之后，我只想说：**卡普空，你这些年憋的果然是个大招。**
+但越是跳票，我越是心痒。终于玩到之后，我只想说：<span class="hl-theme">**卡普空，你这些年憋的果然是个大招。**</span>
 
 ## 这游戏到底讲了什么 (´･_･`)
 
@@ -36,13 +57,13 @@ draft: false
 
 说实话，我一开始是抱着"看卡普空整活"的心态去玩的，结果玩进去就出不来了。
 
-试玩版给我的第一印象就是——**这个世界的"重力感"不对。**
+试玩版给我的第一印象就是——<span class="hl-blue">**这个世界的"重力感"不对。**</span>
 
 你操控 Hugh 在月球都市里行走，跳跃的弧线、落地的缓冲、还有那身厚重宇航服的惯性，全都和地球游戏不一样。第一次跳过一个平台的时候，我整个人因为"跳太高了"而愣住：原来月球的重力是地球的六分之一啊！这个细节做出来之后，科幻感瞬间就立住了。 (★ ω ★)
 
 ![Pragmata：Hugh与Diana](/Mizuki-Blog/assets/games/pragmata/pg-02-diana-hugh.webp)
 
-战斗手感也很有卡普空味——打击感扎实，动作流畅，连招系统带着《鬼泣》的底子，但又因为"月球重力"这个设定衍生出了很多独特的位移玩法。你可以在空中滞空、冲刺、转向，打起来有一种"太空芭蕾"的荒谬美感。
+战斗手感也很有卡普空味——打击感扎实，动作流畅，连招系统带着《鬼泣》的底子，但又因为"月球重力"这个设定衍生出了很多独特的位移玩法。你可以在空中滞空、冲刺、转向，打起来有一种<span class="hl-purple">"太空芭蕾"的荒谬美感。</span>
 
 当然，槽点也不少：
 
@@ -66,14 +87,27 @@ Pragmata 的画面是我近几年见过最"炫"的之一。
 - 有人从那条黄色丝线推断，Hugh 和 Diana 之间存在某种"生命连接"——类似《尼尔》的设定
 - 还有人觉得，卡普空想借这个故事讨论"科技是否真的让人类更自由"这个老命题
 
-我个人的看法是：**这游戏想表达的东西，比它表面呈现出来的要沉重得多。** 那句"我们犯了不可挽回的错误"——我赌它是整个故事的钥匙。 (´；ω；`)
+我个人的看法是：<span class="hl-blue">**这游戏想表达的东西，比它表面呈现出来的要沉重得多。**</span> 那句"我们犯了不可挽回的错误"——我赌它是整个故事的钥匙。 (´；ω；`)
 
 ## 写在最后 (´▽`)ﾉ
 
 《实质存在》不是一部适合所有人的游戏。它的节奏慢、叙事晦涩、解谜反人类，如果你冲着"爽"去，大概率会失望。
 
-但如果你喜欢那种**一边玩一边琢磨"这个世界到底怎么了"**的体验，喜欢卡普空那种扎实到骨子里的动作手感，喜欢在月球上蹦蹦跳跳的荒诞快乐——那它值得你给一次机会。
+但如果你喜欢那种<span class="hl-theme">**一边玩一边琢磨"这个世界到底怎么了"**</span>的体验，喜欢卡普空那种扎实到骨子里的动作手感，喜欢在月球上蹦蹦跳跳的荒诞快乐——那它值得你给一次机会。
 
 跳票多年的卡普空，这次赌得很大。而我愿意陪它赌下去。 (˶ᵕ ᵕ˶)
 
 —— 愿月球的霓虹，照亮所有谜题的答案。
+
+<div class="gentle-open">✨ 好了，这次月球漫游就聊到这里，愿每个谜题都有被点亮的那一天。</div>
+
+<div class="link-box">
+<p><strong>相关链接 🚀</strong></p>
+<ul>
+<li><a href="https://www.capcom-games.com/pragmata/zh-hans/" target="_blank" rel="noopener noreferrer">《实质存在 Pragmata》CAPCOM 官方网站</a></li>
+</ul>
+</div>
+
+<div class="credit-box">文中游戏截图与美术图来自 CAPCOM 官方公开素材，致敬卡普空的科幻新尝试，仅供交流分享，如有侵权请联系我删除。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

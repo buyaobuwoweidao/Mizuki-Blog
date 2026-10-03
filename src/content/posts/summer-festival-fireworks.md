@@ -8,6 +8,27 @@ image: /assets/covers/summer-fireworks.jpg
 draft: false
 ---
 
+<style>
+h2{color:#e8552e;text-shadow:0 0 8px rgba(232,85,46,.5),0 0 22px rgba(232,85,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#e6a23c;text-shadow:0 0 7px rgba(230,162,60,.5),0 0 18px rgba(230,162,60,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(232,85,46,.35),0 0 14px rgba(232,85,46,.2)}to{text-shadow:0 0 11px rgba(232,85,46,.65),0 0 26px rgba(232,85,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e8552e;font-weight:600}
+.gentle-open{color:#e8552e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(232,85,46,.08);border-left:4px solid #e8552e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(230,162,60,.08);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(232,85,46,.06);border:1px solid rgba(232,85,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e8552e}
+.credit-box{background:rgba(230,162,60,.07);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(232,85,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎆 夏末的夜里，陪我聊聊那夜炸开的满天花火。</div>
+
 ## 夏日祭为什么是神 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ 夏日祭赛高
 
 如果你问一个二次元爱好者，动画里最经典的场景是什么，答案里大概率会有"夏日祭"。 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
@@ -16,7 +37,7 @@ draft: false
 
 我认真想过这个问题：为什么夏日祭在动画里出现的频率这么高，却从来不会让人觉得腻？
 
-后来我想明白了。因为夏日祭本身，就是"青春"这个词最浓缩的具象化。
+后来我想明白了。因为夏日祭本身，就是<span class="hl-theme">"青春"这个词最浓缩的具象化</span>。
 
 - 它是暑假的尾巴，是"夏天就要结束了"的提醒。
 - 它是告白的高发地，是"再不开口就来不及了"的契机。
@@ -41,7 +62,7 @@ draft: false
 
 《月色真美》的最后一集，安昙和小太郎在夏日祭的烟火下重逢，一句"我喜欢你"终于说出口，看得人眼泪汪汪。
 
-这些告白之所以动人，是因为夏日祭给了它们一个最好的舞台：人潮是最好的掩护，烟花是最好的背景，而"再不告白夏天就结束了"的紧迫感，是最好的催化剂。
+这些告白之所以动人，是因为夏日祭给了它们一个最好的舞台：人潮是最好的掩护，烟花是最好的背景，而<span class="hl-red">"再不告白夏天就结束了"的紧迫感</span>，是最好的催化剂。
 
 ### 捞金鱼与苹果糖
 
@@ -51,13 +72,15 @@ draft: false
 
 苹果糖则是最上镜的摊位零食——红彤彤的糖衣裹着苹果，在灯光下闪着光泽，几乎每部作品的夏日祭都会给苹果糖一个特写。
 
+---
+
 ## 我记忆里的"夏日祭"
 
 说了这么多动画里的夏日祭，其实我自己也有一段相关的记忆。
 
 那是我第一次参加本地举办的夏日祭活动——虽然不是日本那种正宗的祭典，但主办方很用心地复刻了氛围：灯笼、摊位、和风装饰、晚上的小型烟花表演。
 
-我记得那天傍晚，夕阳还没完全落下，灯笼先亮了起来。我穿着新买的浴衣（虽然只是在网上随便买的便宜款），手里举着一根苹果糖，站在人群里，突然觉得动画里的场景是真的可以走进现实的。
+我记得那天傍晚，夕阳还没完全落下，灯笼先亮了起来。我穿着新买的浴衣（虽然只是在网上随便买的便宜款），手里举着一根苹果糖，站在人群里，突然觉得<span class="hl-theme">动画里的场景是真的可以走进现实的</span>。
 
 晚上放烟花的时候，人群欢呼声、烟花炸开的闷响、空气中残留的硫磺味混在一起。我抬头看了一整场，脖子都酸了，但心里特别满足。
 
@@ -105,7 +128,7 @@ draft: false
 
 夏日的傍晚，天色将暗未暗，祭典的灯笼刚刚亮起。这个时候站在人群里，看着周围的热闹，反而会生出一种很奇妙的安静感——仿佛整个世界都在庆祝，而你的心事，只有你自己知道。
 
-动画里那些"在夏日祭上鼓起勇气告白""在烟花下偷偷牵起手""在人潮中寻找某个身影"的瞬间，之所以那么动人，就是因为它们精准地抓住了这种"热闹与孤独并存"的心情。
+动画里那些"在夏日祭上鼓起勇气告白""在烟花下偷偷牵起手""在人潮中寻找某个身影"的瞬间，之所以那么动人，就是因为它们精准地抓住了这种<span class="hl-red">"热闹与孤独并存"</span>的心情。
 
 对我来说，夏日祭大概就是这样一个存在：它承载着青春里最明亮的热闹，也收藏着青春里最隐秘的心事。
 
@@ -117,8 +140,10 @@ draft: false
 
 你可以挑一部夏日祭名场面的动画，在空调房里重温。可以约上朋友，看一场烟火大会的直播。甚至可以像我一样，简单买点零食，把动画里的夏日祭"搬"到屏幕上。
 
-反正夏日祭这种东西，看一百遍，还是会心动第一百零一遍。
+反正夏日祭这种东西，看一百遍，还是会心动第一百零一遍。 🎐
 
-::note
-下一篇文章打算写"季节与追番"——聊聊我是怎么跟着季节换番看的。如果你也有类似的习惯，欢迎在评论区分享。
-::
+<div class="chatter-box">🎆 下一篇文章打算写"季节与追番"——聊聊我是怎么跟着季节换番看的。如果你也有类似的习惯，欢迎在评论区分享。</div>
+
+<div class="gentle-open">好了，今天就聊到这里，愿你也能等到属于自己的那场花火。下次见。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

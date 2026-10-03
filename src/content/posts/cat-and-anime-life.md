@@ -8,6 +8,27 @@ image: /assets/covers/cat-friend.jpg
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🐱 傍晚路过便利店，又碰见团子了，跟你慢慢说。</div>
+
 ## 团子：附近的小猫 (=^･ω･^=)
 
 先说清楚：我**没有养猫**。我家附近有一只小猫，我单方面给它起了个名字，叫**团子**。 (=^･ω･^=)
@@ -28,7 +49,7 @@ draft: false
 - **投喂的默契**：偶尔带根猫条或小鱼干，它闻着味就跑过来了，吃完就走，非常潇洒
 - **想摸就摸**：它心情好的时候让摸，心情不好就甩尾巴走猫——尊重猫的意愿 (´-ω-`)
 
-我管这叫"云撸猫"：不是我的猫，但快乐是我的。
+我管这叫"云撸猫"：<span class="hl-theme">不是我的猫，但快乐是我的。</span>
 
 ## 动画里的猫，我全都懂
 
@@ -60,7 +81,7 @@ draft: false
 
 ### 都需要"温柔"
 
-喜欢二次元的人，大多有一颗温柔的心——愿意共情虚构的角色，愿意为一场虚构的离别掉眼泪。而遇见团子，是把这份温柔用在现实里：它怕人，我就蹲远一点；它想被摸，我才伸手。温柔是双向的。
+喜欢二次元的人，大多有一颗温柔的心——愿意共情虚构的角色，愿意为一场虚构的离别掉眼泪。而遇见团子，是把这份温柔用在现实里：它怕人，我就蹲远一点；它想被摸，我才伸手。<span class="hl-purple">温柔是双向的。</span>
 
 ### 都是"避难所"
 
@@ -75,7 +96,7 @@ draft: false
 - 它趴在墙头的时候，我觉得它像动画里的猫妖，下一秒就要开口说话。
 - 它是我博客里的常客——这篇文章里，它也要有姓名。
 
-遇见团子这件事，和追番一样，是我生活里稳定的快乐来源。
+遇见团子这件事，和追番一样，<span class="hl-theme">是我生活里稳定的快乐来源。</span>
 
 ## 团子教会我的事
 
@@ -87,7 +108,7 @@ draft: false
 
 ### 珍惜
 
-每次遇见团子，我都会想：今天它也在啊，真好。因为不是我的猫，所以每一次遇见都值得珍惜——就像生命中那些美好的偶然一样。
+每次遇见团子，我都会想：今天它也在啊，真好。因为不是我的猫，所以<span class="hl-theme">每一次遇见都值得珍惜</span>——就像生命中那些美好的偶然一样。
 
 ### 温柔
 
@@ -113,7 +134,7 @@ draft: false
 
 ### 猫与创作
 
-最后，团子还是很好的"创作灵感"。我写文章卡壳的时候，就会想想团子蹲在墙头的画面——那种"不管世界怎样，我都要躺在最舒服的地方"的态度，本身就是一种很好的提醒：生活不用太紧张，舒服就好。
+最后，团子还是很好的"创作灵感"。我写文章卡壳的时候，就会想想团子蹲在墙头的画面——那种"不管世界怎样，我都要躺在最舒服的地方"的态度，本身就是一种很好的提醒：<span class="hl-green">生活不用太紧张，舒服就好。</span>
 
 ## 尾声：团子今天的观后感
 
@@ -123,6 +144,16 @@ draft: false
 
 猫和二次元，一个是现实里的偶遇，一个是屏幕里的世界。我没养猫，但我很幸运，在附近遇见了团子。
 
-::note
-写团子写得停不下来，差点忘了今天原本想写的主题。如果你也遇到过附近的小猫，或者也喜欢动画里的猫，欢迎来评论区聊聊——说不定我们遇见过同一只猫呢。
-::
+<div class="chatter-box">🐾 写团子写得停不下来，差点忘了今天原本想写的主题。如果你也遇到过附近的小猫，或者也喜欢动画里的猫，欢迎来评论区聊聊——说不定我们遇见过同一只猫呢。</div>
+
+<div class="link-box">
+<p><strong>猫老师的出处 🐈</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ss1660" target="_blank" rel="noopener noreferrer">《夏目友人帐》B 站番剧页</a></li>
+<li><a href="https://www.natsume-anime.jp/" target="_blank" rel="noopener noreferrer">《夏目友人帐》动画官方站</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">团子今天也在墙头晒太阳，下次见。☀️</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

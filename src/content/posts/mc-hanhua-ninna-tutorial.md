@@ -9,6 +9,27 @@ draft: false
 hot: true
 ---
 
+<style>
+h2{color:#22a04a;text-shadow:0 0 8px rgba(34,160,74,.5),0 0 22px rgba(34,160,74,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#1fc6a8;text-shadow:0 0 7px rgba(31,198,168,.45),0 0 18px rgba(31,198,168,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(34,160,74,.35),0 0 14px rgba(34,160,74,.2)}to{text-shadow:0 0 11px rgba(34,160,74,.65),0 0 26px rgba(34,160,74,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#22a04a;font-weight:600}
+.gentle-open{color:#22a04a;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(34,160,74,.08);border-left:4px solid #22a04a;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(31,198,168,.08);border-left:4px solid #1fc6a8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(34,160,74,.06);border:1px solid rgba(34,160,74,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#22a04a}
+.credit-box{background:rgba(31,198,168,.07);border-left:4px solid #1fc6a8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(34,160,74,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🍀 如果你也曾对着满屏英文的整合包发呆，这篇就是写给你的。</div>
+
 :::tip 先说结论 (人´∀｀)
 玩《我的世界》整合包的朋友应该都经历过这种崩溃：千辛万苦下好一个超棒的整合包，进游戏一看——满屏英文，任务书看不懂，装备属性看不懂，连个合成表都要对着字典查。今天给大家介绍一位专治这种"英文恐惧症"的宝藏 UP 主——**柠娜**，她的汉化教程 48 万播放，是真的救命 (´▽`)
 :::
@@ -25,7 +46,7 @@ hot: true
 
 最后只能一边开着翻译软件一边玩，体验直接砍半 (´-ω-`)
 
-更难受的是，很多整合包的核心玩法恰恰藏在任务书和剧情里——看不懂，等于白玩。
+更难受的是，很多整合包的核心玩法恰恰藏在任务书和剧情里——<span class="hl-red">看不懂，等于白玩</span>。
 
 ## 宝藏 UP 主：柠娜 (๑•̀ㅂ•́)و✧
 
@@ -33,7 +54,7 @@ hot: true
 
 先看看她的个人简介，一眼就被圈粉了：
 
-> "看看我！！！ 10 年 MC 老玩家，现常研究 AI 自动汉化。整合包汉化补丁已制作大部分（将达到全面）…… 良心 up，狠狠关注"
+<div class="quote-box">"看看我！！！ 10 年 MC 老玩家，现常研究 AI 自动汉化。整合包汉化补丁已制作大部分（将达到全面）…… 良心 up，狠狠关注"</div>
 
 几个关键词，全是含金量：
 
@@ -42,7 +63,7 @@ hot: true
 - **汉化补丁已制作大部分**：市面上叫得上名字的整合包，几乎都能在她那找到汉化补丁
 - **自建汉化站**：为了方便大家下载，还自己搭了汉化分享站，整合包名字一搜就能找到对应汉化补丁
 
-最难得的是，她自称"大学牲"（大学生），一边上学一边做汉化，还这么高产——**这才是真正的用爱发电** (๑˃̵ᴗ˂̵)و
+最难得的是，她自称"大学牲"（大学生），一边上学一边做汉化，还这么高产——<span class="hl-green">**这才是真正的用爱发电**</span> (๑˃̵ᴗ˂̵)و
 
 ## 保姆级教程：5 分钟搞定汉化 (・ω・)ノ
 
@@ -63,7 +84,7 @@ hot: true
 
 可能有人觉得："英文就英文呗，玩多了就认识了。"
 
-但说实话，**汉化不只是"看懂"，更是"沉浸"**：
+但说实话，<span class="hl-theme">**汉化不只是"看懂"，更是"沉浸"**</span>：
 
 - 任务书汉化 → 剧情看得懂，主线玩得进去
 - 装备汉化 → 不用反复查词，build 搭配一目了然
@@ -91,7 +112,7 @@ hot: true
 
 ## 结尾碎碎念 (´▽`)
 
-最后说点心里话。
+最后说点心里话。🌙
 
 MC 圈有很多默默付出的人——整合包作者、材质作者、汉化作者、教程 UP 主，他们很多人不图回报，只是想让更多人玩得开心。柠娜就是其中之一。
 
@@ -106,3 +127,17 @@ MC 圈有很多默默付出的人——整合包作者、材质作者、汉化�
 ---
 
 *本文所有信息均来自 B 站公开页面：柠娜个人空间（UID 383989569）及视频《周末MC梦碎？整合包没汉化别慌！》（BV1MKuRzgEK7），数据截至 2026-10-02。*
+
+<div class="link-box">
+<p><strong>相关链接 🍀</strong></p>
+<ul>
+<li><a href="https://space.bilibili.com/383989569" target="_blank" rel="noopener noreferrer">柠娜的 B 站个人空间</a></li>
+<li><a href="https://www.bilibili.com/video/BV1MKuRzgEK7/" target="_blank" rel="noopener noreferrer">保姆级汉化教程视频（BV1MKuRzgEK7）</a></li>
+</ul>
+</div>
+
+<div class="credit-box">文中视频截图与汉化效果演示来自 UP 主柠娜的 B 站公开内容，致敬她默默做 AI 汉化的用心，仅供交流分享，如有侵权请联系我删除。</div>
+
+<div class="gentle-open">好了，今天就安利到这里，希望你的下一个整合包不再满屏英文。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

@@ -9,6 +9,27 @@ draft: false
 hot: true
 ---
 
+<style>
+h2{color:#c86bbf;text-shadow:0 0 8px rgba(200,107,191,.5),0 0 22px rgba(200,107,191,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#d47a8a;text-shadow:0 0 7px rgba(212,122,138,.5),0 0 18px rgba(212,122,138,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(200,107,191,.35),0 0 14px rgba(200,107,191,.2)}to{text-shadow:0 0 11px rgba(200,107,191,.65),0 0 26px rgba(200,107,191,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#c86bbf;font-weight:600}
+.gentle-open{color:#c86bbf;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(200,107,191,.08);border-left:4px solid #c86bbf;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(212,122,138,.08);border-left:4px solid #d47a8a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(200,107,191,.06);border:1px solid rgba(200,107,191,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#c86bbf}
+.credit-box{background:rgba(212,122,138,.07);border-left:4px solid #d47a8a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(200,107,191,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌸 聊聊我这些年，是怎么一步步把桌面喂饱的。</div>
+
 ## 一切的开始：一张分辨率不对的图 (｡♥‿♥｡) 壁纸收藏之路
 
 说起来有点好笑，我的壁纸收藏之路，起点是一张分辨率只有 720p 的《未闻花名》同人图。 (｡♥‿♥｡)
@@ -31,7 +52,7 @@ hot: true
 - 写作业写到烦躁，瞥见屏幕角落那只抱着团子的小动物，嘴角会不自觉翘起来。
 - 甚至只是等待程序启动的那几秒，看着喜欢的画面，都觉得等待有了意义。
 
-所以说，壁纸是二次元生活中最便宜的快乐——它不需要你花钱买手办、不需要抽卡出货，只需要一张好图，就能让普通的电子设备变得像"自己的房间"。
+所以说，<span class="hl-theme">壁纸是二次元生活中最便宜的快乐</span>——它不需要你花钱买手办、不需要抽卡出货，只需要一张好图，就能让普通的电子设备变得像"自己的房间"。
 
 ## 收藏壁纸的几个阶段
 
@@ -47,7 +68,7 @@ hot: true
 
 随着审美提高，开始懂得挑图了。分辨率低于 1080p 的不收，画风不合心意的不收，水印明显的不收，构图草率的不收。
 
-这个阶段最大的收获，是终于明白"壁纸不是越多越好，而是越精越好"。一张完美的壁纸，胜过一百张平庸的图。
+这个阶段最大的收获，是终于明白<span class="hl-theme">"壁纸不是越多越好，而是越精越好"</span>。一张完美的壁纸，胜过一百张平庸的图。
 
 我给自己定了几条不成文的标准：
 
@@ -63,6 +84,8 @@ hot: true
 我会按画风分（唯美系、赛璐璐系、厚涂系、像素系），按题材分（日常系、战斗系、风景系、人物系），按用途分（桌面壁纸、手机壁纸、锁屏、头像、朋友圈背景），还会给每张图标注来源和作者名。
 
 听起来很麻烦对吧？但做习惯了之后，你会发现这是一件非常治愈的事。就像给自己的数字生活建立了一座美术馆，每一张图都是精心挑选后挂上去的画。
+
+---
 
 ## 我常用的壁纸来源
 
@@ -180,8 +203,19 @@ hot: true
 - 壁纸是拿来用的，不是拿来囤的，定期换一换，让喜欢的画面真正走进你的日常。
 - 最后，也是最重要的——收藏再多别人的图，都不如偶尔自己动手，画一张属于你的"独一无二"。
 
-我的壁纸之路还在继续，图库也还在慢慢生长。说不定下一次整理的时候，又会有新的故事可以写。
+我的壁纸之路还在继续，图库也还在慢慢生长。说不定下一次整理的时候，又会有新的故事可以写。 ✨
 
-::note
-这篇文章原本是想写"壁纸推荐清单"的，结果写着写着变成了收藏心路。如果你想要具体的壁纸推荐，可以留言告诉我，下一篇就专门写一期好图推荐。
-::
+<div class="chatter-box">🖼️ 这篇文章原本是想写"壁纸推荐清单"的，结果写着写着变成了收藏心路。如果你想要具体的壁纸推荐，可以留言告诉我，下一篇就专门写一期好图推荐。</div>
+
+<div class="link-box">
+<p><strong>常用壁纸来源 🎐</strong></p>
+<ul>
+<li><a href="https://www.pixiv.net/" target="_blank" rel="noopener noreferrer">Pixiv（二次元插画大本营）</a></li>
+<li><a href="https://wallhaven.cc/" target="_blank" rel="noopener noreferrer">Wallhaven（老牌高清壁纸站）</a></li>
+<li><a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/" target="_blank" rel="noopener noreferrer">Wallpaper Engine（Steam 动态壁纸）</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">好了，今天就聊到这里，愿你的每一块屏幕都住着喜欢的画面。下次见。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

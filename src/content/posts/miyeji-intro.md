@@ -8,9 +8,30 @@ image: /assets/mobile-banner/1.webp
 draft: false
 ---
 
+<style>
+h2{color:#2a6fd4;text-shadow:0 0 8px rgba(42,111,212,.5),0 0 22px rgba(42,111,212,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#38bdf8;text-shadow:0 0 7px rgba(56,189,248,.5),0 0 18px rgba(56,189,248,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(42,111,212,.35),0 0 14px rgba(42,111,212,.2)}to{text-shadow:0 0 11px rgba(42,111,212,.65),0 0 26px rgba(42,111,212,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#2a6fd4;font-weight:600}
+.gentle-open{color:#2a6fd4;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(42,111,212,.08);border-left:4px solid #2a6fd4;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(56,189,248,.08);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(42,111,212,.06);border:1px solid rgba(42,111,212,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#2a6fd4}
+.credit-box{background:rgba(56,189,248,.07);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(42,111,212,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🕯️ 深夜电子羊尾不知道玩啥？来这个藏满小世界的网站逛一逛。</div>
+
 ## 先一句话说清：谜页集是什么 (｡•̀ᴗ-)✧
 
-**谜页集（miyeji.cn）是一个收集"网页互动解谜与互动游戏"的网站。** 在这里能看到各种作者用网页做出来的小游戏、互动小说、解谜作品——关键是**全都不用下载**，浏览器打开就能玩，玩完关掉走人，非常清爽 (´▽｀)
+**谜页集（miyeji.cn）是一个收集"网页互动解谜与互动游戏"的网站。** 在这里能看到各种作者用网页做出来的小游戏、互动小说、解谜作品——关键是**<span class="hl-theme">全都不用下载</span>**，浏览器打开就能玩，玩完关掉走人，非常清爽 (´▽｀)
 
 网站首页写着"现实互动解谜与网页互动游戏入口"，近 24 小时就有近两万次作品探索。上面还有"今天玩什么"的随机推荐，不知道玩啥的时候点一下，命运会替你决定（笑）。
 
@@ -18,7 +39,7 @@ draft: false
 
 其实入坑的契机很偶然——有阵子被"电子羊尾"困扰，打开 Steam 翻来翻去都提不起劲，就想着找点"轻量"的东西。然后不知道从哪条友链摸到了谜页集，随手点开一部作品，结果一坐就是两小时 (；´Д`)
 
-那种感觉很难形容：**它没有 3A 大作的大场面，也没有抽卡氪金的钩子，就是安安静静地给你讲一个故事、出一个谜题，让你在浏览器里慢慢探索。** 就像小时候打开一个网页小游戏一样纯粹。
+那种感觉很难形容：<span class="hl-blue">**它没有 3A 大作的大场面，也没有抽卡氪金的钩子，就是安安静静地给你讲一个故事、出一个谜题，让你在浏览器里慢慢探索。**</span> 就像小时候打开一个网页小游戏一样纯粹。
 
 ## 我玩过的几部作品 (≧▽≦)
 
@@ -26,7 +47,7 @@ draft: false
 
 黑白复古海报，雪地砖房，一对青年男女。宣传语是"河开了很多次，他只答应过这一次"。
 
-这是我在谜页集玩的第一部作品。作者从旧电脑与家书里拼起一段含蓄而完整的东北亲情——玩家要在旧文件和信件中翻找线索，拼出一个跨越几十年的故事。玩完眼眶有点热，那种"从前车马慢"的温情，很难在别处体会到 (´；ω；`)
+这是我在谜页集玩的第一部作品。作者从旧电脑与家书里拼起一段含蓄而完整的东北亲情——玩家要在旧文件和信件中翻找线索，拼出一个跨越几十年的故事。玩完眼眶有点热，那种<span class="hl-blue">"从前车马慢"的温情</span>，很难在别处体会到 (´；ω；`)
 
 ![呼兰爱情故事 w-70%](/Mizuki-Blog/images/posts/miyeji-hulan.jpg)
 
@@ -53,8 +74,21 @@ draft: false
 - **类型丰富**：解谜、互动小说、时间管理、文字冒险……总有一款适合你
 - **短小精悍**：很多作品一两个小时就能通关，适合碎片时间，也适合深夜安静地玩
 
-如果你也喜欢"小而美"的东西，或者正在找一些能让你重新感受到"游戏"最初乐趣的作品，强烈推荐去谜页集逛逛。说不定某个藏在网页里的小世界，也在等你敲门 (´▽`ʃ♡ƪ)
+如果你也喜欢"小而美"的东西，或者正在找一些能让你重新感受到"游戏"最初乐趣的作品，强烈推荐去谜页集逛逛。说不定<span class="hl-theme">某个藏在网页里的小世界，也在等你敲门</span> (´▽`ʃ♡ƪ)
 
 ---
 
 *本篇提到的站点信息来自谜页集官网（miyeji.cn），作品热度数据为写稿当天所见。*
+
+<div class="gentle-open">✨ 好了，今晚的网页小世界就逛到这里，愿你也能撞见一份不期而遇的温柔。</div>
+
+<div class="link-box">
+<p><strong>相关链接 🔗</strong></p>
+<ul>
+<li><a href="https://miyeji.cn" target="_blank" rel="noopener noreferrer">谜页集官网（miyeji.cn）</a></li>
+</ul>
+</div>
+
+<div class="credit-box">文中作品配图来自谜页集及各作者公开宣传图，致敬每一位认真做网页小游戏的创作者，仅供交流分享，如有侵权请联系我删除。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

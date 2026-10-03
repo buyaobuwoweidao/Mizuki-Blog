@@ -11,11 +11,32 @@ priority: 1
 hot: true
 ---
 
+<style>
+h2{color:#d4282d;text-shadow:0 0 8px rgba(212,40,45,.5),0 0 22px rgba(212,40,45,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#e6a23c;text-shadow:0 0 7px rgba(230,162,60,.5),0 0 18px rgba(230,162,60,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(212,40,45,.35),0 0 14px rgba(212,40,45,.2)}to{text-shadow:0 0 11px rgba(212,40,45,.65),0 0 26px rgba(212,40,45,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#d4282d;font-weight:600}
+.gentle-open{color:#d4282d;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(212,40,45,.08);border-left:4px solid #d4282d;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(230,162,60,.08);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(212,40,45,.06);border:1px solid rgba(212,40,45,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#d4282d}
+.credit-box{background:rgba(230,162,60,.07);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(212,40,45,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🇨🇳 十月一日，想认认真真地说一句祝福。</div>
+
 ## 十月一日，先说一句：生日快乐 (≧▽≦)
 
-今天是国庆节，窗外的阳光很好，街道上飘着红旗，小区里有人放起了《我和我的祖国》。
+今天是国庆节，窗外的阳光很好，街道上飘着红旗，小区里有人放起了《我和我的祖国》。🎆
 
-作为一个普普通通的、喜欢二次元的年轻人，我想在这个特殊的日子，认认真真地写点什么——不是任务，不是跟风，就是单纯地想对种花家说一句：**生日快乐，山河无恙。**
+作为一个普普通通的、喜欢二次元的年轻人，我想在这个特殊的日子，认认真真地写点什么——不是任务，不是跟风，就是单纯地想对种花家说一句：<span class="hl-theme">**生日快乐，山河无恙。**</span>
 
 ## 那些"理所当然"的幸福
 
@@ -43,14 +64,11 @@ hot: true
 
 一半给祖国——
 
-> 愿山河无恙，国泰民安；
-> 愿盛世如愿，岁岁年年。
+<div class="quote-box">愿山河无恙，国泰民安；<br>愿盛世如愿，岁岁年年。</div>
 
 另一半给每一个平凡的你和我——
 
-> 愿你我都能在和平的时光里，
-> 追自己的梦，爱自己喜欢的人，
-> 把每一个普通的日子，过成闪闪发光的样子 (｡•̀ᴗ-)✧
+<div class="quote-box">愿你我都能在和平的时光里，<br>追自己的梦，爱自己喜欢的人，<br>把每一个普通的日子，过成闪闪发光的样子 (｡•̀ᴗ-)✧</div>
 
 ## 种花家的明天会更好
 
@@ -60,4 +78,15 @@ hot: true
 
 **种花家，越来越好。我们，一起加油 (๑•̀ㅂ•́)و✧**
 
-国庆快乐！愿山河无恙，愿盛世如愿，愿我们都能记得来时的路。
+国庆快乐！愿山河无恙，愿盛世如愿，愿我们都能记得来时的路。 🎇
+
+<div class="link-box">
+<p><strong>相关链接 🐰</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep1438626" target="_blank" rel="noopener noreferrer">《那年那兔那些事儿》B 站官方番剧页</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">好了，祝福送到，愿我们的日子都越来越好。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

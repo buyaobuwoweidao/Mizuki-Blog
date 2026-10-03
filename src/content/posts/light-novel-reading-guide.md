@@ -8,17 +8,38 @@ image: /assets/anime/lkls.webp
 draft: false
 ---
 
+<style>
+h2{color:#e6a23c;text-shadow:0 0 8px rgba(230,162,60,.5),0 0 22px rgba(230,162,60,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#d97706;text-shadow:0 0 7px rgba(217,119,6,.5),0 0 18px rgba(217,119,6,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(230,162,60,.35),0 0 14px rgba(230,162,60,.2)}to{text-shadow:0 0 11px rgba(230,162,60,.65),0 0 26px rgba(230,162,60,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e6a23c;font-weight:600}
+.gentle-open{color:#e6a23c;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(230,162,60,.08);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(217,119,6,.08);border-left:4px solid #d97706;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(230,162,60,.06);border:1px solid rgba(230,162,60,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e6a23c}
+.credit-box{background:rgba(217,119,6,.07);border-left:4px solid #d97706;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(230,162,60,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">📖 泡杯茶，聊聊纸页之间那个比动画更辽阔的世界。</div>
+
 ## 动画之外的另一个世界 (´｡• ᵕ •｡`) 纸页间的另一个世界
 
 熟悉我博客的朋友应该知道，我是个重度动画爱好者，番剧页面里塞满了各种作品。 (´｡• ᵕ •｡`)
 
-但很多人可能不知道，我的"二次元浓度"有一半其实来自另一个渠道——轻小说。
+但很多人可能不知道，我的"二次元浓度"有一半其实来自另一个渠道——<span class="hl-theme">轻小说</span>。
 
 说来也巧，我开始读轻小说的契机，是因为一部动画"不够看"。
 
 那是一部我很喜欢的作品，动画只有十二集，看完之后意犹未尽，满脑子都是"后来呢？后来怎么样了？"。当时朋友说了一句："你可以去看原作啊，原作已经出到十几卷了。"
 
-于是，我人生中的第一本轻小说就这样到手了。从那天起，我的阅读世界里多了一扇门，而门后的世界，远比我想象的辽阔。
+于是，我人生中的第一本轻小说就这样到手了。从那天起，我的阅读世界里多了一扇门，而<span class="hl-blue">门后的世界，远比我想象的辽阔</span>。
 
 ## 轻小说到底是什么
 
@@ -45,7 +66,7 @@ draft: false
 
 ### 更完整的世界观
 
-动画改编通常只覆盖原作的一部分内容，很多设定和支线都会被砍掉。而原作小说会把世界观铺得很完整——那些动画里没讲清楚的设定，在书里都能找到答案。
+动画改编通常只覆盖原作的一部分内容，很多设定和支线都会被砍掉。而原作小说会把世界观铺得很完整——<span class="hl-purple">那些动画里没讲清楚的设定，在书里都能找到答案</span>。
 
 ### 作者的原味
 
@@ -55,7 +76,7 @@ draft: false
 
 说了这么多，肯定有人想问：那第一本到底该读什么？
 
-我的建议是：**从你喜欢的动画的原作开始。**
+我的建议是：<span class="hl-red">**从你喜欢的动画的原作开始。**</span>
 
 原因很简单：你已经知道这个故事有趣，读起来不会踩雷；而原作和动画的差异，会给你带来"原来还有这种细节"的新鲜感。
 
@@ -74,7 +95,7 @@ draft: false
 
 ### 别怕中途弃书
 
-很多人读书有"一定要读完"的执念，但轻小说真的不用。不合口味就换一本，书架那么大，总有一本适合你。
+很多人读书有"一定要读完"的执念，但轻小说真的不用。不合口味就换一本，书架那么大，总有一本适合你。 🍀
 
 ### 关注插画
 
@@ -88,7 +109,7 @@ draft: false
 
 最后聊聊轻小说在我生活中的位置。
 
-工作日的晚上，我喜欢泡一杯茶，坐在书桌前读半小时轻小说。手机静音，窗帘拉上，台灯调到最舒服的亮度——这种时候，一整天的疲惫都会慢慢沉淀下来。
+工作日的晚上，我喜欢泡一杯茶，坐在书桌前读半小时轻小说。手机静音，窗帘拉上，台灯调到最舒服的亮度——这种时候，一整天的疲惫都会慢慢沉淀下来。 ☕
 
 周末则更奢侈一点：找个安静的咖啡馆，点一杯拿铁，把最近在读的一卷轻小说摊开，一坐就是一下午。
 
@@ -135,16 +156,18 @@ draft: false
 - 无聊发呆时，读轻松搞笑系，笑一笑时间就过去了。
 - 深夜独处时，读一点带哲思的作品，让文字陪我把心事理清楚。
 
-阅读和追番一样，也是一件"看心情"的事——不必勉强自己读"应该读"的书，读"想读"的书就好。
+阅读和追番一样，也是一件"看心情"的事——不必勉强自己读"应该读"的书，<span class="hl-green">读"想读"的书就好</span>。
 
 ## 尾声
 
-如果你也想试试轻小说，我的建议永远是那句：**从你喜欢的动画的原作开始。**
+如果你也想试试轻小说，我的建议永远是那句：<span class="hl-theme">**从你喜欢的动画的原作开始。**</span>
 
-读完第一卷，如果你觉得"还不错"，那恭喜你，你的阅读世界里又多了一个维度。如果你觉得"也就那样"，那也没关系——阅读本来就是很私人的事，找到适合自己的才最重要。
+读完第一卷，如果你觉得"还不错"，那恭喜你，你的阅读世界里又多了一个维度。如果你觉得"也就那样"，那也没关系——阅读本来就是很私人的事，找到适合自己的才最重要。 📚
 
 ::tip
 阅读轻小说建议从实体书或正版电子书开始，既是对作者的支持，也能享受完整的插画和排版。
 ::
 
-下一篇我想写写"番剧 OST 与配乐"——那些一听前奏就让人起鸡皮疙瘩的动画音乐，敬请期待。
+下一篇我想写写"番剧 OST 与配乐"——那些一听前奏就让人起鸡皮疙瘩的动画音乐，敬请期待。 ✨
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

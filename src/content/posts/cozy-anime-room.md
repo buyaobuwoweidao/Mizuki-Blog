@@ -8,11 +8,32 @@ image: /assets/desktop-banner/3.webp
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🏮 推门进小窝，先把外面的风关在门外。</div>
+
 ## 为什么想有个"二次元小窝" (っ˘ω˘ς) 回到小窝就回血
 
 不知道你有没有这种感觉：在外面奔波一天，回到一个喜欢的房间，疲惫会瞬间被治愈一半。 (っ˘ω˘ς)
 
-我的房间不大，但对我来说，它是全世界最舒服的地方——因为我把整个房间，都布置成了自己喜欢的样子。
+我的房间不大，但对我来说，<span class="hl-theme">它是全世界最舒服的地方</span>——因为我把整个房间，都布置成了自己喜欢的样子。
 
 今天就来分享一下我的"二次元小窝"布置心得，给想折腾房间的朋友一点参考。
 
@@ -62,7 +83,7 @@ draft: false
 - **绿植**：放一两盆好养的小绿植，给二次元浓度过高的房间添一点"活气"
 - **香薰**：淡淡的味道，让房间的记忆里多一个嗅觉维度
 
-这些看似不起眼的小东西，才是房间从"样板间"变成"家"的关键。
+这些看似不起眼的小东西，才是<span class="hl-purple">房间从"样板间"变成"家"的关键。</span>
 
 ## 一个房间，两种模式
 
@@ -72,12 +93,16 @@ draft: false
 - 晚上，关掉主灯，只剩灯带和投影，听歌、发呆、写博客
 - 周末，摆开零食和饮料，把屏幕调亮，过一个完整的"宅家日"
 
-它不完美，但每一件东西都是我自己挑的、自己摆的，所以怎么看都顺眼。
+它不完美，但<span class="hl-theme">每一件东西都是我自己挑的、自己摆的</span>，所以怎么看都顺眼。
 
 ## 结尾
 
-布置房间这件事，其实没有标准答案——**你喜欢的，就是最好的风格。**
+布置房间这件事，其实没有标准答案——**<span class="hl-green">你喜欢的，就是最好的风格。</span>**
 
-不用一步到位，慢慢添置，房间会跟着你的热爱一起成长。
+不用一步到位，<span class="hl-theme">慢慢添置，房间会跟着你的热爱一起成长。</span>
 
 如果你也有自己的小窝布置心得，欢迎在评论区分享。或许，我们还能交换几个好用的氛围灯链接呢。
+
+<div class="gentle-open">愿你的小窝，永远亮着一盏暖灯。🕯️</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

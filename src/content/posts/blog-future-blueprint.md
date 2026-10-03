@@ -9,6 +9,27 @@ draft: false
 hot: true
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌙 国庆假期的夜里，对着这个小窝发了会儿呆，想到哪写到哪。</div>
+
 :::tip 写在前面 (人´∀｀)
 这篇文章不是教程，也不是什么正经的更新日志——就是国庆假期里，我盯着这个小窝发了会儿呆，突然想把"它从哪来、要往哪去、我还欠它什么"都写下来。想到哪写到哪，可能有点乱，就当是和你坐在屏幕前闲聊吧。
 :::
@@ -18,15 +39,13 @@ hot: true
 这博客从无到有的过程，我自己回头看都觉得有点魔幻。用最朴素的方式记一下吧：
 
 - **2026 年 9 月中旬**：突发奇想"我也想有个自己的小窝"。于是从零开始，用 Astro 搭了这套博客框架，一点点把主题改成自己喜欢的样子——那时候它还是个什么都没有的空壳子。
-- **2026 年 9 月下旬**：开始往里面填东西。写了第一篇文章，给相册、番剧、日记这些页面塞满数据，给站里装上了文章编辑器。最开心的瞬间：第一次在手机上打开自己的网站，发现排版没乱 (≧▽≦)
+- **2026 年 9 月下旬**：开始往里面填东西。写了第一篇文章，给相册、番剧、日记这些页面塞满数据，给站里装上了文章编辑器。最开心的瞬间：<span class="hl-theme">第一次在手机上打开自己的网站，发现排版没乱</span> (≧▽≦)
 - **2026 年 9 月 23 日**：写了《附近的小猫团子》。先声明，我没养猫——那是附近偶遇的小猫，我单方面给它起了名，每次路上碰见都超开心。它是我这个博客里第一个"有温度"的故事 (´▽`ʃ♡ƪ)
 - **2026 年 9 月 30 日**：国庆前夜，写了国庆文章和《那年那兔那些事》的观后感。写的时候想起了自己入团时候的事，还有大学里申请入党积极分子的经历——怎么说呢，我这个人是 8 月 1 号建军节生的，跟国家大概有点缘分吧 (๑•̀ㅂ•́)و✧
 - **2026 年 10 月 1 日**：国庆节当天。把给祖国的祝福文置顶了，那兔那篇也置顶了。晚上躺在床上刷手机，突然觉得"有个自己的网站真好"。
 - **2026 年 10 月 2 日**（也就是今天）：MC 专区正式上线！收录了 120+ 个 MC 相关网站，分了 9 组；写了乌托邦探险之旅的 5000 字安利文；把流萤的主题曲、动态、留言板都缝了进来；游戏分享也从 11 款扩到了 37 款，米哈游、网易、腾讯都单独建了组。
 
-:::note 一个小感受 (´-ω-`)
-回头一看，建站不到一个月，从"空壳子"到现在这样，全靠一股"今天不弄完就不睡觉"的劲。这种一点点把喜欢的东西堆进自己角落的感觉，真的会上瘾。
-:::
+<div class="chatter-box">✨ 一个小感受 (´-ω-`)：回头一看，建站不到一个月，从"空壳子"到现在这样，全靠一股"今天不弄完就不睡觉"的劲。这种一点点把喜欢的东西堆进自己角落的感觉，真的会上瘾。</div>
 
 ## 二、一个留了很久的想法：星露谷整合包 (´▽`)ﾉ
 
@@ -38,7 +57,7 @@ hot: true
 - **美化整合**：把像素小人换成立绘、给农场加更多家具和建筑皮肤，游戏瞬间变成"装修模拟器"；
 - **玩法扩展**：更多作物、更多剧情、更多 NPC 互动——种田党的快乐翻倍。
 
-所以我的计划是：专门开一个**星露谷整合包/MOD 分享页**，收集好用的汉化整合、MOD 合集和美化资源，像 MC 专区那样分类整理好，标清楚"适合新手/适合老玩家"。这个想法先立个 flag 放在这里，等我整理好第一批资源就来兑现 (ง •̀_•́)ง
+所以我的计划是：专门开一个**星露谷整合包/MOD 分享页**，收集好用的汉化整合、MOD 合集和美化资源，像 MC 专区那样分类整理好，标清楚"适合新手/适合老玩家"。这个想法<span class="hl-purple">先立个 flag 放在这里</span>，等我整理好第一批资源就来兑现 (ง •̀_•́)ง
 
 ## 三、未完成的目标清单 (・ω・)ノ
 
@@ -84,12 +103,23 @@ hot: true
 
 **关于画画**。其实我还有个一直没往外说的爱好——画画。毕业那年找了一份兼职，攒了点钱买了块平板，从那以后就开始在平板上画。最早是看着别人的作品描，后来慢慢能脱稿画一些了，但想象力是真的不太好，大部分时候还是得找参考。这事儿我从来没跟同学朋友提过，总觉得有点"不务正业"，就一直藏在心里，在家里、在学校，一个人画 (´；ω；`)
 
-**关于游戏**。这个博客的游戏分享已经 37 款了，但我心里清楚，我玩过的远不止这些。从俄国站扒资源玩盗版的日子、后来慢慢补票的日子……玩过的东西多了，就越发觉得"记录"这件事很有意义。
+**关于游戏**。这个博客的游戏分享已经 37 款了，但我心里清楚，我玩过的远不止这些。从俄国站扒资源玩盗版的日子、后来慢慢补票的日子……玩过的东西多了，就越发觉得<span class="hl-theme">"记录"这件事很有意义。</span>
 
-**关于这个小窝**。它大概不会成为什么大网站，也不会有很多人来看。但它是我的——想写什么写什么，想放什么放什么。这大概就是"个人博客"最浪漫的地方吧。
+**关于这个小窝**。它大概不会成为什么大网站，也不会有很多人来看。但它是我的——想写什么写什么，想放什么放什么。这大概就是<span class="hl-theme">"个人博客"最浪漫的地方</span>吧。
 
-:::note
-最后：如果你看到了这里，欢迎去留言板留个言，或者去动态页看看我最近在干什么。也欢迎给我推荐整合包、番剧、游戏——评论区永远欢迎你 (人´∀｀)
-::: 
+<div class="chatter-box">💬 最后：如果你看到了这里，欢迎去留言板留个言，或者去动态页看看我最近在干什么。也欢迎给我推荐整合包、番剧、游戏——评论区永远欢迎你 (人´∀｀)</div> 
 
 就这样，下次更新见 (｡•̀ᴗ-)✧
+
+<div class="link-box">
+<p><strong>随手记 · 用到的工具与提到的游戏 🛠️</strong></p>
+<ul>
+<li><a href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro 官网（这个小窝就是用它搭的）</a></li>
+<li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages（现在挂着小窝的地方）</a></li>
+<li><a href="https://www.stardewvalley.net/" target="_blank" rel="noopener noreferrer">《星露谷物语》官方站（flag 已立，慢慢填）</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">小窝会慢慢长大，我们下次更新见。🌱</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

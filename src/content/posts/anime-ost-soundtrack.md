@@ -8,9 +8,30 @@ image: /assets/music/cover/xryx.webp
 draft: false
 ---
 
+<style>
+h2{color:#1fc6a8;text-shadow:0 0 8px rgba(31,198,168,.5),0 0 22px rgba(31,198,168,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#0ea5e9;text-shadow:0 0 7px rgba(14,165,233,.5),0 0 18px rgba(14,165,233,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(31,198,168,.35),0 0 14px rgba(31,198,168,.2)}to{text-shadow:0 0 11px rgba(31,198,168,.65),0 0 26px rgba(31,198,168,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#1fc6a8;font-weight:600}
+.gentle-open{color:#1fc6a8;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(31,198,168,.08);border-left:4px solid #1fc6a8;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(31,198,168,.06);border:1px solid rgba(31,198,168,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#1fc6a8}
+.credit-box{background:rgba(14,165,233,.07);border-left:4px solid #0ea5e9;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(31,198,168,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎧 耳机里正好放着一段温柔的 OST，那就聊聊声音这件事。</div>
+
 ## 配乐是动画的第二层皮肤 ♪♪(´▽｀) 前奏一响就沦陷
 
-看番这么多年，我渐渐意识到一件事：一部动画能不能让你记住，配乐至少占一半功劳。 ♪♪(´▽｀)
+看番这么多年，我渐渐意识到一件事：<span class="hl-theme">一部动画能不能让你记住，配乐至少占一半功劳。</span> ♪♪(´▽｀)
 
 画面负责"看见"，配乐负责"感受"。当悠扬的钢琴声在关键时刻响起，当熟悉的 OP 前奏在结尾处再次出现，那些画面就不再只是画面，而是变成了刻在心里的记忆。
 
@@ -22,11 +43,11 @@ draft: false
 
 ### 情绪放大器
 
-同样一个拥抱的画面，配上舒缓的钢琴是温情，配上激昂的交响是燃，配上空灵的弦乐是哀伤。配乐决定了观众用什么样的情绪去理解画面。
+同样一个拥抱的画面，配上舒缓的钢琴是温情，配上激昂的交响是燃，配上空灵的弦乐是哀伤。<span class="hl-blue">配乐决定了观众用什么样的情绪去理解画面。</span>
 
 ### 记忆锚点
 
-你有没有过这种经历：偶然听到一段旋律，瞬间想起某部动画的某个场景？这就是配乐的魔力——它是记忆的锚点，把画面、情绪、故事都锁进了旋律里。
+你有没有过这种经历：偶然听到一段旋律，瞬间想起某部动画的某个场景？这就是配乐的魔力——<span class="hl-purple">它是记忆的锚点，把画面、情绪、故事都锁进了旋律里</span>。
 
 ### 叙事的一部分
 
@@ -42,7 +63,7 @@ draft: false
 
 代表作我首推《四月是你的谎言》。这部作品的配乐本身就是角色的一部分——有马公生的钢琴声里，藏着他所有的温柔、痛苦与救赎。尤其是那首贯穿全片的钢琴曲，每次响起，都会让人想起那句"你只需要记住，你弹的每一个音，都在替你说出说不出口的话"。
 
-还有《紫罗兰永恒花园》的 OST，弦乐一响，仿佛能看到薇尔莉特穿着蓝裙走在邮路上，一封封信件从指尖送出。
+还有《紫罗兰永恒花园》的 OST，弦乐一响，仿佛能看到薇尔莉特穿着蓝裙走在邮路上，一封封信件从指尖送出。 🎹
 
 ### 燃系
 
@@ -56,7 +77,7 @@ draft: false
 
 治愈系 OST 适合在疲惫的时候循环。
 
-《摇曳露营△》的配乐就很典型——轻松的木吉他、口哨、铃铛声，仿佛真的坐在富士山脚下晒太阳。《夏目友人帐》的 OST 则是那种"温柔到能融化一切"的感觉，配乐和猫老师的身影一起出现时，整个人都会松弛下来。
+《摇曳露营△》的配乐就很典型——轻松的木吉他、口哨、铃铛声，仿佛真的坐在富士山脚下晒太阳。《夏目友人帐》的 OST 则是那种"温柔到能融化一切"的感觉，配乐和猫老师的身影一起出现时，整个人都会松弛下来。 🍀
 
 ### 空灵系
 
@@ -89,7 +110,7 @@ draft: false
 
 作曲家在创作时，会先看分镜脚本，理解每一场戏的情绪走向，再为关键场景量身定做旋律。有些作曲家还会为角色设计专属的主题动机——某个角色登场时，特定的旋律就会响起，观众听久了，光听旋律就知道"谁来了"。
 
-所以说，配乐不是随随便便的"背景音乐"，它是作曲家们用音符写的另一部动画。
+所以说，配乐不是随随便便的"背景音乐"，<span class="hl-theme">它是作曲家们用音符写的另一部动画</span>。
 
 ## 我的 OST 收藏与播放习惯
 
@@ -130,8 +151,8 @@ draft: false
 
 回想这些年，那些陪我走过无数个深夜的旋律，早就超出了"动画配乐"的范畴——它们是我的情绪出口、我的精神补给、我的记忆收藏夹。
 
-如果你也有私藏的 OST，欢迎在评论区分享。让好听的旋律，继续在我们之间流动。
+如果你也有私藏的 OST，欢迎在评论区分享。让好听的旋律，继续在我们之间流动。 🎵
 
-::note
-下一篇准备写"漫展回忆录"——聊聊我这些年在漫展上的所见所闻，以及那些在人群里闪闪发光的瞬间。
-::
+<div class="chatter-box">🎐 下一篇准备写"漫展回忆录"——聊聊我这些年在漫展上的所见所闻，以及那些在人群里闪闪发光的瞬间。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

@@ -9,6 +9,27 @@ draft: false
 hot: false
 ---
 
+<style>
+h2{color:#2aa855;text-shadow:0 0 8px rgba(42,168,85,.5),0 0 22px rgba(42,168,85,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#7cbb3f;text-shadow:0 0 7px rgba(124,187,63,.5),0 0 18px rgba(124,187,63,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(42,168,85,.35),0 0 14px rgba(42,168,85,.2)}to{text-shadow:0 0 11px rgba(42,168,85,.65),0 0 26px rgba(42,168,85,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#2aa855;font-weight:600}
+.gentle-open{color:#2aa855;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(42,168,85,.08);border-left:4px solid #2aa855;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(124,187,63,.08);border-left:4px solid #7cbb3f;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(42,168,85,.06);border:1px solid rgba(42,168,85,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#2aa855}
+.credit-box{background:rgba(124,187,63,.07);border-left:4px solid #7cbb3f;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(42,168,85,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌻 从 09 年的一缕阳光聊到现在的融合版，慢慢盘点这些陪我们长大的版本。</div>
+
 :::tip 先说结论 (人´∀｀)
 《植物大战僵尸》是我游戏列表里最"老"的那一批——09 年发售，到现在十七年。真正神奇的是：这游戏不但没凉，还靠着一群玩家二创（融合版、杂交版、95 版……）活得比谁都滋润。这篇文章聊聊 PVZ 的版本们，文末把所有下载入口、百科和社区都给你列好，方便入坑 (｡•̀ᴗ-)✧
 :::
@@ -17,7 +38,7 @@ hot: false
 
 说实话，塔防游戏最怕的就是"通关即弃"。原版 PVZ 五十关，加无尽模式，顶多折腾俩月就腻了。但植物大战僵尸不一样——它硬是被玩家社区"玩"成了常青树。
 
-融合版让两个植物能合成一个更离谱的植物，杂交版把植物和僵尸整得面目全非还能继续平衡，95 版把难度拉满让老玩家重新受苦……每出一个版本，B 站就热闹一阵。**原来一个游戏的寿命，可以由玩家自己续。**
+融合版让两个植物能合成一个更离谱的植物，杂交版把植物和僵尸整得面目全非还能继续平衡，95 版把难度拉满让老玩家重新受苦……每出一个版本，B 站就热闹一阵。<span class="hl-green">**原来一个游戏的寿命，可以由玩家自己续。**</span>
 
 这篇文章就把我玩过/在玩的版本和下载渠道整理一下。有喜欢的自己挑，都是玩家们为爱发电做的，有条件记得去支持原作者 (´▽`)ﾉ
 
@@ -67,7 +88,7 @@ B 站 UP 主 **潜艇伟伟迷** 的作品，也是这两年火出圈的一个�
 - **植物大战僵尸中文维基** 与 **灰机 wiki** 的维护者们 —— 图鉴和数据都是他们一点点攒的
 - **pvzhe.com / pvzhybrid.org / 3DM Mod 站** —— 版本资源的中转站
 
-如果没有这些人，PVZ 大概早就停在 2010 年的那批存档里了。是他们让它一直"活着" (´▽`)ﾉ
+如果没有这些人，PVZ 大概早就停在 2010 年的那批存档里了。是他们让它<span class="hl-green">一直"活着"</span> (´▽`)ﾉ
 
 ## 侵权与删除声明
 
@@ -76,3 +97,7 @@ B 站 UP 主 **潜艇伟伟迷** 的作品，也是这两年火出圈的一个�
 ---
 
 *顺便说一句：我也在计划给这个专区加更多版本，有什么好玩的改版，欢迎来留言板安利 (๑•̀ㅂ•́)و✧*
+
+<div class="gentle-open">🌻 好了，PVZ 的版本们就盘点到这里，愿你的花园永远阳光充足、僵尸止步。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

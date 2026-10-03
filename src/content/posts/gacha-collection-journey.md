@@ -9,13 +9,34 @@ draft: false
 hot: true
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">💰 钱包先深呼吸，听我把这段"为热爱花钱"的故事讲完。</div>
+
 ## 一切始于一个"就买一个" (´；ω；`) 钱包：你礼貌吗
 
 入坑二次元收藏的人，大概都说过同一句话："我就买这一个，绝对不买第二个了。" (´；ω；`)
 
 然后就没有然后了。
 
-我的第一个手办，是在一次漫展上冲动入手的。那天人山人海，摊位上摆着一个我很喜欢的角色的 Q 版手办，几百块钱，咬咬牙就买了。回家的路上，我抱着盒子，感觉自己拥有了全世界。
+我的第一个手办，是在一次漫展上冲动入手的。那天人山人海，摊位上摆着一个我很喜欢的角色的 Q 版手办，几百块钱，咬咬牙就买了。回家的路上，我抱着盒子，<span class="hl-theme">感觉自己拥有了全世界。</span>
 
 那一刻我完全没想到，这只是一个开始。
 
@@ -39,7 +60,7 @@ hot: true
 
 手办这东西，一分钱一分货。景品便宜但细节一般，正比例手办贵但做工精细，从发型到衣褶、从眼神到姿势，每一个细节都在还原角色。
 
-我的收藏原则是：**不为"拥有"而买，只为"心动"而买。**
+我的收藏原则是：**<span class="hl-green">不为"拥有"而买，只为"心动"而买。</span>**
 
 - 看到喜欢的角色出了好造型，会反复看官图、看评测
 - 确定自己是真的喜欢，而不是一时冲动，才下单
@@ -53,13 +74,11 @@ hot: true
 
 我的回答是：值。
 
-因为它们不是普通的商品，是**情感的容器**。每一个手办背后，都是一部作品的陪伴、一个角色的共鸣、一段属于我的时间。看着它们，就像翻一本立体的回忆录。
+因为它们不是普通的商品，是**<span class="hl-purple">情感的容器</span>**。每一个手办背后，都是一部作品的陪伴、一个角色的共鸣、一段属于我的时间。看着它们，就像翻一本立体的回忆录。
 
 当然，我也理解为什么有人觉得不值——每个人的快乐来源不同，把钱花在让自己开心的事情上，本身就没有标准答案。
 
-:::note
-理性提醒：收藏要有度。量力而行，不要为了"集齐"而透支生活。真正的热爱，是让收藏成为生活的点缀，而不是负担。
-:::
+<div class="chatter-box">🧡 理性提醒：收藏要有度。量力而行，不要为了"集齐"而透支生活。真正的热爱，是让收藏成为生活的点缀，而不是负担。</div>
 
 ## 收藏小技巧分享
 
@@ -75,6 +94,10 @@ hot: true
 
 从第一个冲动入手的 Q 版手办，到如今满柜子的收藏，这条路我走得很快乐。
 
-二次元收藏的本质，大概就是把对作品的爱，具象成可以触碰的东西。
+二次元收藏的本质，大概就是<span class="hl-theme">把对作品的爱，具象成可以触碰的东西。</span>
 
 如果你也在收藏路上，或者想入坑，欢迎来评论区晒晒你的柜子。我倒要看看，谁的谷子更多（笑）。
+
+<div class="gentle-open">柜子慢慢填，热爱别透支，下次再晒新宝贝。✨</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

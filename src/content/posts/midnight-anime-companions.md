@@ -8,6 +8,27 @@ image: /assets/covers/midnight-phone.jpg
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌙 凌晨两点还没睡的话，这盏灯，陪你把这晚过完。</div>
+
 ## 凌晨两点，我和我的屏幕 (˘ω˘) 凌晨两点见
 
 深夜档动画有个神奇的名字，叫"深夜动画"——因为它的播出时间，本来就在凌晨。 (˘ω˘)
@@ -16,7 +37,7 @@ draft: false
 
 不知道从什么时候开始，我养成了熬夜的习惯。有时候是工作没做完，有时候是纯粹睡不着，更多的时候，是舍不得睡——总觉得夜晚还有太多事情没做，还有太多故事没看完。
 
-于是，凌晨两点的房间里，经常亮着一盏灯，屏幕里放着一部动画，耳机里循环着 OST。窗外的城市安静下来，世界缩小到只剩这一个房间，而屏幕里的世界，反而显得格外辽阔。
+于是，凌晨两点的房间里，经常亮着一盏灯，屏幕里放着一部动画，耳机里循环着 OST。窗外的城市安静下来，<span class="hl-theme">世界缩小到只剩这一个房间</span>，而屏幕里的世界，反而显得格外辽阔。
 
 ## 深夜档动画的魅力
 
@@ -59,7 +80,7 @@ draft: false
 
 后来我想通了——两者都有。有时候是真的睡不着，身体很累但脑子清醒；有时候是舍不得睡，总觉得夜晚的时间才是真正属于自己的。
 
-白天属于工作、属于别人、属于各种不得不做的事。只有深夜，世界安静下来，时间才重新回到自己手里。所以哪怕什么都不做，只是躺着听歌，也觉得这一刻是赚到的。
+白天属于工作、属于别人、属于各种不得不做的事。只有深夜，世界安静下来，<span class="hl-purple">时间才重新回到自己手里。</span>所以哪怕什么都不做，只是躺着听歌，也觉得这一刻是赚到的。
 
 这大概就是为什么，深夜档动画和深夜的观众能互相理解——我们都在用自己的方式，珍惜这段只属于自己的时间。
 
@@ -69,7 +90,7 @@ draft: false
 
 凌晨的城市，路灯还亮着，偶尔有车经过，远处的霓虹灯在雨雾里晕开。这种时候打开一部治愈系动画，会觉得整个世界都是安静的、安全的、属于自己的。
 
-那些在深夜拯救过我的动画和音乐，我大概会记很久。它们像是一盏盏亮在凌晨两点的灯，陪我走过了很多个"睡不着"的夜晚。
+那些在深夜拯救过我的动画和音乐，我大概会记很久。<span class="hl-theme">它们像是一盏盏亮在凌晨两点的灯</span>，陪我走过了很多个"睡不着"的夜晚。
 
 ## 深夜档动画推荐
 
@@ -101,7 +122,7 @@ draft: false
 
 对我来说，深夜的二次元时光，需要一点仪式感才完整：把房间的灯调暗，泡一杯热饮，戴上耳机，选好今晚要看或要听的"对象"，然后郑重其事地按下播放键。
 
-这个过程，就像给自己的夜晚"开了一个场"——从这一刻起，世界是我的，时间是我的，故事也是我的。
+这个过程，就像给自己的夜晚"开了一个场"——从这一刻起，<span class="hl-green">世界是我的，时间是我的，故事也是我的。</span>
 
 仪式感这个东西，听起来矫情，但做起来真的很治愈。尤其是在那些"舍不得睡"的夜晚，一个小小的仪式，就能让整段深夜时光变得值得。
 
@@ -111,8 +132,20 @@ draft: false
 
 如果你也有失眠的习惯，或者也喜欢熬夜，我想说：深夜的二次元时光很美好，但身体也很重要。看一两集就好，听几首歌就好，别把每个夜晚都熬到天亮。
 
-把夜晚还给夜晚，把故事留到明天。晚安，好梦。
+<span class="hl-theme">把夜晚还给夜晚，把故事留到明天。</span>晚安，好梦。
 
 ::tip
 失眠的朋友可以试试"深夜三部曲"：一杯温牛奶、一部治愈系动画、一集《虫师》的配乐。音量调低，亮度调暗，让身体慢慢跟着节奏放松下来。
 ::
+
+<div class="link-box">
+<p><strong>深夜陪伴的几部番 🌌</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/media/md1715/" target="_blank" rel="noopener noreferrer">《虫师》B 站番剧页</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss1660" target="_blank" rel="noopener noreferrer">《夏目友人帐》B 站番剧页</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">今晚就早点放下手机吧，晚安。🌙</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

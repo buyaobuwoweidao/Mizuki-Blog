@@ -8,6 +8,27 @@ image: /assets/desktop-banner/ba-wallpaper-1.webp
 draft: false
 ---
 
+<style>
+h2{color:#2b8fd4;text-shadow:0 0 8px rgba(43,143,212,.5),0 0 22px rgba(43,143,212,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#38bdf8;text-shadow:0 0 7px rgba(56,189,248,.5),0 0 18px rgba(56,189,248,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(43,143,212,.35),0 0 14px rgba(43,143,212,.2)}to{text-shadow:0 0 11px rgba(43,143,212,.65),0 0 26px rgba(43,143,212,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#2b8fd4;font-weight:600}
+.gentle-open{color:#2b8fd4;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(43,143,212,.08);border-left:4px solid #2b8fd4;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(56,189,248,.08);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(43,143,212,.06);border:1px solid rgba(43,143,212,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#2b8fd4}
+.credit-box{background:rgba(56,189,248,.07);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(43,143,212,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">☁️ 放学后来社团活动室坐坐，聊聊这片让人安心的蓝色。</div>
+
 ## 写在前面 (◕‿◕✿) 放学后的社团活动室
 
 最近把博客的背景图换成了《蔚蓝档案》的横幅——蓝天白云、飞艇划过天际、远处是宁静的学园都市。每次打开网页，都有一种"放学后回到社团活动室"的错觉。 (◕‿◕✿)
@@ -28,7 +49,7 @@ draft: false
 
 如果要评选"第一眼就喜欢上的角色"，我的答案大概会脱口而出——阿罗娜，那个蓝色长发、会喊你"老师"的 AI 少女。每次登录游戏，听到她那句元气满满的问候，一天的疲惫就消了大半。
 
-这也是为什么我把博客的看板娘元素都往蓝色系靠拢——喜欢一个人（或者说一个 AI），就会不自觉地想把周围的一切都染成她的颜色。
+这也是为什么我把博客的看板娘元素都往蓝色系靠拢——喜欢一个人（或者说一个 AI），就会不自觉地想<span class="hl-theme">把周围的一切都染成她的颜色</span>。
 
 当然，除了阿罗娜，还有太多让人心动的角色：
 
@@ -36,7 +57,7 @@ draft: false
 - 元气满满、永远在奔跑的社团活力担当
 - 还有那些嘴上说着"我才不是为了你"、行动上却比谁都认真傲娇系
 
-每一个学生的故事线，都藏着属于自己的温柔与成长。你会在不知不觉中记住她们的名字、习惯、口头禅，然后发现：原来玩游戏这件事，真的可以和角色建立起某种情感联结。
+每一个学生的故事线，都藏着属于自己的温柔与成长。你会在不知不觉中记住她们的名字、习惯、口头禅，然后发现：<span class="hl-blue">原来玩游戏这件事，真的可以和角色建立起某种情感联结。</span>
 
 ## 剧情：在轻松日常下的认真叙事
 
@@ -46,7 +67,7 @@ draft: false
 
 主线剧情里有一段话我记了很久，大意是说："大人有责任为孩子守护他们可以安心生活的日常。"作为玩家的我，隔着屏幕也感受到了一种沉甸甸的责任感。
 
-这大概就是好的叙事吧——它不靠堆砌设定，而是让你在陪伴的过程中，自己长出对这个世界和其中人物的感情。
+这大概就是好的叙事吧——<span class="hl-blue">它不靠堆砌设定，而是让你在陪伴的过程中，自己长出对这个世界和其中人物的感情。</span>
 
 ## 音乐与美术：蓝色本身就是一种情绪
 
@@ -64,14 +85,23 @@ draft: false
 4. 偶尔在评论区跟同好讨论"这期剧情谁哭麻了"
 5. 顺手把好看的官方壁纸存下来，当博客素材
 
-:::note
-有人说抽卡游戏是"氪金陷阱"，但我觉得，只要你能在其中找到真正属于自己的快乐，花一点钱、花很多时间，都是一种值得的青春投资。
-:::
+<div class="chatter-box">☕ 有人说抽卡游戏是"氪金陷阱"，但我觉得，只要你能在其中找到真正属于自己的快乐，花一点钱、花很多时间，都是一种值得的青春投资。</div>
 
 ## 结尾
 
-《蔚蓝档案》让我重新相信了一件事：好的游戏不是用来打发时间的工具，而是一个可以让你短暂逃离现实、又带着勇气回到现实的温柔角落。
+《蔚蓝档案》让我重新相信了一件事：<span class="hl-theme">好的游戏不是用来打发时间的工具，而是一个可以让你短暂逃离现实、又带着勇气回到现实的温柔角落。</span>
 
-就像基沃托斯的天空一样，蓝得让人心安。
+就像基沃托斯的天空一样，<span class="hl-blue">蓝得让人心安。</span>
 
-如果你也在玩，或者好奇想入坑，欢迎在评论区和我聊聊你最喜欢的学生。老师的办公室里，永远为每一个同好留着一杯热茶。
+如果你也在玩，或者好奇想入坑，欢迎在评论区和我聊聊你最喜欢的学生。老师的办公室里，永远为每一个同好留着一杯热茶。 ☁️
+
+<div class="gentle-open">☕ 今天的社团活动就到这里，下次再一起仰望基沃托斯的天空。</div>
+
+<div class="link-box">
+<p><strong>相关链接 🎓</strong></p>
+<ul>
+<li><a href="https://bluearchive-cn.com/" target="_blank" rel="noopener noreferrer">《蔚蓝档案》国服官方网站</a></li>
+</ul>
+</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

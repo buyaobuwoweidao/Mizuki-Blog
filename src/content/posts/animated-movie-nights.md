@@ -8,6 +8,27 @@ image: /assets/anime/zsfl.webp
 draft: false
 ---
 
+<style>
+h2{color:#e86fb0;text-shadow:0 0 8px rgba(232,111,176,.5),0 0 22px rgba(232,111,176,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#9955ff;text-shadow:0 0 7px rgba(153,85,255,.45),0 0 18px rgba(153,85,255,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(232,111,176,.35),0 0 14px rgba(232,111,176,.2)}to{text-shadow:0 0 11px rgba(232,111,176,.65),0 0 26px rgba(232,111,176,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e86fb0;font-weight:600}
+.gentle-open{color:#e86fb0;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(232,111,176,.08);border-left:4px solid #e86fb0;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(153,85,255,.08);border-left:4px solid #9955ff;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(232,111,176,.06);border:1px solid rgba(232,111,176,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e86fb0}
+.credit-box{background:rgba(153,85,255,.07);border-left:4px solid #9955ff;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(232,111,176,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🕯️ 周末的深夜，拉上窗帘，我们来聊聊那些反复回味的剧场版。</div>
+
 ## 深夜观影的仪式感 (˘ω˘)……夜里看剧场版，根本停不下来
 
 周末的夜晚，最适合做的事是什么？ ( ｡•̀ᴗ-)✧
@@ -30,13 +51,13 @@ draft: false
 
 新海诚的巅峰之作，当年在电影院看的时候，片尾曲响起的一瞬间，全场安静得能听到呼吸声。
 
-彗星、绳结、时间错位、跨越时空的相遇。这部片子最厉害的地方在于：明明知道结局，每次看到那一声"你的名字是——"，还是会起鸡皮疙瘩。
+彗星、绳结、时间错位、跨越时空的相遇。这部片子最厉害的地方在于：明明知道结局，每次看到那一声"你的名字是——"，<span class="hl-purple">还是会起鸡皮疙瘩</span>。
 
 ### 3. 声之形
 
 和恋爱无关，讲的是欺凌、救赎与和解。
 
-戴着助听器的少女、曾经伤害过她的人、成长中的自我救赎。这部电影看得人很痛，但又很温暖。它让我明白：向伤害过的人说一句"对不起"，需要多大的勇气。
+戴着助听器的少女、曾经伤害过她的人、成长中的自我救赎。这部电影看得人很痛，但又很温暖。它让我明白：<span class="hl-theme">向伤害过的人说一句"对不起"，需要多大的勇气</span>。
 
 ### 4. 你的名字。之后的天气之子
 
@@ -61,9 +82,7 @@ draft: false
 
 它不追求让你"爽"，而是追求让你"记住"。
 
-:::note
-看动画电影的正确姿势：拉上窗帘、关掉手机、戴上耳机。沉浸感，是这部作品最好的打开方式。
-:::
+<div class="chatter-box">🎧 看动画电影的正确姿势：拉上窗帘、关掉手机、戴上耳机。沉浸感，是这部作品最好的打开方式。</div>
 
 ## 我的观影小仪式
 
@@ -75,7 +94,7 @@ draft: false
 4. 戴上耳机，按下播放
 5. 看完不急着关，坐在黑暗里，让片尾曲放完
 
-这一步都不能少，仪式感拉满，快乐加倍。
+这一步都不能少，仪式感拉满，快乐加倍。☕
 
 ## 结尾
 
@@ -84,3 +103,7 @@ draft: false
 它们不着急，不功利，愿意花两个小时，认真讲一个关于成长、爱与告别的故事。
 
 如果你也有反复回味的动画电影，欢迎在评论区告诉我。我的片单，随时准备更新。
+
+<div class="gentle-open">好了，夜也深了，愿你今晚也有一部好电影相伴。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

@@ -8,17 +8,38 @@ image: /assets/music/cover/dazbee.webp
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎧 戴上耳机，聊聊那些一开口就被记住的声音。</div>
+
 ## 从"看番"到"听番" (´▽`ʃ♡ƪ) 声优控集合
 
 不知道从什么时候起，我看动画的习惯变了。 (´▽`ʃ♡ƪ)
 
 以前是盯着字幕看剧情，现在是竖起耳朵听声音。某个角色一开口，心里就会"叮"地一下：这不是上次那个谁吗？
 
-没错，我正式进化成了——声优控。
+没错，我正式进化成了——<span class="hl-theme">声优控</span>。
 
 ## 入坑的契机
 
-我的声优认知启蒙，大概是《命运石之门》里的冈部伦太郎。宫野真守那一嗓子"El Psy Kongroo"，中二得理直气壮、热血得莫名其妙，愣是把一个疯疯癫癫的自称疯狂科学家演出了史诗感。从那一刻我开始意识到：原来声音是可以有"演技"的。
+我的声优认知启蒙，大概是《命运石之门》里的冈部伦太郎。宫野真守那一嗓子"El Psy Kongroo"，中二得理直气壮、热血得莫名其妙，愣是把一个疯疯癫癫的自称疯狂科学家演出了史诗感。从那一刻我开始意识到：<span class="hl-blue">原来声音是可以有"演技"的。</span>
 
 之后就像打开了新世界的大门：
 
@@ -28,11 +49,11 @@ draft: false
 
 ## 声优，才是二次元的"灵魂胶水"
 
-为什么声优这么重要？我的理解是：**画面给了角色一张脸，而声音给了角色一颗心。**
+为什么声优这么重要？我的理解是：<span class="hl-red">**画面给了角色一张脸，而声音给了角色一颗心。**</span>
 
 同一个角色，换了配音，感觉就完全不一样。你会因为声音记住一个角色的性格，也会因为一个声音，对某个角色产生莫名的好感。
 
-这就是声优的魔法——他们用一张嘴，演活了成千上万个不同的人生。
+这就是声优的魔法——他们用一张嘴，演活了成千上万个不同的人生。 ✨
 
 ## 我的"一听就能认出来"清单
 
@@ -44,7 +65,7 @@ draft: false
 - **低音炮反派专业户**：那种带着磁性又有点危险的声线，让人又爱又怕
 - **傲娇系本命**：嘴硬心软的声音演绎，傲娇角色少了她们就少了灵魂
 
-每次在片尾声优表里验证自己的判断，猜对了，就会有一种"我是专业的"的满足感。
+每次在片尾声优表里验证自己的判断，猜对了，就会有一种<span class="hl-green">"我是专业的"</span>的满足感。
 
 ## 声音背后的故事
 
@@ -55,7 +76,7 @@ draft: false
 - 有人一人分饰多角，在录音棚里演完全场
 - 还有人为了保持声音状态，连辣的都不敢吃
 
-知道了这些之后，再看每一集动画，都会多一份敬意。
+知道了这些之后，再看每一集动画，都会多一份敬意。 🌙
 
 :::tip 给想入坑声优圈的朋友
 从自己喜欢的角色开始，去查她的声优，再看她配的其他作品。不需要背声优表，看得多了，自然就记住了。
@@ -67,12 +88,14 @@ draft: false
 
 很多声优本职唱功一流，动漫角色歌、演唱会、广播剧，都是她们的舞台。我特别喜欢收集那些"声优本命演唱的角色歌"，晚上写作业的时候放，感觉整个房间都变成了动画片场。
 
-还有广播剧（DRAMA CD），戴着耳机听，声优就在你耳边说话，那种沉浸感是画面给不了的。
+还有广播剧（DRAMA CD），戴着耳机听，声优就在你耳边说话，<span class="hl-purple">那种沉浸感是画面给不了的</span>。
 
 ## 结尾
 
 从看番到听番，从认脸到认声，这条路我走得心甘情愿。
 
-声音是记忆的载体——多年以后，我可能忘了某部番的具体剧情，但某个角色开口的第一句话，大概一辈子都不会忘。
+声音是记忆的载体——多年以后，我可能忘了某部番的具体剧情，但<span class="hl-theme">某个角色开口的第一句话，大概一辈子都不会忘</span>。
 
-如果你也是声优控，欢迎在评论区分享你最爱的声音。说不定，我们喜欢的是同一个人呢。
+如果你也是声优控，欢迎在评论区分享你最爱的声音。说不定，我们喜欢的是同一个人呢。 🎐
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

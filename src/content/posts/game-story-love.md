@@ -8,13 +8,34 @@ image: /assets/anime/ll.webp
 draft: false
 ---
 
+<style>
+h2{color:#2a6fd4;text-shadow:0 0 8px rgba(42,111,212,.5),0 0 22px rgba(42,111,212,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#38bdf8;text-shadow:0 0 7px rgba(56,189,248,.5),0 0 18px rgba(56,189,248,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(42,111,212,.35),0 0 14px rgba(42,111,212,.2)}to{text-shadow:0 0 11px rgba(42,111,212,.65),0 0 26px rgba(42,111,212,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#2a6fd4;font-weight:600}
+.gentle-open{color:#2a6fd4;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(42,111,212,.08);border-left:4px solid #2a6fd4;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(56,189,248,.08);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(42,111,212,.06);border:1px solid rgba(42,111,212,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#2a6fd4}
+.credit-box{background:rgba(56,189,248,.07);border-left:4px solid #38bdf8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(42,111,212,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎮 今晚不聊数值和强度，聊聊那些让我愿意为故事买单的瞬间。</div>
+
 ## 游戏是能玩的动画 (ง •̀_•́)ง 为剧情买单，值了
 
 在很多人眼里，游戏和动画是两回事：动画是"看"的，游戏是"玩"的。 (ง •̀_•́)ง
 
 但对我来说，这两件事之间的界限，早就模糊了。尤其是这些年，游戏行业的叙事水平突飞猛进——很多游戏的剧情，已经完全不输给动画，甚至因为"你参与了故事"，体验还要更胜一筹。
 
-游戏，对我来说就是"能玩的动画"。
+游戏，对我来说就是<span class="hl-theme">"能玩的动画"</span>。
 
 ## 那些让我为剧情买单的游戏
 
@@ -24,7 +45,7 @@ draft: false
 
 当时玩到一段剧情，主角在雨里和同伴告别，我盯着屏幕愣了很久，反应过来的时候已经眼眶发酸。那是我第一次意识到：原来游戏里的故事，也能这么动人。
 
-从那天起，我选游戏的第一标准就变了——不再是"好不好玩"，而是"故事好不好"。
+从那天起，我选游戏的第一标准就变了——不再是"好不好玩"，而是<span class="hl-blue">"故事好不好"</span>。
 
 ### 《崩坏：星穹铁道》与流萤
 
@@ -34,7 +55,7 @@ draft: false
 
 我记得剧情推到关键处的那天晚上，我坐在椅子上看完了整段剧情，屏幕黑了很久才缓过来。从那以后，我的桌面、手机、博客背景，全都换成了流萤相关的元素。
 
-这大概就是"为剧情买单"的最高形式——不只是花钱，而是把喜欢的东西，变成生活的一部分。
+这大概就是"为剧情买单"的最高形式——不只是花钱，而是<span class="hl-theme">把喜欢的东西，变成生活的一部分</span>。
 
 ### 用心做的单机剧情
 
@@ -74,7 +95,7 @@ draft: false
 
 因为好的剧情，是一种"一次性的奢侈品"——它带给你的感动，是真实存在的。多年之后你可能忘了抽卡出了什么、忘了等级练到多少，但你会记得那个雨夜、那场告别、那句台词。
 
-这就是剧情的价值：它不像数值会膨胀，不像装备会淘汰，它只会在时间里慢慢发酵，变成你记忆里的一部分。
+这就是剧情的价值：<span class="hl-blue">它不像数值会膨胀，不像装备会淘汰，它只会在时间里慢慢发酵，变成你记忆里的一部分。</span>
 
 ## 怎么判断一部游戏的剧情值不值得投入
 
@@ -112,10 +133,19 @@ draft: false
 
 写到这里，我又想起流萤那句台词。
 
-好的游戏剧情，就像好的动画一样，会在你看完/玩完之后，悄悄改变你的一部分。而我愿意一次次为这样的故事买单，因为我知道——下一个故事，可能又会带来新的感动。
+好的游戏剧情，就像好的动画一样，会在你看完/玩完之后，悄悄改变你的一部分。而我愿意一次次为这样的故事买单，因为我知道——<span class="hl-theme">下一个故事，可能又会带来新的感动。</span> ✨
 
 你有哪些"为剧情买单"的游戏？有没有哪段剧情，让你记到现在？欢迎在评论区聊聊。
 
-::note
-这篇算是"游戏叙事"的随笔。下一篇想写写"动画里的旅行与风景"——那些让我看完就想收拾行李出发的动画圣地。
-::
+<div class="chatter-box">🎐 这篇算是"游戏叙事"的随笔。下一篇想写写"动画里的旅行与风景"——那些让我看完就想收拾行李出发的动画圣地。</div>
+
+<div class="gentle-open">🌙 今晚的故事就聊到这里，愿你也能遇见那个让你心甘情愿买单的好故事。</div>
+
+<div class="link-box">
+<p><strong>相关链接 🎬</strong></p>
+<ul>
+<li><a href="https://sr.mihoyo.com/main" target="_blank" rel="noopener noreferrer">《崩坏：星穹铁道》官方网站</a></li>
+</ul>
+</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

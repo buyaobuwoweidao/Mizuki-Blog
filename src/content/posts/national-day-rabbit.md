@@ -11,9 +11,30 @@ priority: 2
 hot: true
 ---
 
+<style>
+h2{color:#d4282d;text-shadow:0 0 8px rgba(212,40,45,.5),0 0 22px rgba(212,40,45,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#e6a23c;text-shadow:0 0 7px rgba(230,162,60,.5),0 0 18px rgba(230,162,60,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(212,40,45,.35),0 0 14px rgba(212,40,45,.2)}to{text-shadow:0 0 11px rgba(212,40,45,.65),0 0 26px rgba(212,40,45,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#d4282d;font-weight:600}
+.gentle-open{color:#d4282d;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(212,40,45,.08);border-left:4px solid #d4282d;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(230,162,60,.08);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(212,40,45,.06);border:1px solid rgba(212,40,45,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#d4282d}
+.credit-box{background:rgba(230,162,60,.07);border-left:4px solid #e6a23c;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(212,40,45,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🇨🇳 十月一日的夜里，来聊聊这部让我哭湿半包纸巾的番。</div>
+
 ## 十月一号，从一部国产番开始
 
-今天是国庆节 (๑•̀ㅂ•́)و✧
+今天是国庆节 (๑•̀ㅂ•́)و✧ 🎆
 
 本来计划出门逛逛，结果看到外面的人山人海，果断放弃了——还是窝在家里舒服。随手点开了一直躺在追番列表里的《那年那兔那些事儿》，想着"就随便看两集吧"。
 
@@ -25,7 +46,7 @@ hot: true
 
 一开始我以为它是轻松搞笑向的，毕竟兔子们圆滚滚的，说话还带着口癖，可爱得不行。可看着看着就发现，那些笑眯眯的兔子背后，是一个比一个沉重的故事。
 
-**种花家就由我来守护。**
+<span class="hl-red"><strong>种花家就由我来守护。</strong></span>
 
 这句话在番里反复出现。每一次听到，弹幕都会刷过一整屏，但真正让我绷不住的，是兔子们真的会为了这句话往前冲——一个接一个，明明知道前方是什么，还是笑着冲上去。
 
@@ -55,9 +76,9 @@ hot: true
 
 一是兔子们用身体堵住缺口的时候，弹幕里没有人刷梗，全屏只有两个字——"致敬"。
 
-二是老兔子弥留之际说的那句"我们没白死，你们的年代到了"，配合片尾曲响起的瞬间，我眼泪直接掉下来了 (´；ω；`)
+二是老兔子弥留之际说的那句<span class="hl-red">"我们没白死，你们的年代到了"</span>，配合片尾曲响起的瞬间，我眼泪直接掉下来了 (´；ω；`)
 
-三是最平凡的：新一代的小兔子坐在屋檐下，看着远方的灯火，说"原来种花家，已经是这个样子了啊"。
+三是最平凡的：新一代的小兔子坐在屋檐下，看着远方的灯火，说<span class="hl-theme">"原来种花家，已经是这个样子了啊"</span>。
 
 这些瞬间没有惊天动地的特效，就是平实的、安静的，却比任何嘶吼都更有力量。
 
@@ -75,13 +96,13 @@ hot: true
 
 递交之前，我把申请书改了一遍又一遍，每个字都反复斟酌，怕写得不真诚。交上去的那个下午，我绕着宿舍楼走了整整三圈，心跳得厉害。后来被确定为入党积极分子，参加了培训，学习了党史，我才慢慢明白——入党不是一句口号，是一份沉甸甸的、需要一生去兑现的承诺。
 
-现在回头看，那些时刻其实和番里的兔子很像——不是轰轰烈烈的，就是普普通通的、发自内心地想往"那个方向"靠一靠。像兔子们说的那样：**幸福并感激着。**
+现在回头看，那些时刻其实和番里的兔子很像——不是轰轰烈烈的，就是普普通通的、发自内心地想往"那个方向"靠一靠。像兔子们说的那样：<span class="hl-theme"><strong>幸福并感激着。</strong></span>
 
 ## 山河无恙，盛世如愿
 
 这部番最戳我的，是片尾那句话：
 
-> 我们幸福并感激着。
+<div class="quote-box">我们幸福并感激着。</div>
 
 那些兔子没有等到它们守护的种花家变成现在的样子。可它们冲上去的理由，不就是为了让后来的兔子——比如我——能在这个国庆节，窝在家里舒舒服服地看一部番吗 (´；ω；`)
 
@@ -93,8 +114,17 @@ hot: true
 
 ![种花家的兔子给你点赞 w-50%](/Mizuki-Blog/images/posts/nt4-wave.jpg)
 
-今天的国庆节，过得比想象中更难忘。愿山河无恙，愿盛世如愿，愿我们都能记得来时的路。
+今天的国庆节，过得比想象中更难忘。愿山河无恙，愿盛世如愿，愿我们都能记得来时的路。 🎆
 
-::note
-这篇是国庆限定的小随笔。下一篇想写写《那年那兔那些事儿》里那些让我泪崩的名场面盘点，顺便整理一份"热血又催泪"的国产动画清单。
-::
+<div class="chatter-box">🌸 这篇是国庆限定的小随笔。下一篇想写写《那年那兔那些事儿》里那些让我泪崩的名场面盘点，顺便整理一份"热血又催泪"的国产动画清单。</div>
+
+<div class="link-box">
+<p><strong>相关链接 🐰</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep1438626" target="_blank" rel="noopener noreferrer">《那年那兔那些事儿》B 站官方番剧页</a></li>
+</ul>
+</div>
+
+<div class="credit-box">文中图片与截图来自网络公开渠道，致敬《那年那兔那些事儿》制作组与每一位种花家的兔子，仅供交流分享，如有侵权请联系我删除。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

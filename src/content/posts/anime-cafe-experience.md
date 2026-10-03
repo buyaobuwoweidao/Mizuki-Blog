@@ -8,6 +8,27 @@ image: /assets/anime/tz1.webp
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">☕ 推开门之前，先把现实世界的音量调小一点。</div>
+
 ## 现实里的"动画场景" (*´▽`*) 推开门就是另一个世界
 
 你有没有幻想过：走进一家店，推开门，然后发现自己"走进了动画里"？ (´▽`ʃ♡ƪ)
@@ -26,7 +47,7 @@ draft: false
 
 最让我印象深刻的，是她们会在你的饮料上用拉花画一只猫、一颗爱心，然后和你一起喊"让美味加倍～萌え萌えキュン～"。
 
-我当时在心里默默吐槽"这什么羞耻咒语"，但嘴角却忍不住上扬。因为那一刻你会发现：这里不是"假装二次元"，这里是真的在用尽全力，把二次元的氛围变成现实。
+我当时在心里默默吐槽"这什么羞耻咒语"，但嘴角却忍不住上扬。因为那一刻你会发现：<span class="hl-theme">这里不是"假装二次元"，这里是真的在用尽全力，把二次元的氛围变成现实。</span>
 
 ## 主题联动咖啡厅
 
@@ -40,7 +61,7 @@ draft: false
 - 饮料杯垫是随机角色款，为了集齐喜欢的角色，我和朋友连喝了好几杯。
 - 店里循环播放着作品的 OST，配上装饰，仿佛真的进入了那个世界。
 
-这种联动的奇妙之处在于"限时"——过了这段时间就没有了。所以每次联动，都像是一次"限时的邂逅"，错过了就要再等。
+这种联动的奇妙之处在于"限时"——过了这段时间就没有了。所以每次联动，都像是一次<span class="hl-purple">"限时的邂逅"</span>，错过了就要再等。
 
 ## 为什么二次元咖啡厅这么有魅力
 
@@ -50,7 +71,7 @@ draft: false
 
 ### 角色感
 
-在二次元咖啡厅，你可以暂时放下现实里的身份，做回一个"客人""主人"或者"冒险者"。这种角色感的切换，是一种很奇妙的放松——你不是在消费，你是在"扮演"。
+在二次元咖啡厅，你可以暂时放下现实里的身份，做回一个"客人""主人"或者"冒险者"。这种角色感的切换，是一种很奇妙的放松——<span class="hl-theme">你不是在消费，你是在"扮演"。</span>
 
 ### 同好聚集地
 
@@ -79,7 +100,7 @@ draft: false
 
 联动咖啡厅最让人上头的，是"点餐送周边"的机制——随餐附赠的角色杯垫、明信片、特典，都是"限定"的，错过就没有。
 
-很多同好会为了集齐整套杯垫，把菜单上的每一道菜都点一遍。虽然钱包会抗议，但看着整套杯垫排成一排的时候，那种满足感是无价的。
+很多同好会为了集齐整套杯垫，把菜单上的每一道菜都点一遍。虽然钱包会抗议，但看着整套杯垫排成一排的时候，<span class="hl-green">那种满足感是无价的。</span>
 
 ### 特典与签名
 
@@ -89,10 +110,14 @@ draft: false
 
 写这篇的时候，我想起第一次进女仆咖啡厅时，那句让我笑出声的"萌え萌えキュン"。
 
-二次元咖啡厅这个存在，大概就是二次元爱好者的一个"现实补给站"——当你觉得现实世界太累、太普通的时候，推开门，就能短暂地回到那个熟悉的世界里。
+二次元咖啡厅这个存在，大概就是二次元爱好者的一个<span class="hl-theme">"现实补给站"</span>——当你觉得现实世界太累、太普通的时候，推开门，就能短暂地回到那个熟悉的世界里。
 
 如果你还没去过，找一家评价不错的，挑个周末去试试吧。说不定推开门的那一刻，你也会觉得自己"不小心走进了动画"。
 
 ::tip
 第一次去二次元咖啡厅，推荐从"常规主题店"开始（不用预约的那种），先感受一下氛围。等习惯了，再挑战需要预约的联动店，体验会更完整。
 ::
+
+<div class="gentle-open">下次推门，愿你也不小心走进动画里。🫖</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

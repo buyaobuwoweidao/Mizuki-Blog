@@ -8,6 +8,27 @@ image: /assets/anime/gyrd.webp
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎐 人群散了，还想把那些闪光的瞬间，慢慢讲给你听。</div>
+
 ## 第一次进漫展：瞳孔地震 ٩(◕‿◕｡)۶ 漫展永动机启动！
 
 我第一次去漫展，是在上大学之后。 (๑˃̵ᴗ˂̵)و
@@ -18,7 +39,7 @@ draft: false
 
 那不是"热闹"两个字能形容的——人山人海，到处都是五颜六色的头发和奇装异服，空气里飘着冷气和周边包装的味道，耳边是此起彼伏的"集邮吗""可以拍吗""老师这个出得好好看"。
 
-我第一次意识到：原来在现实世界里，真的存在这么一大群"同类"。
+我第一次意识到：<span class="hl-theme">原来在现实世界里，真的存在这么一大群"同类"。</span>
 
 ## 漫展的快乐清单
 
@@ -54,7 +75,7 @@ draft: false
 
 中午在漫展附近的快餐店吃饭，人满为患，一个拿着痛包的女生问我能不能拼桌。结果一坐下，发现我们喜欢同一部作品，然后从作品聊到声优、从声优聊到周边，一顿饭吃了两个小时。
 
-那种"陌生人与陌生人，因为同一个爱好瞬间变成朋友"的感觉，大概只有漫展才有。
+那种<span class="hl-theme">"陌生人与陌生人，因为同一个爱好瞬间变成朋友"</span>的感觉，大概只有漫展才有。
 
 ### 夜场外的灯光
 
@@ -76,7 +97,7 @@ draft: false
 
 ### 二次元可以走进现实
 
-漫展最让我感慨的一点是：那些你以为只存在于屏幕里的东西，其实都可以走进现实。角色的衣服可以穿在身上，喜欢的故事可以画成同人本，甚至可以把喜欢的角色出成 Cos——只要你愿意，二次元的边界就会向现实无限延伸。
+漫展最让我感慨的一点是：那些你以为只存在于屏幕里的东西，其实都可以走进现实。角色的衣服可以穿在身上，喜欢的故事可以画成同人本，甚至可以把喜欢的角色出成 Cos——只要你愿意，<span class="hl-purple">二次元的边界就会向现实无限延伸。</span>
 
 ## 漫展的"生存指南"
 
@@ -109,16 +130,20 @@ draft: false
 
 这种"戒断反应"，其实恰恰说明漫展的好——它给了你一整天的快乐，快乐结束之后，你需要一点时间来消化。而消化完，你就会开始期待下一场。
 
-对我来说，"期待下一场漫展"这件事本身，就已经是生活里一个小小的盼头了。
+对我来说，<span class="hl-theme">"期待下一场漫展"这件事本身，就已经是生活里一个小小的盼头了。</span>
 
 ## 尾声：下一场见
 
 写这篇的时候，我翻了翻手机里的漫展照片，嘴角不自觉地扬了起来。
 
-漫展对我而言，早就不是"买周边的地方"那么简单了。它是一个证明——证明在这个世界的某个角落，永远有一群和你一样热爱二次元的人，等着和你相遇。
+漫展对我而言，早就不是"买周边的地方"那么简单了。它是一个证明——证明在这个世界的某个角落，<span class="hl-theme">永远有一群和你一样热爱二次元的人，等着和你相遇。</span>
 
 所以，下一场漫展，我们人海里见。
 
 ::tip
 第一次去漫展的新人请注意：穿舒服的鞋、备好水和干粮、提前做好攻略、保管好财物。最重要的——大胆一点，集邮和交朋友都是漫展的乐趣所在！
 ::
+
+<div class="gentle-open">下一场漫展，我们人海里见。🎏</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

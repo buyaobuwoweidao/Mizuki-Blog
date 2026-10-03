@@ -8,6 +8,27 @@ image: /assets/covers/anime-food.jpg
 draft: false
 ---
 
+<style>
+h2{color:#e08a2e;text-shadow:0 0 8px rgba(224,138,46,.5),0 0 22px rgba(224,138,46,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#f07a2a;text-shadow:0 0 7px rgba(240,122,42,.5),0 0 18px rgba(240,122,42,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,46,.35),0 0 14px rgba(224,138,46,.2)}to{text-shadow:0 0 11px rgba(224,138,46,.65),0 0 26px rgba(224,138,46,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a2e;font-weight:600}
+.gentle-open{color:#e08a2e;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,46,.08);border-left:4px solid #e08a2e;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(240,122,42,.08);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,46,.06);border:1px solid rgba(224,138,46,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a2e}
+.credit-box{background:rgba(240,122,42,.07);border-left:4px solid #f07a2a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,46,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🍜 夜深了，肚子先替你点个菜，慢慢聊。</div>
+
 ## 从一集动画开始的执念 (๑´ڡ`๑) 深夜慎入，饿了别怪我
 
 事情要从《食戟之灵》说起。 (๑´ڡ`๑)
@@ -18,7 +39,7 @@ draft: false
 
 第二天，我照着记忆里的步骤，煎蛋、炒饭、摆盘，最后撒上葱花。成品当然没有动画里那么夸张，但当我用勺子舀起第一口的时候，居然真的觉得——好吃。
 
-那一刻我突然明白，为什么会有那么多人喜欢看美食番：因为食物是最容易让人产生共鸣的东西。你不需要理解复杂的剧情，不需要共情深刻的人物，只要看到一碗热腾腾的拉面，胃就会替你说出"想吃"两个字。
+那一刻我突然明白，为什么会有那么多人喜欢看美食番：<span class="hl-theme">因为食物是最容易让人产生共鸣的东西。</span>你不需要理解复杂的剧情，不需要共情深刻的人物，只要看到一碗热腾腾的拉面，胃就会替你说出"想吃"两个字。
 
 从那以后，我踏上了一条不归路：复刻动漫美食。
 
@@ -32,7 +53,7 @@ draft: false
 
 我在厨房里复刻这道菜的时候，耳机里放着那集的 BGM，窗外的夕阳和金黄的咖喱汤重叠在一起。那一瞬间，我觉得自己好像真的坐在了富士山脚下，跟凛共享着同一份宁静。
 
-原来复刻美食的意义，不是"做出一道一样的菜"，而是"用另一种方式，重新走进那个世界"。
+原来复刻美食的意义，不是"做出一道一样的菜"，而是<span class="hl-theme">"用另一种方式，重新走进那个世界"</span>。
 
 - 看着动画里的角色吃得开心，你也能通过食物尝到他们的快乐。
 - 料理的过程本身，就像一场小型的"沉浸式体验"。
@@ -86,7 +107,7 @@ draft: false
 
 但奇怪的是，这些失败从来没有打击我的热情。反而让我越来越喜欢这件事。
 
-因为料理是一件"允许失败"的事。失败了，重来就好；不完美，也有不完美的味道。它不像游戏排位那样有输赢，也不像工作那样有 KPI，它只是诚实地回馈你的每一次尝试。
+因为料理是一件"允许失败"的事。<span class="hl-green">失败了，重来就好；不完美，也有不完美的味道。</span>它不像游戏排位那样有输赢，也不像工作那样有 KPI，它只是诚实地回馈你的每一次尝试。
 
 ## 料理与治愈
 
@@ -112,7 +133,7 @@ draft: false
 
 第二层追求是"神似"——不仅像，还要好吃。这就要回归到料理本身：火候、调味、食材处理，这些基本功决定了复刻的"上限"。
 
-我现在的原则是：先保证好吃，再追求好看。毕竟动画里的食物是"画"出来的，而现实里的食物是"吃"出来的。
+我现在的原则是：<span class="hl-theme">先保证好吃，再追求好看。</span>毕竟动画里的食物是"画"出来的，而现实里的食物是"吃"出来的。
 
 ### 接受"不完全一样"
 
@@ -134,7 +155,7 @@ draft: false
 
 有一年冬天，我复刻了《深夜食堂》里的黄油拌饭——米饭、黄油、酱油，简单到不能再简单。但吃下去的那一刻，我想到的不是那道菜本身，而是那个冬天的夜晚：窗外下着雪，我窝在暖和的房间里，看了一整晚《深夜食堂》，心里想着"生活再难，也有这样一碗饭的温柔"。
 
-一道菜，一段回忆。这大概就是复刻动漫美食，最珍贵的意义。
+一道菜，一段回忆。<span class="hl-theme">这大概就是复刻动漫美食，最珍贵的意义。</span>
 
 ::tip
 如果你也想尝试复刻动漫美食，我的建议是：从简单的开始。三明治、饭团、蛋包饭，这些成功率高的先做起来，找到手感之后再挑战拉面、天妇罗这些进阶项目。
@@ -149,3 +170,15 @@ draft: false
 这大概就是二次元最迷人的地方：它给了我们无数种"走进故事"的方式，而每一种方式，都是属于我们自己的独家记忆。
 
 下次如果你也看到喜欢的动画美食，不妨试试自己动手做一份。说不定，你也会在厨房里，找到属于你的那个二次元世界。
+
+<div class="link-box">
+<p><strong>番剧小尾巴 🍳</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/media/md1559/" target="_blank" rel="noopener noreferrer">《食戟之灵》B 站番剧页</a></li>
+<li><a href="https://www.bilibili.com/bangumi/play/ss43164" target="_blank" rel="noopener noreferrer">《孤独摇滚！》B 站番剧页</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">饭要趁热吃，故事要慢慢讲，下次见。🍛</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

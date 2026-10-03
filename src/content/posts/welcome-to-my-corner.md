@@ -9,6 +9,27 @@ draft: false
 hot: true
 ---
 
+<style>
+h2{color:#e08a3c;text-shadow:0 0 8px rgba(224,138,60,.5),0 0 22px rgba(224,138,60,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#d46a8a;text-shadow:0 0 7px rgba(212,106,138,.5),0 0 18px rgba(212,106,138,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(224,138,60,.35),0 0 14px rgba(224,138,60,.2)}to{text-shadow:0 0 11px rgba(224,138,60,.65),0 0 26px rgba(224,138,60,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e08a3c;font-weight:600}
+.gentle-open{color:#e08a3c;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(224,138,60,.08);border-left:4px solid #e08a3c;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(212,106,138,.08);border-left:4px solid #d46a8a;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(224,138,60,.06);border:1px solid rgba(224,138,60,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e08a3c}
+.credit-box{background:rgba(212,106,138,.07);border-left:4px solid #d46a8a;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(224,138,60,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎐 路过的朋友，请进，这里留了一盏暖灯给你。</div>
+
 :::tip 欢迎光临！
 这里是 𝓕𝓲𝓻𝓮𝓯𝓵𝔂 的二次元小窝，一个由 [Mizuki](https://github.com/matsuzaka-yuki/Mizuki) 主题搭起来的个人博客。
 :::
@@ -31,7 +52,7 @@ hot: true
 - 吐槽今天遇到的糟心事
 - 或者只是留下一句"我来过啦"（・ω・）
 
-**本站的目标是：让每个路过的二次元同好都能感受到温暖。**
+**<span class="hl-theme">本站的目标是：让每个路过的二次元同好都能感受到温暖。</span>**
 
 ## 关于这个博客
 
@@ -45,4 +66,17 @@ hot: true
 博客会不定期更新，欢迎常来坐坐。如果喜欢这个风格，也可以在评论区告诉我，我会很开心（笑）。
 :::
 
-那么，欢迎来到我的小窝，祝你今天也有好心情！
+那么，欢迎来到我的小窝，祝你今天也有好心情！ ✨
+
+<div class="link-box">
+<p><strong>本站用到的工具 🛠️</strong></p>
+<ul>
+<li><a href="https://github.com/matsuzaka-yuki/Mizuki" target="_blank" rel="noopener noreferrer">Mizuki 博客主题（GitHub）</a></li>
+<li><a href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro 静态站点框架</a></li>
+<li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages 托管</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">好了，门就一直为你开着，下次想聊天了，随时回来坐坐。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

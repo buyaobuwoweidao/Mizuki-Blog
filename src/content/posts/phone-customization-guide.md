@@ -8,11 +8,32 @@ image: /assets/mobile-banner/wanfory-bg.jpg
 draft: false
 ---
 
+<style>
+h2{color:#0ea5e9;text-shadow:0 0 8px rgba(14,165,233,.5),0 0 22px rgba(14,165,233,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#22d3ee;text-shadow:0 0 7px rgba(34,211,238,.5),0 0 18px rgba(34,211,238,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(14,165,233,.35),0 0 14px rgba(14,165,233,.2)}to{text-shadow:0 0 11px rgba(14,165,233,.65),0 0 26px rgba(14,165,233,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#0ea5e9;font-weight:600}
+.gentle-open{color:#0ea5e9;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(14,165,233,.08);border-left:4px solid #0ea5e9;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(34,211,238,.08);border-left:4px solid #22d3ee;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(14,165,233,.06);border:1px solid rgba(14,165,233,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#0ea5e9}
+.credit-box{background:rgba(34,211,238,.07);border-left:4px solid #22d3ee;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(14,165,233,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">📱 把喜欢的世界，装进口袋里带去任何地方。</div>
+
 ## 手机是离我最近的屏幕 (ᵔᴥᵔ) 手机也要二次元
 
 我有个习惯：桌面要二次元，手机当然也要。 (ᵔᴥᵔ)
 
-毕竟，桌面是我每天面对的屏幕，但手机才是离我最近的屏幕——通勤时、排队时、睡觉前，手机几乎长在我的手上。所以把手机二次元化，对我来说是一种刚需。
+毕竟，桌面是我每天面对的屏幕，但手机才是离我最近的屏幕——通勤时、排队时、睡觉前，手机几乎长在我的手上。所以<span class="hl-theme">把手机二次元化，对我来说是一种刚需。</span>
 
 今天就来聊聊，我是怎么把手机主题、壁纸、图标、小组件全部二次元化的。
 
@@ -26,7 +47,7 @@ draft: false
 
 手机壁纸的选择和桌面壁纸不太一样：因为手机是竖屏，而且锁屏和主屏分开，所以需要竖屏壁纸，且构图要考虑时间、日期、通知的显示位置。
 
-我一般会把锁屏壁纸选成"氛围感"强的图，主屏壁纸选成"主体明确"的图。锁屏是给别人看的，主屏是给自己看的——这个分配逻辑，我用得很顺手。
+我一般会把锁屏壁纸选成"氛围感"强的图，主屏壁纸选成"主体明确"的图。<span class="hl-purple">锁屏是给别人看的，主屏是给自己看的</span>——这个分配逻辑，我用得很顺手。
 
 ### 第二层：图标
 
@@ -62,7 +83,7 @@ draft: false
 - **小组件**：时钟和日历换成了手绘风，音乐播放器用了一张专辑封面做背景。
 - **主题**：锁屏动画和字体换成了主题自带的，整体是一个"深夜咖啡厅"的氛围。
 
-整套配置下来，每次解锁手机，都像打开一个属于自己的小世界。
+整套配置下来，<span class="hl-theme">每次解锁手机，都像打开一个属于自己的小世界。</span>
 
 ## 手机美化踩过的坑
 
@@ -90,7 +111,7 @@ draft: false
 
 有人说，手机美化是"自我表达"。我觉得很对——手机是每天最贴身的东西，把它弄成喜欢的样子，就像在身上戴着喜欢角色的徽章，是一种无声的宣言：我喜欢这个，这就是我。
 
-而且，每次解锁手机的瞬间，看到喜欢的画面，心情真的会变好。在这个充满琐事的现实世界里，手机屏幕是一个随时可以打开的小小避难所。
+而且，每次解锁手机的瞬间，看到喜欢的画面，心情真的会变好。在这个充满琐事的现实世界里，<span class="hl-blue">手机屏幕是一个随时可以打开的小小避难所。</span>
 
 ## 手机美化与"数字身份"
 
@@ -115,10 +136,14 @@ draft: false
 
 写这篇的时候，我刚好拿起手机，锁屏上是我最喜欢的角色，正对着我笑。
 
-那一刻我突然觉得，二次元最浪漫的地方就在于：它不只能活在屏幕里的故事中，也能活在你身边的每一个细节里——桌面、手机、壁纸、图标，只要你想，就能把它装进口袋，带到任何地方。
+那一刻我突然觉得，二次元最浪漫的地方就在于：它不只能活在屏幕里的故事中，也能活在你身边的每一个细节里——桌面、手机、壁纸、图标，只要你想，<span class="hl-green">就能把它装进口袋，带到任何地方。</span>
 
 你的手机是什么主题？有没有什么独特的二次元美化思路？欢迎来评论区分享。
 
 ::tip
 手机美化别贪多：壁纸选一张"主体清晰"的、图标包选"辨识度高"的、小组件留"最实用"的两三个，效果反而最好。少即是多，这句在手机美化上同样适用。
 ::
+
+<div class="gentle-open">下次解锁，愿你也对自己笑一下。📲</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

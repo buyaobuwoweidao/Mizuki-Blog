@@ -8,6 +8,27 @@ image: /assets/anime/yyl.webp
 draft: false
 ---
 
+<style>
+h2{color:#e86fb0;text-shadow:0 0 8px rgba(232,111,176,.5),0 0 22px rgba(232,111,176,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#9955ff;text-shadow:0 0 7px rgba(153,85,255,.45),0 0 18px rgba(153,85,255,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(232,111,176,.35),0 0 14px rgba(232,111,176,.2)}to{text-shadow:0 0 11px rgba(232,111,176,.65),0 0 26px rgba(232,111,176,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e86fb0;font-weight:600}
+.gentle-open{color:#e86fb0;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(232,111,176,.08);border-left:4px solid #e86fb0;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(153,85,255,.08);border-left:4px solid #9955ff;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(232,111,176,.06);border:1px solid rgba(232,111,176,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e86fb0}
+.credit-box{background:rgba(153,85,255,.07);border-left:4px solid #9955ff;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(232,111,176,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🍂 天冷了，泡杯热饮，窝进被窝，慢慢把攒了半年的番补完。</div>
+
 ## 为什么秋天适合补番 (*´∀`*) 秋天就是要窝着补番
 
 秋天一到，气温降下来，人也变得懒洋洋的。这种时候最适合泡杯热饮，窝在被窝里，一集一集地把攒了半年的番看完。 (*´∀`*)
@@ -16,7 +37,7 @@ draft: false
 
 ### 治愈系：适合慢慢看
 
-- **《摇曳露营△》**：露营、篝火、美食，每一集都像一次深呼吸
+- **《摇曳露营△》**：露营、篝火、美食，<span class="hl-theme">每一集都像一次深呼吸</span>
 - **《请问您今天要来点兔子吗》**：咖啡店的日常，萌系治愈天花板
 
 ### 剧情系：适合一口气刷完
@@ -26,12 +47,12 @@ draft: false
 
 ### 音乐系：看完想弹吉他
 
-- **《孤独摇滚！》**：波奇酱的社恐日常太真实了，Live 演出燃到爆
+- **《孤独摇滚！》**：波奇酱的社恐日常太真实了，Live 演出燃到爆 🎸
 - **《K-ON! 轻音少女》**：经典中的经典，茶话会与乐队的青春物语
 
 ## 我的看番习惯
 
-顺手分享几个小习惯：
+顺手分享几个小习惯：🍵
 
 1. **先看评分再看标签**：B 站番剧评分 + 评论区风向，基本不会踩雷
 2. **日常番配零食**：治愈系番剧一定要配奶茶和薯片
@@ -40,3 +61,14 @@ draft: false
 ## 结尾
 
 片单随时更新，看完欢迎来留言板交流感想！你最近在看什么番？也给我反向安利一下呗。
+
+<div class="link-box">
+<p><strong>相关链接 ✨</strong></p>
+<ul>
+<li><a href="https://www.bilibili.com/bangumi/play/ep779775" target="_blank" rel="noopener noreferrer">《葬送的芙莉莲》B 站番剧页</a></li>
+</ul>
+</div>
+
+<div class="gentle-open">好了，秋日片单交到你手里，记得配好零食再开始哦。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

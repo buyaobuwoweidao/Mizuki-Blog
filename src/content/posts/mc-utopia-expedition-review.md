@@ -9,6 +9,27 @@ draft: false
 hot: true
 ---
 
+<style>
+h2{color:#22a04a;text-shadow:0 0 8px rgba(34,160,74,.5),0 0 22px rgba(34,160,74,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#1fc6a8;text-shadow:0 0 7px rgba(31,198,168,.45),0 0 18px rgba(31,198,168,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(34,160,74,.35),0 0 14px rgba(34,160,74,.2)}to{text-shadow:0 0 11px rgba(34,160,74,.65),0 0 26px rgba(34,160,74,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#22a04a;font-weight:600}
+.gentle-open{color:#22a04a;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(34,160,74,.08);border-left:4px solid #22a04a;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(31,198,168,.08);border-left:4px solid #1fc6a8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(34,160,74,.06);border:1px solid rgba(34,160,74,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#22a04a}
+.credit-box{background:rgba(31,198,168,.07);border-left:4px solid #1fc6a8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(34,160,74,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌾 想找一个能慢慢住下来的方块世界？听我絮叨絮叨这个整合包。</div>
+
 :::tip 先说结论 (人´∀｀)
 如果你玩腻了"开局一棵树、装备全靠砍"的速通式生存，想找一个能**慢下来**的世界——乌托邦探险之旅可能是你这两年能遇到的、最有诚意的养老系整合包。本文不吹不黑，优点缺点都说清楚，文末有推荐人群和避坑指南。
 :::
@@ -21,7 +42,7 @@ hot: true
 
 然后我遇见了《乌托邦探险之旅》。
 
-这个整合包给我的第一感觉，用一句话概括就是——**它想让 Minecraft 回到"世界"本身，而不是"游戏"本身**。你不需要通关，不需要赶进度，甚至可以什么都不做，只是走走看看。作者小火柴在介绍视频里说了一句话我记到现在："伴着音乐踏遍未知风景，带上相机定格旅途美好瞬间，闲暇之余经营自己的小农场，在四季流转里寻找缤纷。"
+这个整合包给我的第一感觉，用一句话概括就是——<span class="hl-theme">**它想让 Minecraft 回到"世界"本身，而不是"游戏"本身**</span>。你不需要通关，不需要赶进度，甚至可以什么都不做，只是走走看看。作者小火柴在介绍视频里说了一句话我记到现在："伴着音乐踏遍未知风景，带上相机定格旅途美好瞬间，闲暇之余经营自己的小农场，在四季流转里寻找缤纷。"
 
 说实话，当时我就觉得：嗯，这就是我要的 (˶ᵔ ᵕ ᵔ˶)
 
@@ -37,7 +58,7 @@ hot: true
 
 ### 它的定位：养老与冒险的"双面世界"
 
-《乌托邦探险之旅》是一个基于原版的大型整合包，3.0 版本内置了 **270+ 个模组**，3.5 又做了删减和重构。但它和"堆模组"的整合包本质区别在于：**模组在这里不是目的，是手段**。
+《乌托邦探险之旅》是一个基于原版的大型整合包，3.0 版本内置了 **270+ 个模组**，3.5 又做了删减和重构。但它和"堆模组"的整合包本质区别在于：<span class="hl-green">**模组在这里不是目的，是手段**</span>。
 
 整个整合包可以拆成两个完全不同的"板块"：
 
@@ -147,7 +168,7 @@ hot: true
 
 ## 我的实际游玩体验 (´▽`)
 
-![乌托邦的彩色渐变树林与海岸](/assets/games/utopia-shot-tropical.jpg)
+![乌托邦探险之旅 3.5 官方启动画面（作者：Limit 小火柴）](/assets/games/utopia-launch-screen.jpg)
 
 说说我自己吧。我玩的是 3.2 版本（后来升到 3.5 重开了一个档）。
 
@@ -157,7 +178,7 @@ hot: true
 
 冒险我也去试了。传送门到某个维度，拿着整合包给的武器打了一路的怪，BOSS 战虽然不难但场景是真的华丽。不过说实话，**我最后还是回到了养老模式**——在乌托邦里，我更喜欢当个"旅行者"而不是"勇者"。
 
-这个整合包最神奇的地方是：它不会逼你做任何事，但你会心甘情愿地留下来。
+这个整合包最神奇的地方是：<span class="hl-theme">它不会逼你做任何事，但你会心甘情愿地留下来</span>。
 
 ## 乌托邦 vs 其他热门整合包：它到底特别在哪
 
@@ -238,7 +259,7 @@ hot: true
 
 5. **作者会回复私信**：小火柴虽然更新慢，但据很多玩家反馈，私信问他问题他是会回的。这种"作者就在那里"的感觉，让这个整合包多了不少人情味。
 
-这些细节单独看都不起眼，但合在一起，就是乌托邦和其他整合包拉开差距的地方——**它真的有"人味儿"** (´▽`)
+这些细节单独看都不起眼，但合在一起，就是乌托邦和其他整合包拉开差距的地方——<span class="hl-green">**它真的有"人味儿"**</span> (´▽`)
 
 ## 结语：把游戏还给自己
 
@@ -257,3 +278,9 @@ hot: true
 ---
 
 *本文基于乌托邦探险之旅 3.0~3.5 各版本公开资料整理，整合包下载请认准 B 站 UP 主「Limit 小火柴」官方渠道。如有疏漏，欢迎评论区指正 (人´∀｀)*
+
+<div class="credit-box">文中整合包截图来自《乌托邦探险之旅》游戏内公开画面，致敬作者 Limit 小火柴的用心创作，仅供交流分享，如有侵权请联系我删除。</div>
+
+<div class="gentle-open">好了，絮叨了这么多，愿你也能在方块世界里慢慢过日子。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

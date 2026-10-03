@@ -8,13 +8,34 @@ image: /assets/covers/rainy-day.jpg
 draft: false
 ---
 
+<style>
+h2{color:#cf8a3c;text-shadow:0 0 8px rgba(207,138,60,.5),0 0 22px rgba(207,138,60,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#6f8fb8;text-shadow:0 0 7px rgba(111,143,184,.45),0 0 18px rgba(111,143,184,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(207,138,60,.35),0 0 14px rgba(207,138,60,.2)}to{text-shadow:0 0 11px rgba(207,138,60,.65),0 0 26px rgba(207,138,60,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#cf8a3c;font-weight:600}
+.gentle-open{color:#cf8a3c;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(207,138,60,.08);border-left:4px solid #cf8a3c;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(111,143,184,.08);border-left:4px solid #6f8fb8;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(207,138,60,.06);border:1px solid rgba(207,138,60,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#cf8a3c}
+.credit-box{background:rgba(111,143,184,.07);border-left:4px solid #6f8fb8;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(207,138,60,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🌧️ 下雨的傍晚，泡杯热茶，听我慢慢聊几句。</div>
+
 ## 雨天是二次元的限定皮肤 (´｡• ᵕ •｡`) 雨天限定
 
 不知道你有没有这种感觉：下雨天，特别适合看番。 (´｡• ᵕ •｡`)
 
 窗外的天色暗下来，雨声淅淅沥沥地敲着玻璃，房间里只亮着一盏台灯，屏幕里的世界就显得格外亮。这种时候，不管看什么作品，都比晴天多了一层氛围感。
 
-我甚至觉得，雨天就像是给现实世界套了一层"二次元滤镜"——灰蒙蒙的天空像动画里的阴天场景，雨滴打在窗户上的轨迹像极了新海诚电影里的分镜。
+我甚至觉得，雨天就像是给现实世界套了一层<span class="hl-theme">"二次元滤镜"</span>——灰蒙蒙的天空像动画里的阴天场景，雨滴打在窗户上的轨迹像极了新海诚电影里的分镜。
 
 ## 动画里的雨天名场面
 
@@ -24,7 +45,7 @@ draft: false
 
 《你的名字》里，泷和三叶在陨石坑边上重逢的场景虽然没下雨，但新海诚的"雨"是刻在骨子里的审美——那部《天气之子》更是把雨拍成了主角：东京被连日的大雨淹没，帆高和阳菜在雨幕中奔跑，雨点像剪不断的丝线，把两个孤独的灵魂缠在一起。
 
-还有《龙与虎》里的经典场景——龙儿在大雨里狂奔，浑身湿透地去找大河。那种"不顾一切也要见到你"的冲动，配上倾盆大雨，格外动人。
+还有《龙与虎》里的经典场景——龙儿在大雨里狂奔，浑身湿透地去找大河。那种<span class="hl-red">"不顾一切也要见到你"</span>的冲动，配上倾盆大雨，格外动人。
 
 ### 雨里的离别
 
@@ -37,6 +58,8 @@ draft: false
 当然，雨天不只有告白和离别，也有安静的日常。
 
 《轻音少女》里，大家窝在部室里避雨，随便聊着天，弹着吉他，把雨天过成了"意外的假期"。《摇曳露营》里也有下雨天的露营场景——帐篷里听着雨声，煮一锅热汤，外面越冷，里面越暖。
+
+---
 
 ## 下雨天的二次元过法
 
@@ -52,7 +75,7 @@ draft: false
 
 补番累了就切换到"听歌模式"。把最近喜欢的 OST 拉出来循环，窗外的雨声和耳机里的旋律混在一起，会形成一种很奇妙的混音。
 
-如果家里有手冲咖啡，冲一杯，坐在窗边发呆——下雨天发呆是不算浪费时间的。
+如果家里有手冲咖啡，冲一杯，坐在窗边发呆——<span class="hl-theme">下雨天发呆是不算浪费时间的</span>。
 
 ### 傍晚：写点东西
 
@@ -92,7 +115,7 @@ draft: false
 
 我的很多文章，就是在雨天的傍晚写出来的。有时候甚至不用刻意构思，只要看着窗外的雨，思绪就会自然流淌成文字。
 
-所以对我来说，雨天不是一个"不方便出门"的日子，而是一个"适合和自己待在一起"的日子。
+所以对我来说，雨天不是一个"不方便出门"的日子，而是一个<span class="hl-theme">"适合和自己待在一起"</span>的日子。
 
 ## 尾声：等一场雨
 
@@ -100,8 +123,10 @@ draft: false
 
 我泡了一杯茶，打开了一部治愈系动画，决定把今天剩下的时间交给雨声和故事。
 
-如果你那里也下雨了，不妨试试这套"雨天二次元日程"。相信我，下雨天和二次元，真的很配。
+如果你那里也下雨了，不妨试试这套"雨天二次元日程"。相信我，下雨天和二次元，真的很配。 🌧️
 
-::note
-这篇算是"雨天限定"的随笔。下一篇想写写"深夜与失眠"——聊聊那些睡不着觉的夜晚，我是怎么用动画和音乐度过的。
-::
+<div class="chatter-box">☔ 这篇算是"雨天限定"的随笔。下一篇想写写"深夜与失眠"——聊聊那些睡不着觉的夜晚，我是怎么用动画和音乐度过的。</div>
+
+<div class="gentle-open">好了，今天就聊到这里，愿你的雨天也有一盏暖灯。下次见。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

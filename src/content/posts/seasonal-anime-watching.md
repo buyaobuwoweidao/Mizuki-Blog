@@ -8,6 +8,27 @@ image: /assets/anime/rynh.webp
 draft: false
 ---
 
+<style>
+h2{color:#e86fb0;text-shadow:0 0 8px rgba(232,111,176,.5),0 0 22px rgba(232,111,176,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#9955ff;text-shadow:0 0 7px rgba(153,85,255,.45),0 0 18px rgba(153,85,255,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(232,111,176,.35),0 0 14px rgba(232,111,176,.2)}to{text-shadow:0 0 11px rgba(232,111,176,.65),0 0 26px rgba(232,111,176,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e86fb0;font-weight:600}
+.gentle-open{color:#e86fb0;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(232,111,176,.08);border-left:4px solid #e86fb0;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(153,85,255,.08);border-left:4px solid #9955ff;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(232,111,176,.06);border:1px solid rgba(232,111,176,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e86fb0}
+.credit-box{background:rgba(153,85,255,.07);border-left:4px solid #9955ff;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(232,111,176,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🍃 追着追着才发现，我看什么番，原来是跟着季节走的。</div>
+
 ## 追番也有"季节限定" (◕‿◕) 追番也要看季节
 
 追番追得久了，我发现一个规律：我追的番，会随着季节变化。 (◕‿◕)
@@ -18,7 +39,7 @@ draft: false
 
 ## 春天：万物复苏，适合治愈
 
-春天的特点是"一切都重新开始"。冰雪消融，花开了，树绿了，空气里都是新生的味道。
+春天的特点是"一切都重新开始"。冰雪消融，花开了，树绿了，空气里都是新生的味道。🌸
 
 这种季节，我最爱看治愈系作品——那种讲成长、讲和解、讲"从零开始"的故事。
 
@@ -42,7 +63,7 @@ draft: false
 
 ## 秋天：天气转凉，适合文艺
 
-秋天是四季里最有"氛围感"的季节。落叶、黄昏、凉风，空气中都是淡淡的萧瑟与诗意。
+秋天是四季里最有"氛围感"的季节。落叶、黄昏、凉风，空气中都是淡淡的萧瑟与诗意。🍂
 
 这种季节，我会转向文艺系作品——那种画面精美、情绪细腻、看完会沉默很久的故事。
 
@@ -54,7 +75,7 @@ draft: false
 
 ## 冬天：天寒地冻，适合温暖
 
-冬天的关键词只有一个：冷。所以这个季节，我只看"暖"的作品。
+冬天的关键词只有一个：冷。所以这个季节，我只看"暖"的作品。🕯️
 
 - 《摇曳露营△》：冬天的夜晚看，仿佛跟着凛一起坐在富士山下，围着篝火吃咖喱。
 - 《请问您今天要来点兔子吗？》：冬天看这种软乎乎的日常，整个人都会变暖。
@@ -62,7 +83,7 @@ draft: false
 
 还有各种"冬日番"的标配场景——主角们围着火锅抢肉吃、缩在暖炉里吃橘子、在雪地里打雪仗。冬天看这些画面，会觉得自己也被那份温暖包围了。
 
-冬天的温暖番，像是一床厚棉被——把寒风挡在外面，把温度留在心里。
+冬天的温暖番，像是一床厚棉被——<span class="hl-theme">把寒风挡在外面，把温度留在心里</span>。
 
 ## 为什么我们会"跟着季节换口味"
 
@@ -83,7 +104,7 @@ draft: false
 - 秋天，看一部文艺片，像给自己的情绪做一次"秋季总结"。
 - 冬天，窝在暖和的被窝里看治愈日常，像给自己做一次"冬季充电"。
 
-每个季节有每个季节的追法，每一部作品都留在它最适合的季节里。这样的追番，才算是"把日子过成了自己喜欢的样子"。
+每个季节有每个季节的追法，每一部作品都留在它最适合的季节里。这样的追番，才算是<span class="hl-purple">"把日子过成了自己喜欢的样子"</span>。
 
 ## 季节追番的"进阶玩法"
 
@@ -113,6 +134,8 @@ draft: false
 
 你呢？你追番会跟着季节换口味吗？还是说，你有一套完全属于自己的追番规律？欢迎在评论区聊聊。
 
-::tip
-分享一个我私藏的"季节片单"小技巧：在每个季节开始的时候，列一张"本季想看的清单"，看完一部划掉一部。到了季节末尾，回头看这张清单，会特别有成就感。
-::
+<div class="chatter-box">🎐 分享一个我私藏的"季节片单"小技巧：在每个季节开始的时候，列一张"本季想看的清单"，看完一部划掉一部。到了季节末尾，回头看这张清单，会特别有成就感。</div>
+
+<div class="gentle-open">好了，愿你下一个季节的片单，也排得满满当当。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

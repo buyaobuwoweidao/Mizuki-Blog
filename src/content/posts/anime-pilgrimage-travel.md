@@ -8,6 +8,27 @@ image: /assets/anime/laxxx.webp
 draft: false
 ---
 
+<style>
+h2{color:#e86fb0;text-shadow:0 0 8px rgba(232,111,176,.5),0 0 22px rgba(232,111,176,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#9955ff;text-shadow:0 0 7px rgba(153,85,255,.45),0 0 18px rgba(153,85,255,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(232,111,176,.35),0 0 14px rgba(232,111,176,.2)}to{text-shadow:0 0 11px rgba(232,111,176,.65),0 0 26px rgba(232,111,176,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#e86fb0;font-weight:600}
+.gentle-open{color:#e86fb0;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(232,111,176,.08);border-left:4px solid #e86fb0;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(153,85,255,.08);border-left:4px solid #9955ff;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(232,111,176,.06);border:1px solid rgba(232,111,176,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#e86fb0}
+.credit-box{background:rgba(153,85,255,.07);border-left:4px solid #9955ff;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(232,111,176,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">🎒 看完一部动画就想收拾行李？来聊聊这件让人心痒的小事。</div>
+
 ## 动画里的风景会"种草" (๑•̀ㅂ•́)و✧ 看完就想出发
 
 你是否有过这样的经历：看完一部动画，突然很想去某个地方看看？ (ง •̀_•́)ง
@@ -44,7 +65,7 @@ draft: false
 
 ### 日常系作品的圣地
 
-除了电影，很多日常系动画的取景地也很有魅力：
+除了电影，很多日常系动画的取景地也很有魅力：🌸
 
 - 《轻音少女》的京都：抹茶、樱花、和风街道，动画里的日常感在现实中也能找到。
 - 《摇曳露营△》的山梨县：富士山、露营地、山脚下的平原，动画里那种"一个人静静地露营"的氛围，在现实里真的存在。
@@ -66,11 +87,11 @@ draft: false
 
 这是最有意思的一层：当你站在取景地，看着眼前的景色，再对比动画里被"加工"过的画面，你会突然理解制作组的用心——哪些地方被美化、哪些地方被改动、哪些地方是真实的保留。
 
-这种"创作的真实感"，让动画不再只是"虚构"，而是一种"对现实的深情加工"。
+这种"创作的真实感"，让动画不再只是"虚构"，而是一种<span class="hl-purple">"对现实的深情加工"</span>。
 
 ## 圣地巡礼的注意事项
 
-如果你也想尝试圣地巡礼，这里有几个小提醒：
+如果你也想尝试圣地巡礼，这里有几个小提醒：🎐
 
 - **尊重当地居民**：很多取景地是普通的居民区，打卡时不要打扰当地人的生活。
 - **注意安全**：有些取景地在铁道路口、悬崖边、深山里，打卡时一定要注意安全。
@@ -103,7 +124,7 @@ draft: false
 
 去圣地巡礼，不只是为了"打卡"，更是为了去见一见那个"陪伴过你的故事"。当你看过那部动画、喜欢过那些角色之后，去它们"生活过"的地方走一走，会生出一种很奇妙的亲切感——仿佛那个虚构的世界，真的在某个角落存在着。
 
-这种"心情的旅行"，不需要昂贵的机票，也不需要精心的规划。它可以只是一次周末的短途旅行，甚至只是去城市里某个"动画同款"的角落——重要的是，你带着故事出发，也带着新的感动回来。
+这种"心情的旅行"，不需要昂贵的机票，也不需要精心的规划。它可以只是一次周末的短途旅行，甚至只是去城市里某个"动画同款"的角落——重要的是，<span class="hl-theme">你带着故事出发，也带着新的感动回来</span>。
 
 ## 尾声：下一站，出发
 
@@ -113,6 +134,8 @@ draft: false
 
 你呢？有没有哪个动画里的地方，让你看完就想出发？
 
-::note
-圣地巡礼这篇是"旅行+二次元"的开头，如果反响不错，下一篇想专门写写"我的巡礼清单"——那些我列了但还没去的地方。
-::
+<div class="chatter-box">🌸 圣地巡礼这篇是"旅行+二次元"的开头，如果反响不错，下一篇想专门写写"我的巡礼清单"——那些我列了但还没去的地方。</div>
+
+<div class="gentle-open">好了，愿你的下一场旅行，也带着一个喜欢的故事。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>

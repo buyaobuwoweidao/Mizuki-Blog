@@ -8,9 +8,30 @@ image: /assets/games/stellar-blade/sb-01-official-drink.webp
 draft: false
 ---
 
+<style>
+h2{color:#2a6fb5;text-shadow:0 0 8px rgba(42,111,181,.5),0 0 22px rgba(42,111,181,.3);animation:glowPulse 3.2s ease-in-out infinite alternate}
+h3{color:#0ea5e9;text-shadow:0 0 7px rgba(14,165,233,.45),0 0 18px rgba(14,165,233,.25);animation:glowPulse 3.2s ease-in-out infinite alternate}
+@keyframes glowPulse{from{text-shadow:0 0 5px rgba(42,111,181,.35),0 0 14px rgba(42,111,181,.2)}to{text-shadow:0 0 11px rgba(42,111,181,.65),0 0 26px rgba(42,111,181,.4)}}
+.hl-blue{color:#2288ff;font-weight:600}
+.hl-red{color:#ff6677;font-weight:600}
+.hl-green{color:#22aa55;font-weight:600}
+.hl-purple{color:#9955ff;font-weight:600}
+.hl-theme{color:#2a6fb5;font-weight:600}
+.gentle-open{color:#2a6fb5;font-size:.95em;letter-spacing:.03em;margin-bottom:1rem}
+.quote-box{background:rgba(42,111,181,.08);border-left:4px solid #2a6fb5;border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0}
+.chatter-box{background:rgba(14,165,233,.07);border-left:4px solid #0ea5e9;border-radius:.5rem;padding:.8rem 1rem;margin:1.2rem 0;font-size:.95em}
+.link-box{background:rgba(42,111,181,.06);border:1px solid rgba(42,111,181,.35);border-radius:.5rem;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.92em}
+.link-box a{color:#2a6fb5}
+.credit-box{background:rgba(14,165,233,.06);border-left:4px solid #0ea5e9;border-radius:.5rem;padding:.7rem 1rem;margin:1rem 0;font-size:.85em;color:#999}
+.disclaimer{color:#8a8f98;font-size:.8rem;text-align:center;margin-top:1.8rem}
+hr{border:none;border-top:1px dashed rgba(42,111,181,.35);margin:1.8rem 0}
+</style>
+
+<div class="gentle-open">✨ 今晚不聊别的，就好好夸一夸这款让我上头的游戏。</div>
+
 ## 开头先放话：这游戏我吹爆 (≧▽≦)
 
-如果让我给近几年的动作游戏排个名，剑星（Stellar Blade）绝对稳坐我心里的头把交椅。
+如果让我给近几年的动作游戏排个名，剑星（Stellar Blade）<span class="hl-theme">绝对稳坐我心里的头把交椅</span>。
 
 没有别的理由，就三个字：**太！爽！了！**
 
@@ -38,7 +59,7 @@ draft: false
 
 ## 美术：每一帧都是壁纸 (★ ω ★)
 
-剑星的美术，属于那种"我光站着不动都能看半小时"的级别。
+剑星的美术，属于那种<span class="hl-blue">"我光站着不动都能看半小时"</span>的级别。
 
 废土都市的萧条感、荒野里的残阳、地下设施的幽蓝灯光——场景设计堪称一绝。而最绝的，是伊芙的建模和服装系统。
 
@@ -52,7 +73,7 @@ draft: false
 
 ## 音乐：能单曲循环一整天的 OST (´∀｀)♡
 
-剑星的 OST 我必须单独夸一夸。
+剑星的 OST 我必须单独夸一夸。🎧
 
 战斗 BGM 燃到爆炸，场景 BGM 又安静又孤独，完美契合末世氛围。特别是那几首带人声的主题曲，旋律一响，我鸡皮疙瘩就起来了。我现在的歌单里，剑星的曲子占比相当高，每次随机播放到都能瞬间回到那片废土。 (ﾉ◕ヮ◕)ﾉ
 
@@ -65,6 +86,8 @@ draft: false
 - **剧情后段略显仓促**：前中期铺得很开的世界观，到结尾收束得有点急，感觉还有好多坑没填
 
 但即便如此，剑星的优点也远远盖过了这些缺点。它依然是我心中近几年最出色的动作游戏之一。 (´▽`)ﾉ
+
+---
 
 ## 剑星2：求求你快点出 (≧▽≦)
 
@@ -86,10 +109,24 @@ draft: false
 
 ## 写在最后 (´▽`)ﾉ
 
-剑星让我明白了一件事：**好的游戏不需要多复杂，只要把一个点做到极致，就能让人念念不忘。**
+剑星让我明白了一件事：<span class="hl-theme">**好的游戏不需要多复杂，只要把一个点做到极致，就能让人念念不忘。**</span>
 
 战斗爽到极致，美术美到极致，女主角飒到极致——剑星把"极致"两个字诠释得明明白白。
 
 所以我愿意等，愿意一遍遍刷预告，愿意为了剑星2把钱包准备好。 (˶ᵕ ᵕ˶)
 
 —— 愿伊芙的剑，永远锋利；愿剑星2，早日到来。
+
+<div class="link-box">
+<p><strong>相关链接 ✨</strong></p>
+<ul>
+<li><a href="https://www.stellar-blade.com/" target="_blank" rel="noopener noreferrer">《剑星》官方网站（SHIFT UP）</a></li>
+<li><a href="https://shiftup.co.kr/eng/" target="_blank" rel="noopener noreferrer">SHIFT UP 工作室官网</a></li>
+</ul>
+</div>
+
+<div class="credit-box">文中游戏截图与壁纸来自网络公开渠道，致敬 SHIFT UP 的用心创作，仅供交流分享，如有侵权请联系我删除。</div>
+
+<div class="gentle-open">好了，夸也夸完了，接下来就安心等剑星2的好消息吧。</div>
+
+<div class="disclaimer">本篇仅为个人主观感受</div>
