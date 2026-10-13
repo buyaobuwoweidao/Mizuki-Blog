@@ -129,19 +129,44 @@ const coverBtns = [
 
 <style is:global>
 	/* ===== 首页专属全局覆盖：隐藏主题的顶部横幅与 banner 布局位移 ===== */
-	body:has(.home-cover) .enable-banner #banner-wrapper {
+	html[data-layout-variant="home"] .enable-banner #banner-wrapper {
 		display: none !important;
 	}
-	body:has(.home-cover) .enable-banner #top-row {
+	html[data-layout-variant="home"] .enable-banner #top-row {
 		height: auto !important;
 	}
-	body:has(.home-cover) .enable-banner #main-grid {
+	html[data-layout-variant="home"] .enable-banner #main-grid {
 		transform: none !important;
 	}
-	body:has(.home-cover) .enable-banner #sidebar-sticky,
-	body:has(.home-cover) .enable-banner #left-sidebar-sticky,
-	body:has(.home-cover) .enable-banner #right-sidebar-sticky {
+	html[data-layout-variant="home"] .enable-banner #sidebar-sticky,
+	html[data-layout-variant="home"] .enable-banner #left-sidebar-sticky,
+	html[data-layout-variant="home"] .enable-banner #right-sidebar-sticky {
 		top: 1rem !important;
+	}
+	/* 顶部白色渐变高光层在首页隐藏（它就是封面顶部白边的来源） */
+	html[data-layout-variant="home"] .top-gradient-highlight {
+		display: none !important;
+	}
+	/* 首页彻底清空容器边距，保证封面真正贴边全屏 */
+	html[data-layout-variant="home"] #main-grid,
+	html[data-layout-variant="home"] #swup-container,
+	html[data-layout-variant="home"] #content-wrapper {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	html[data-layout-variant="home"] .home-cover {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	/* 兼容旧版 body:has 写法（双保险） */
+	body:has(.home-cover) .top-gradient-highlight {
+		display: none !important;
+	}
+	body:has(.home-cover) #main-grid,
+	body:has(.home-cover) #swup-container,
+	body:has(.home-cover) #content-wrapper {
+		padding: 0 !important;
+		margin: 0 !important;
 	}
 
 	/* ===== 封面样式 ===== */
@@ -154,10 +179,10 @@ const coverBtns = [
 	.home-cover-veil {
 		background: linear-gradient(
 			to bottom,
-			rgba(0, 0, 0, 0.55) 0%,
-			rgba(0, 0, 0, 0.3) 40%,
-			rgba(0, 0, 0, 0.45) 75%,
-			rgba(0, 0, 0, 0.72) 100%
+			rgba(0, 0, 0, 0.6) 0%,
+			rgba(0, 0, 0, 0.32) 30%,
+			rgba(0, 0, 0, 0.4) 60%,
+			rgba(0, 0, 0, 0.75) 100%
 		);
 	}
 	.home-eyebrow {
