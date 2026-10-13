@@ -4,17 +4,15 @@ import FloatingControls from "@components/control/FloatingControls.astro";
 import BackgroundPlayer from "@components/features/BackgroundPlayer.astro";
 import IconifyLoader from "@components/misc/IconifyLoader.astro";
 import FullscreenWallpaper from "@components/misc/FullscreenWallpaper.astro";
-import Footer from "@components/organisms/footer/Footer.astro";
 import Navbar from "@components/organisms/navigation/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
 import GridScripts from "@layouts/partials/GridScripts.astro";
-import { getSortedPostsList } from "@utils/content-utils";
 
 import { fullscreenWallpaperConfig, siteConfig } from "../config";
 import { BANNER_HEIGHT, BANNER_HEIGHT_FULLSCREEN } from "../constants/constants";
 import { url } from "../utils/url-utils";
 
-// 视觉小说标题画面式全屏首页（独立布局，不带侧边栏/banner）
+// 视觉小说标题画面式全屏独立首页
 const coverBtns = [
 	{ name: "HOME", label: "首页", url: "/" },
 	{ name: "BLOG", label: "文章", url: "/posts/" },
@@ -22,19 +20,10 @@ const coverBtns = [
 	{ name: "MC", label: "MC 专区", url: "/mc/" },
 	{ name: "ME", label: "关于我", url: "/about/" },
 ];
-
-const recentPosts = (await getSortedPostsList()).slice(0, 5);
-
-const fmtDate = (d: Date) => {
-	const y = d.getFullYear();
-	const m = String(d.getMonth() + 1).padStart(2, "0");
-	const day = String(d.getDate()).padStart(2, "0");
-	return `${y}-${m}-${day}`;
-};
 ---
 
 <Layout
-	title="挚爱流萤"
+	title="Firefly"
 	description="我的二次元小窝"
 	layoutVariant="home"
 >
@@ -54,14 +43,14 @@ const fmtDate = (d: Date) => {
 	<BackgroundPlayer />
 	<IconifyLoader />
 
-	<!-- 顶部导航（保留博客完整导航） -->
+	<!-- 顶部导航（保留博客完整导航，悬浮于封面上方） -->
 	<div
 		id="top-row"
-		class="z-50 pointer-events-none relative transition-all duration-700 max-w-(--layout-page-width) px-0 md:px-4 mx-auto"
+		class="z-50 pointer-events-none absolute top-0 left-0 right-0 transition-all duration-700 max-w-(--layout-page-width) px-0 md:px-4 mx-auto"
 	>
 		<div
 			id="navbar-wrapper"
-			class="pointer-events-auto sticky top-0 transition-all"
+			class="pointer-events-auto transition-all"
 		>
 			<Navbar />
 		</div>
@@ -72,7 +61,7 @@ const fmtDate = (d: Date) => {
 			<div id="content-wrapper" class="onload-animation transition-leaving">
 				<div
 					id="page-overlay-data"
-					data-title="挚爱流萤"
+					data-title="Firefly"
 					data-date=""
 					data-category=""
 					data-words=""
@@ -85,14 +74,8 @@ const fmtDate = (d: Date) => {
 				<!-- ===== 全屏标题画面 ===== -->
 				<section
 					class="home-cover relative overflow-hidden flex items-center justify-center w-full"
+					style={`background-image: url("${url("/images/albums/yuimi-lab/cover.webp")}")`}
 				>
-					<img
-						src={url("/images/albums/yuimi-lab/cover.webp")}
-						alt=""
-						class="home-cover-bg absolute inset-0 w-full h-full object-cover object-center"
-						loading="eager"
-						decoding="async"
-					/>
 					<div class="home-cover-veil absolute inset-0"></div>
 
 					<!-- 粒子层（JS 生成） -->
@@ -103,7 +86,7 @@ const fmtDate = (d: Date) => {
 						<p class="home-eyebrow select-none">
 							𝓕𝓲𝓻𝓮𝓯𝓵𝔂 · MIZUKI BLOG
 						</p>
-						<h1 class="home-title">挚爱流萤</h1>
+						<h1 class="home-title select-none">FIREFLY</h1>
 						<p class="home-subtitle">
 							欢迎来到我的二次元小窝 (๑•̀ㅂ•́)و✧
 						</p>
@@ -126,70 +109,7 @@ const fmtDate = (d: Date) => {
 							}
 						</div>
 					</div>
-
-					<!-- 左下角小字：日期 + 运行天数 -->
-					<div class="home-corner absolute bottom-5 left-6 z-10 select-none">
-						<p id="home-date">…</p>
-						<p>站点已运行 <span id="home-days">…</span> 天</p>
-					</div>
 				</section>
-
-				<!-- ===== 最新文章 ===== -->
-				<section class="home-posts relative z-10 max-w-(--layout-page-width) mx-auto px-2 md:px-4 py-10">
-					<div class="card-base px-6 sm:px-9 py-6 rounded-(--radius-large)">
-						<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
-							<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
-							<div class="flex items-baseline gap-2 min-w-0">
-								<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
-									最新文章
-								</h2>
-								<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
-									最近写下的碎碎念 (｡•̀ᴗ-)✧
-								</span>
-							</div>
-						</div>
-
-						<div class="divide-y divide-(--line-divider)">
-							{
-								recentPosts.map((post) => (
-									<a
-										href={post.url}
-										class="group flex items-center gap-3 px-4 py-3 hover:bg-(--card-bg) transition-colors duration-200"
-									>
-										<span class="shrink-0 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
-											{fmtDate(post.data.published)}
-										</span>
-										<span class="grow min-w-0 font-medium text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
-											{post.data.title}
-										</span>
-										<Icon
-											name="material-symbols:arrow-outward-rounded"
-											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
-										/>
-									</a>
-								))
-							}
-						</div>
-
-						<div class="mt-4 text-center">
-							<a
-								href={url("/posts/")}
-								class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
-							>
-								查看全部文章
-								<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
-							</a>
-						</div>
-					</div>
-
-					<div class="footer col-span-full onload-animation hidden lg:block">
-						<Footer />
-					</div>
-				</section>
-
-				<div class="footer col-span-full onload-animation block lg:hidden">
-					<Footer />
-				</div>
 			</div>
 		</main>
 	</div>
@@ -197,23 +117,7 @@ const fmtDate = (d: Date) => {
 	<FloatingControls headings={[]} />
 	<div id="toc-container" class="hidden" />
 
-	<script define:vars={{ siteStartDate: siteConfig.siteStartDate }}>
-		// 当前日期 + 运行天数
-		const dateEl = document.getElementById("home-date");
-		const daysEl = document.getElementById("home-days");
-		if (dateEl) {
-			const now = new Date();
-			const week = ["日", "一", "二", "三", "四", "五", "六"][now.getDay()];
-			dateEl.textContent = `${now.getFullYear()} 年 ${now.getMonth() + 1} 月 ${now.getDate()} 日 · 星期${week}`;
-		}
-		if (daysEl) {
-			const start = new Date(`${siteStartDate}T00:00:00+08:00`);
-			const now = new Date();
-			daysEl.textContent = String(
-				Math.max(1, Math.floor((now.getTime() - start.getTime()) / 86400000) + 1),
-			);
-		}
-
+	<script>
 		// 生成飘浮粒子
 		const wrap = document.getElementById("home-particles");
 		if (wrap) {
@@ -239,9 +143,6 @@ const fmtDate = (d: Date) => {
 
 <style is:global>
 	/* ===== 首页专属全局覆盖：隐藏主题的顶部横幅与 banner 布局位移 ===== */
-	#home-cover-page-marker {
-		display: none;
-	}
 	body:has(.home-cover) .enable-banner #banner-wrapper {
 		display: none !important;
 	}
@@ -259,19 +160,10 @@ const fmtDate = (d: Date) => {
 
 	/* ===== 封面样式 ===== */
 	.home-cover {
-		min-height: calc(100vh - 3.5rem);
-	}
-	.home-cover-bg {
-		animation: homeBgSlow 24s ease-in-out infinite alternate;
-		transform: scale(1.05);
-	}
-	@keyframes homeBgSlow {
-		0% {
-			transform: scale(1.05) translateY(0);
-		}
-		100% {
-			transform: scale(1.12) translateY(-14px);
-		}
+		min-height: 100vh;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 	.home-cover-veil {
 		background: linear-gradient(
@@ -290,9 +182,10 @@ const fmtDate = (d: Date) => {
 	}
 	.home-title {
 		color: #fff;
-		font-size: clamp(3rem, 9vw, 6.5rem);
+		font-size: clamp(3.5rem, 10vw, 7.5rem);
 		font-weight: 900;
 		line-height: 1.1;
+		letter-spacing: 0.08em;
 		text-shadow: 0 4px 30px rgba(0, 0, 0, 0.55);
 		animation: homeTitleGlow 4s ease-in-out infinite;
 	}
@@ -365,11 +258,6 @@ const fmtDate = (d: Date) => {
 	.home-btn:hover .home-btn-key {
 		color: rgba(255, 255, 255, 0.85);
 	}
-	.home-corner {
-		color: rgba(255, 255, 255, 0.6);
-		font-size: 0.72rem;
-		line-height: 1.5;
-	}
 
 	/* 粒子 */
 	.home-particles i {
@@ -389,10 +277,10 @@ const fmtDate = (d: Date) => {
 		}
 	}
 
-	/* 移动端导航悬浮时的封面高度补偿 */
+	/* 移动端兼容 */
 	@media (width < 640px) {
 		.home-cover {
-			min-height: calc(100vh - 3rem);
+			min-height: 100vh;
 		}
 	}
 </style>
