@@ -6,7 +6,7 @@ tags: [国庆, 祝福, 种花家, 随笔]
 category: 随笔
 image: /assets/covers/national-day-red.jpg
 draft: false
-pinned: true
+pinned: false
 priority: 1
 hot: true
 ---

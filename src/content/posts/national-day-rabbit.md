@@ -6,7 +6,7 @@ tags: [那年那兔那些事, 国庆, 国产, 热血, 随笔]
 category: 番剧
 image: /assets/anime/nt4.webp
 draft: false
-pinned: true
+pinned: false
 priority: 2
 hot: true
 ---
