@@ -319,6 +319,25 @@ import { url } from "@/utils/url-utils";
                   }
                 }, spineModelConfig.interactive.idleInterval);
               }
+
+              // 空闲自动说话：每隔一段时间随机冒一句台词
+              const idleMessages =
+                spineModelConfig.interactive.idleMessages;
+              const idleMsgInterval =
+                spineModelConfig.interactive.idleMessageInterval || 25000;
+              if (idleMessages && idleMessages.length > 0) {
+                setInterval(() => {
+                  try {
+                    const randomMessage =
+                      idleMessages[
+                        Math.floor(Math.random() * idleMessages.length)
+                      ];
+                    showMessage(randomMessage);
+                  } catch (e) {
+                    console.warn("Failed to show idle message:", e);
+                  }
+                }, idleMsgInterval);
+              }
             }
           }
         },
