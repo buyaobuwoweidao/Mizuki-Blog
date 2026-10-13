@@ -6,16 +6,13 @@ import { getSortedPostsList } from "@utils/content-utils";
 import { siteConfig } from "../config";
 import { url } from "../utils/url-utils";
 
-// 快捷入口
-const shortcuts = [
-	{ name: "MC 专区", desc: "整合包、资源、导航收藏", url: "/mc/", icon: "material-symbols:extension-rounded" },
-	{ name: "PVZ 专区", desc: "植物大战僵尸收藏", url: "/pvz/", icon: "material-symbols:eco-rounded" },
-	{ name: "游戏分享", desc: "玩过的游戏都记在这", url: "/games/", icon: "material-symbols:sports-esports-rounded" },
-	{ name: "番剧", desc: "看番记录与推荐", url: "/anime/", icon: "material-symbols:movie-rounded" },
-	{ name: "书签导航", desc: "收藏的网站都在这", url: "/booknav/", icon: "material-symbols:bookmarks-rounded" },
-	{ name: "留言板", desc: "来跟我说说话吧", url: "/guestbook/", icon: "material-symbols:forum-rounded" },
-	{ name: "动态", desc: "近期的碎碎念", url: "/dynamic/", icon: "material-symbols:dynamic-feed-rounded" },
-	{ name: "关于我", desc: "关于 𝓕𝓲𝓻𝓮𝓯𝓵𝔂", url: "/about/", icon: "material-symbols:person-rounded" },
+// 视觉小说封面式首页：大背景图 + 中央标题 + 底部导航按钮
+const coverBtns = [
+	{ name: "HOME", label: "首页", url: "/" },
+	{ name: "BLOG", label: "文章", url: "/posts/" },
+	{ name: "GAME", label: "游戏", url: "/games/" },
+	{ name: "MC", label: "MC 专区", url: "/mc/" },
+	{ name: "ME", label: "关于我", url: "/about/" },
 ];
 
 // 最新文章（纯文字，不放封面图，保证首页轻量）
@@ -31,121 +28,110 @@ const fmtDate = (d: Date) => {
 
 <MainGridLayout title="挚爱流萤" description="我的二次元小窝">
 
-	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
-		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
-			<PageHeader
-				title="挚爱流萤"
-				subtitle="欢迎回家～这里是 𝓕𝓲𝓻𝓮𝓯𝓵𝔂 的二次元小窝 (๑•̀ㅂ•́)و✧"
-			/>
+	<!-- 视觉小说封面块 -->
+	<div
+		class="relative w-full overflow-hidden rounded-(--radius-large) flex items-center justify-center min-h-[72vh]"
+	>
+		<img
+			src={url("/images/albums/yuimi-lab/cover.webp")}
+			alt=""
+			class="absolute inset-0 w-full h-full object-cover object-center"
+			loading="eager"
+			decoding="async"
+		/>
+		<!-- 上下渐隐遮罩，保证文字可读 -->
+		<div
+			class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70"
+		></div>
 
-			<!-- 欢迎面板 -->
-			<div
-				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+		<div
+			class="relative z-10 text-center px-6 py-16 flex flex-col items-center max-w-full"
+		>
+			<p
+				class="text-xs sm:text-sm tracking-[0.35em] text-white/70 mb-5 select-none"
 			>
-				<div class="shrink-0 w-12 h-12 rounded-xl bg-(--primary)/15 flex items-center justify-center">
-					<Icon name="material-symbols:waving-hand-rounded" class="text-3xl text-(--primary)" />
-				</div>
-				<div class="grow min-w-0">
-					<p class="font-bold text-black/85 dark:text-white/85 mb-1">
-						欢迎来到我的小窝～
-					</p>
-					<p class="text-sm text-black/50 dark:text-white/50">
-						这里会掉下一些兴趣标签，游戏、番剧、碎碎念都堆在底下，慢慢逛吧 (｡•̀ᴗ-)✧
-					</p>
-					<p class="mt-2 text-xs text-black/35 dark:text-white/35">
-						<span id="home-date">…</span>　·　站点已运行 <span id="home-days">…</span> 天
-					</p>
-				</div>
+				𝓕𝓲𝓻𝓮𝓯𝓵𝔂 · MIZUKI BLOG
+			</p>
+			<h1
+				class="text-5xl sm:text-7xl font-black text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)] leading-tight"
+			>
+				挚爱流萤
+			</h1>
+			<p class="mt-4 text-white/90 text-base sm:text-lg drop-shadow">
+				欢迎来到我的二次元小窝 (๑•̀ㅂ•́)و✧
+			</p>
+
+			<!-- 导航按钮组 -->
+			<div class="mt-10 flex flex-wrap justify-center gap-3">
+				{
+					coverBtns.map((btn) => (
+						<a
+							href={url(btn.url)}
+							class="group flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/25 text-white text-sm font-bold hover:bg-(--primary) hover:border-(--primary) transition-all duration-300 active:scale-95"
+						>
+							<span class="text-white/60 group-hover:text-white/80 text-[0.65rem] tracking-widest">
+								{btn.name}
+							</span>
+							<span>{btn.label}</span>
+						</a>
+					))
+				}
 			</div>
+		</div>
 
-			<!-- 快捷入口 -->
-			<section>
-				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
-					<Icon name="material-symbols:apps-rounded" class="text-(--primary) text-xl shrink-0" />
-					<div class="flex items-baseline gap-2 min-w-0">
-						<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
-							快捷入口
-						</h2>
-						<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
-							想去哪里点哪里 (´▽`)ﾉ
-						</span>
-					</div>
-				</div>
-
-				<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-					{
-						shortcuts.map((item) => (
-							<a
-								href={url(item.url)}
-								class="group flex flex-col items-center gap-2 p-4 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 text-center"
-							>
-								<div
-									class="w-11 h-11 rounded-xl bg-(--primary)/10 flex items-center justify-center"
-								>
-									<Icon name={item.icon} class="text-xl text-(--primary)" />
-								</div>
-								<div class="min-w-0">
-									<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 truncate">
-										{item.name}
-									</div>
-									<div class="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-1 mt-0.5">
-										{item.desc}
-									</div>
-								</div>
-							</a>
-						))
-					}
-				</div>
-			</section>
-
-			<!-- 最新文章 -->
-			<section class="mt-8">
-				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
-					<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
-					<div class="flex items-baseline gap-2 min-w-0">
-						<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
-							最新文章
-						</h2>
-						<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
-							最近写下的碎碎念 (｡•̀ᴗ-)✧
-						</span>
-					</div>
-				</div>
-
-				<div class="rounded-xl border border-(--line-divider) divide-y divide-(--line-divider)">
-					{
-						recentPosts.map((post) => (
-							<a
-								href={post.url}
-								class="group flex items-center gap-3 px-4 py-3 hover:bg-(--card-bg) transition-colors duration-200"
-							>
-								<span class="shrink-0 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
-									{fmtDate(post.data.published)}
-								</span>
-								<span class="grow min-w-0 font-medium text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
-									{post.data.title}
-								</span>
-								<Icon
-									name="material-symbols:arrow-outward-rounded"
-									class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
-								/>
-							</a>
-						))
-					}
-				</div>
-
-				<div class="mt-4 text-center">
-					<a
-						href={url("/posts/")}
-						class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
-					>
-						查看全部文章
-						<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
-					</a>
-				</div>
-			</section>
+		<!-- 左下角小字：站点运行信息 -->
+		<div class="absolute bottom-4 left-5 z-10 text-left text-white/60 text-xs select-none">
+			<p id="home-date">…</p>
+			<p>站点已运行 <span id="home-days">…</span> 天</p>
 		</div>
 	</div>
+
+	<!-- 最新文章 -->
+	<section class="mt-8">
+		<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+			<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
+			<div class="flex items-baseline gap-2 min-w-0">
+				<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+					最新文章
+				</h2>
+				<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+					最近写下的碎碎念 (｡•̀ᴗ-)✧
+				</span>
+			</div>
+		</div>
+
+		<div class="rounded-xl border border-(--line-divider) divide-y divide-(--line-divider)">
+			{
+				recentPosts.map((post) => (
+					<a
+						href={post.url}
+						class="group flex items-center gap-3 px-4 py-3 hover:bg-(--card-bg) transition-colors duration-200"
+					>
+						<span class="shrink-0 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
+							{fmtDate(post.data.published)}
+						</span>
+						<span class="grow min-w-0 font-medium text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
+							{post.data.title}
+						</span>
+						<Icon
+							name="material-symbols:arrow-outward-rounded"
+							class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+						/>
+					</a>
+				))
+			}
+		</div>
+
+		<div class="mt-4 text-center">
+			<a
+				href={url("/posts/")}
+				class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
+			>
+				查看全部文章
+				<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
+			</a>
+		</div>
+	</section>
 
 	<script define:vars={{ siteStartDate: siteConfig.siteStartDate }}>
 		// 显示当前日期与站点运行天数（轻量，无依赖）
@@ -168,13 +154,4 @@ const fmtDate = (d: Date) => {
 			daysEl.textContent = String(days);
 		}
 	</script>
-
-	<style>
-		.line-clamp-1 {
-			display: -webkit-box;
-			-webkit-line-clamp: 1;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
-		}
-	</style>
 </MainGridLayout>
