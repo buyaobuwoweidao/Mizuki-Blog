@@ -1,0 +1,40 @@
+/* ===== 自定义鼠标光标：流萤萤火虫光点 =====
+   白色核心 + 荧光绿黄光晕，浅色/深色背景都可见
+   参考明日方舟主题（hexo-theme-arknights）的自定义光标思路
+*/
+:root {
+	--firefly-cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACoUlEQVR4nMWXfXLaMBDFH4Li4BICvU2vEs7Xq5TLZMqXjTEQkzGzj3ndkY2d6TSa2X9sad9Pq5W0Gvz+84qeLQD4BmAIYGDfrgDeAZwBVH2cjXqITgA8AUgEoP4OEyVACeAIoOgCM3rwv57hFMB3AKkDGDmAiwM4AMgBZBah3gAJgBmAZ4NILQr193EDwMkACgPIDHpn3zsDpADmAF4M4NlFoQ1AZ68R29j3hwApgIXZ3KIwc1EYm1MFOBuAzp7R0oQ9tAEkJrqIQDAKTMYYAJMvd5Hyu6WMAQxM6EUgfshSEILLwJ0A2QEM/z6yTLpV35iYIwGYynrPTHgegWAUxg7gJLPXrepzhLtkrwDBHBNi5qKhEIxC4gBKmb2PjhdnklYEmJjTNALiIZiQXAZI+LNIZJicKsxkzgnwZOZBohA/F7+SSPImq/Wy9kGfejIWTph6eR36QAdmBJlEQGLi92b//K6hqB7ltMCLhTYW81GZtok7CD0z6Ed93zWDrdfQQkfzUIxM18aZ/iXmNG66wfZ/aLChGBOuS+MuoDX5H/CQ+LIW7ESqGuxdrM7oru3sxjb5vwbpdBE7i+kB0rUdbczJ+VKNm26IiNGOcrncbrfVehm907VZn8zGFOJHfd81g4WiFKMohXM7XuuiYtMGYf821ndvYwlCGNWqeGr52aqwv1guq/Wy7Si+gQLYRkB8VEAAL8xSivvY33qHB5fRNgKRRUBAgMoJa93nL5aiw3W8i0B4kMrXAzHxELlY8o4FiUJoXhACHuBqnfyjQ4uJokdJdk9cAGsXjWtTTVhaR63htNrNexaluwhE+agqPog415YJ1rcsZ8i3fcpyWEf/1Mo/+TDZf+ZhAhvwJjP6708z2EAeJF/yOGXjOVHbP32efwAi+IsdIAd/KwAAAABJRU5ErkJggg==") 16 16, auto;
+}
+
+html,
+body,
+a,
+button,
+summary,
+[role="button"],
+label,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"] {
+	cursor: var(--firefly-cursor);
+}
+
+/* 文本输入区保持文本光标，方便编辑 */
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+textarea {
+	cursor: text;
+}
+
+/* 禁用态保持默认 */
+[disabled],
+.disabled,
+.is-disabled {
+	cursor: not-allowed;
+}
