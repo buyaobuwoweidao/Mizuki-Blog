@@ -128,8 +128,14 @@ import { LinkPreset } from "../types/config";
  */
 export const navBarConfig: NavBarConfig = {
 	links: [
-		// 预设链接：首页
+		// 预设链接：首页（轻量欢迎页）
 		LinkPreset.Home,
+		// 文章列表（欢迎页之外的文章入口）
+		{
+			name: "文章",
+			url: "/posts/",
+			icon: "material-symbols:article-rounded",
+		},
 		// 预设链接：归档
 		LinkPreset.Archive,
 

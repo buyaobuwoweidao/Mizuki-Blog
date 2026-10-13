@@ -1,0 +1,180 @@
+---
+import { Icon } from "astro-icon/components";
+import { PageHeader } from "@components/features/page-header";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getSortedPostsList } from "@utils/content-utils";
+import { siteConfig } from "../config";
+import { url } from "../utils/url-utils";
+
+// 快捷入口
+const shortcuts = [
+	{ name: "MC 专区", desc: "整合包、资源、导航收藏", url: "/mc/", icon: "material-symbols:extension-rounded" },
+	{ name: "PVZ 专区", desc: "植物大战僵尸收藏", url: "/pvz/", icon: "material-symbols:eco-rounded" },
+	{ name: "游戏分享", desc: "玩过的游戏都记在这", url: "/games/", icon: "material-symbols:sports-esports-rounded" },
+	{ name: "番剧", desc: "看番记录与推荐", url: "/anime/", icon: "material-symbols:movie-rounded" },
+	{ name: "书签导航", desc: "收藏的网站都在这", url: "/booknav/", icon: "material-symbols:bookmarks-rounded" },
+	{ name: "留言板", desc: "来跟我说说话吧", url: "/guestbook/", icon: "material-symbols:forum-rounded" },
+	{ name: "动态", desc: "近期的碎碎念", url: "/dynamic/", icon: "material-symbols:dynamic-feed-rounded" },
+	{ name: "关于我", desc: "关于 𝓕𝓲𝓻𝓮𝓯𝓵𝔂", url: "/about/", icon: "material-symbols:person-rounded" },
+];
+
+// 最新文章（纯文字，不放封面图，保证首页轻量）
+const recentPosts = (await getSortedPostsList()).slice(0, 5);
+
+const fmtDate = (d: Date) => {
+	const y = d.getFullYear();
+	const m = String(d.getMonth() + 1).padStart(2, "0");
+	const day = String(d.getDate()).padStart(2, "0");
+	return `${y}-${m}-${day}`;
+};
+---
+
+<MainGridLayout title="挚爱流萤" description="我的二次元小窝">
+
+	<div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader
+				title="挚爱流萤"
+				subtitle="欢迎回家～这里是 𝓕𝓲𝓻𝓮𝓯𝓵𝔂 的二次元小窝 (๑•̀ㅂ•́)و✧"
+			/>
+
+			<!-- 欢迎面板 -->
+			<div
+				class="mb-8 rounded-xl border border-(--primary)/30 bg-(--primary)/5 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+			>
+				<div class="shrink-0 w-12 h-12 rounded-xl bg-(--primary)/15 flex items-center justify-center">
+					<Icon name="material-symbols:waving-hand-rounded" class="text-3xl text-(--primary)" />
+				</div>
+				<div class="grow min-w-0">
+					<p class="font-bold text-black/85 dark:text-white/85 mb-1">
+						欢迎来到我的小窝～
+					</p>
+					<p class="text-sm text-black/50 dark:text-white/50">
+						这里会掉下一些兴趣标签，游戏、番剧、碎碎念都堆在底下，慢慢逛吧 (｡•̀ᴗ-)✧
+					</p>
+					<p class="mt-2 text-xs text-black/35 dark:text-white/35">
+						<span id="home-date">…</span>　·　站点已运行 <span id="home-days">…</span> 天
+					</p>
+				</div>
+			</div>
+
+			<!-- 快捷入口 -->
+			<section>
+				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+					<Icon name="material-symbols:apps-rounded" class="text-(--primary) text-xl shrink-0" />
+					<div class="flex items-baseline gap-2 min-w-0">
+						<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+							快捷入口
+						</h2>
+						<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+							想去哪里点哪里 (´▽`)ﾉ
+						</span>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+					{
+						shortcuts.map((item) => (
+							<a
+								href={url(item.url)}
+								class="group flex flex-col items-center gap-2 p-4 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 text-center"
+							>
+								<div
+									class="w-11 h-11 rounded-xl bg-(--primary)/10 flex items-center justify-center"
+								>
+									<Icon name={item.icon} class="text-xl text-(--primary)" />
+								</div>
+								<div class="min-w-0">
+									<div class="font-bold text-sm text-neutral-900 dark:text-neutral-100 truncate">
+										{item.name}
+									</div>
+									<div class="text-xs text-neutral-500 dark:text-neutral-400 line-clamp-1 mt-0.5">
+										{item.desc}
+									</div>
+								</div>
+							</a>
+						))
+					}
+				</div>
+			</section>
+
+			<!-- 最新文章 -->
+			<section class="mt-8">
+				<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+					<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
+					<div class="flex items-baseline gap-2 min-w-0">
+						<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+							最新文章
+						</h2>
+						<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+							最近写下的碎碎念 (｡•̀ᴗ-)✧
+						</span>
+					</div>
+				</div>
+
+				<div class="rounded-xl border border-(--line-divider) divide-y divide-(--line-divider)">
+					{
+						recentPosts.map((post) => (
+							<a
+								href={post.url}
+								class="group flex items-center gap-3 px-4 py-3 hover:bg-(--card-bg) transition-colors duration-200"
+							>
+								<span class="shrink-0 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
+									{fmtDate(post.data.published)}
+								</span>
+								<span class="grow min-w-0 font-medium text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
+									{post.data.title}
+								</span>
+								<Icon
+									name="material-symbols:arrow-outward-rounded"
+									class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+								/>
+							</a>
+						))
+					}
+				</div>
+
+				<div class="mt-4 text-center">
+					<a
+						href={url("/posts/")}
+						class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
+					>
+						查看全部文章
+						<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
+					</a>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script define:vars={{ siteStartDate: siteConfig.siteStartDate }}>
+		// 显示当前日期与站点运行天数（轻量，无依赖）
+		const dateEl = document.getElementById("home-date");
+		const daysEl = document.getElementById("home-days");
+		if (dateEl) {
+			const now = new Date();
+			const week = ["日", "一", "二", "三", "四", "五", "六"][now.getDay()];
+			dateEl.textContent = `${now.getFullYear()} 年 ${now.getMonth() + 1} 月 ${now.getDate()} 日 · 星期${week}`;
+		}
+		if (daysEl) {
+			const start = new Date(`${siteStartDate}T00:00:00+08:00`);
+			const now = new Date();
+			const days = Math.max(
+				1,
+				Math.floor(
+					(now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24),
+				) + 1,
+			);
+			daysEl.textContent = String(days);
+		}
+	</script>
+
+	<style>
+		.line-clamp-1 {
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	</style>
+</MainGridLayout>

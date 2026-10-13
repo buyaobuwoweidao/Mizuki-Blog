@@ -2,8 +2,6 @@
 import type { Page } from "astro";
 import { Icon } from "astro-icon/components";
 
-import { url } from "../../utils/url-utils";
-
 interface Props {
 	page: Page;
 	class?: string;
@@ -60,11 +58,18 @@ if (r < page.lastPage) {
 	pages.push(page.lastPage);
 }
 
+// 从当前分页 URL 推导列表根路径（去掉末尾的 /page/N/、/N/ 或 /page/ 段）
+const currentUrl = page.url.current ?? "/";
+const basePath = currentUrl
+	.replace(/\/page\/\d+\/?$/, "/")
+	.replace(/\/\d+\/?$/, "/")
+	.replace(/\/page\/?$/, "/");
+
 const getPageUrl = (p: number) => {
 	if (p === 1) {
-		return "/";
+		return basePath;
 	}
-	return `/${p}/`;
+	return `${basePath}page/${p}/`;
 };
 ---
 
@@ -107,7 +112,7 @@ const getPageUrl = (p: number) => {
 				}
 				return (
 					<a
-						href={url(getPageUrl(p))}
+						href={getPageUrl(p)}
 						aria-label={`Page ${p}`}
 						class="btn-card w-11 h-11 rounded-lg overflow-hidden active:scale-[0.85]"
 					>

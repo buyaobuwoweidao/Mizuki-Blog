@@ -1,0 +1,49 @@
+---
+import Pagination from "@components/control/Pagination.astro";
+import CategoryBar from "@components/features/posts/CategoryBar.astro";
+import PostPage from "@components/features/posts/PostPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import type { Page } from "astro";
+
+import { siteConfig } from "../../config";
+import { PAGE_SIZE } from "../../constants/constants";
+import { getSortedPosts } from "../../utils/content-utils";
+import { initPostIdMap } from "../../utils/permalink-utils";
+import { url } from "../../utils/url-utils";
+
+const showCategoryBar = siteConfig.postListLayout.categoryBar?.enable ?? false;
+
+// 文章列表第 1 页（/posts/）
+const allBlogPosts = await getSortedPosts();
+initPostIdMap(allBlogPosts);
+
+const firstPagePosts = allBlogPosts.slice(0, PAGE_SIZE);
+const totalPages = Math.ceil(allBlogPosts.length / PAGE_SIZE);
+
+// 构造与 Astro 分页对象兼容的最小 Page 对象，供 PostPage / Pagination 使用
+const page = {
+	data: firstPagePosts,
+	currentPage: 1,
+	lastPage: totalPages,
+	url: {
+		current: url("/posts/"),
+		prev: undefined,
+		next:
+			totalPages > 1
+				? url("/posts/page/2/")
+				: undefined,
+	},
+} as unknown as Page;
+---
+
+<MainGridLayout>
+	{showCategoryBar && <CategoryBar />}
+	<PostPage page={page} />
+	{totalPages > 1 && (
+		<Pagination
+			class="mx-auto onload-animation"
+			page={page}
+			style={`animation-delay: calc(var(--content-delay) + ${firstPagePosts.length * 50}ms)`}
+		/>
+	)}
+</MainGridLayout>

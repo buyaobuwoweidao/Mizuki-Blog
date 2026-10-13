@@ -1,0 +1,68 @@
+---
+import Pagination from "@components/control/Pagination.astro";
+import CategoryBar from "@components/features/posts/CategoryBar.astro";
+import PostPage from "@components/features/posts/PostPage.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import type { GetStaticPaths, Page } from "astro";
+
+import { siteConfig } from "../../../config";
+import { PAGE_SIZE } from "../../../constants/constants";
+import { getSortedPosts } from "../../../utils/content-utils";
+import { initPostIdMap } from "../../../utils/permalink-utils";
+
+const showCategoryBar = siteConfig.postListLayout.categoryBar?.enable ?? false;
+
+// 文章列表分页（/posts/page/2/ 起）：第 1 页由 src/pages/posts/index.astro 承担
+export const getStaticPaths = (async () => {
+	const allBlogPosts = await getSortedPosts();
+	initPostIdMap(allBlogPosts);
+
+	const totalPages = Math.ceil(allBlogPosts.length / PAGE_SIZE);
+	const paths = [];
+	for (let i = 2; i <= totalPages; i++) {
+		paths.push({
+			params: { page: String(i) },
+			props: { pageNum: i, posts: allBlogPosts },
+		});
+	}
+	return paths;
+}) satisfies GetStaticPaths;
+
+const { pageNum, posts } = Astro.props as {
+	pageNum: number;
+	posts: typeof posts;
+};
+
+const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+const start = (pageNum - 1) * PAGE_SIZE;
+const pagePosts = posts.slice(start, start + PAGE_SIZE);
+
+// 构造与 Astro 分页对象兼容的最小 Page 对象，供 PostPage / Pagination 使用
+const base = import.meta.env.BASE_URL;
+const page = {
+	data: pagePosts,
+	currentPage: pageNum,
+	lastPage: totalPages,
+	url: {
+		current: `${base}posts/page/${pageNum}/`,
+		prev:
+			pageNum === 2
+				? `${base}posts/`
+				: `${base}posts/page/${pageNum - 1}/`,
+		next:
+			pageNum < totalPages
+				? `${base}posts/page/${pageNum + 1}/`
+				: undefined,
+	},
+} as unknown as Page;
+---
+
+<MainGridLayout>
+	{showCategoryBar && <CategoryBar />}
+	<PostPage page={page} />
+	<Pagination
+		class="mx-auto onload-animation"
+		page={page}
+		style={`animation-delay: calc(var(--content-delay) + ${pagePosts.length * 50}ms)`}
+	/>
+</MainGridLayout>

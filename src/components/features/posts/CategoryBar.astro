@@ -8,7 +8,7 @@ import { getCategoryUrl, url } from "@/utils/url-utils";
 
 const categories = await getCategoryList();
 const totalPosts = (await getSortedPostsList()).length;
-const homeUrl = url("/");
+const homeUrl = url("/posts/");
 const archiveUrl = url("/archive/");
 ---
 
@@ -149,14 +149,14 @@ const archiveUrl = url("/archive/");
 		const isHome =
 			pathname === homePath || pathname === "" || pathname === "/";
 		const isArchive = pathname === archivePath;
-		// 分页页面（如 /2/, /3/）也属于首页的延续
+		// 分页页面（如 /posts/page/2/，或旧结构 /2/）也属于首页的延续
 		const isHomePagination =
 			/^\/\d+$/.test(pathname) ||
 			(homePath !== "" &&
 				new RegExp(
 					"^" +
 						homePath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") +
-						"\\/\\d+$",
+						"(?:/page)?/\\d+$",
 				).test(pathname));
 
 		// 在首页、首页分页和归档页显示
