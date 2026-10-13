@@ -4,7 +4,7 @@ import type { SiteConfig } from "../types/config";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "挚爱流萤",
+	title: "Black Butterfly",
 	subtitle: "我的二次元小窝",
 	siteURL: "https://buyaobuwoweidao.github.io/Mizuki-Blog/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-09-01", // 站点开始运行日期，用于站点统计组件计算运行天数
@@ -41,7 +41,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "𝓕𝓲𝓻𝓮𝓯𝓵𝔂",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "assets/home/firefly-logo.webp",
+		icon: "assets/home/firefly-logo-black.svg",
 		// 网站Logo图片路径
 		logo: "assets/home/firefly-blog-logo.png",
 	},

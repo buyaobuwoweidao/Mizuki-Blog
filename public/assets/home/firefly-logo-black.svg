@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <g id="wing">
+      <path d="M57 46 C 48 30, 32 22, 18 25 C 8 27, 6 37, 14 45 C 24 53, 44 53, 57 51 Z" fill="#111111"/>
+      <path d="M57 64 C 47 72, 34 80, 24 78 C 13 76, 13 66, 24 60 C 36 54, 49 57, 57 66 Z" fill="#111111"/>
+    </g>
+  </defs>
+  <ellipse cx="60" cy="62" rx="4.6" ry="17" fill="#111111"/>
+  <use href="#wing"/>
+  <use href="#wing" transform="translate(120,0) scale(-1,1)"/>
+  <path d="M60 45 C 58 34, 62 26, 72 21" stroke="#111111" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M60 45 C 58 34, 54 26, 44 21" stroke="#111111" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+</svg>
