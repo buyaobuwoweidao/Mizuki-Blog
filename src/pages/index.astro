@@ -1,12 +1,20 @@
 ---
 import { Icon } from "astro-icon/components";
-import { PageHeader } from "@components/features/page-header";
-import MainGridLayout from "@layouts/MainGridLayout.astro";
+import FloatingControls from "@components/control/FloatingControls.astro";
+import BackgroundPlayer from "@components/features/BackgroundPlayer.astro";
+import IconifyLoader from "@components/misc/IconifyLoader.astro";
+import FullscreenWallpaper from "@components/misc/FullscreenWallpaper.astro";
+import Footer from "@components/organisms/footer/Footer.astro";
+import Navbar from "@components/organisms/navigation/Navbar.astro";
+import Layout from "@layouts/Layout.astro";
+import GridScripts from "@layouts/partials/GridScripts.astro";
 import { getSortedPostsList } from "@utils/content-utils";
-import { siteConfig } from "../config";
+
+import { fullscreenWallpaperConfig, siteConfig } from "../config";
+import { BANNER_HEIGHT, BANNER_HEIGHT_FULLSCREEN } from "../constants/constants";
 import { url } from "../utils/url-utils";
 
-// 视觉小说封面式首页：大背景图 + 中央标题 + 底部导航按钮
+// 视觉小说标题画面式全屏首页（独立布局，不带侧边栏/banner）
 const coverBtns = [
 	{ name: "HOME", label: "首页", url: "/" },
 	{ name: "BLOG", label: "文章", url: "/posts/" },
@@ -15,7 +23,6 @@ const coverBtns = [
 	{ name: "ME", label: "关于我", url: "/about/" },
 ];
 
-// 最新文章（纯文字，不放封面图，保证首页轻量）
 const recentPosts = (await getSortedPostsList()).slice(0, 5);
 
 const fmtDate = (d: Date) => {
@@ -26,115 +33,172 @@ const fmtDate = (d: Date) => {
 };
 ---
 
-<MainGridLayout title="挚爱流萤" description="我的二次元小窝">
+<Layout
+	title="挚爱流萤"
+	description="我的二次元小窝"
+	layoutVariant="home"
+>
+	<GridScripts
+		navbarTransparentMode={siteConfig.banner?.navbar?.transparentMode || "semi"}
+		defaultWallpaperMode={siteConfig.wallpaperMode.defaultMode}
+		defaultPostListLayout={siteConfig.postListLayout?.defaultMode || "list"}
+		BANNER_HEIGHT={BANNER_HEIGHT}
+		BANNER_HEIGHT_FULLSCREEN={BANNER_HEIGHT_FULLSCREEN}
+		wavesEnabled={siteConfig.banner?.waves?.enable ?? true}
+		bannerTitleEnabled={siteConfig.banner?.homeText?.enable ?? true}
+		wallpaperEnabled={fullscreenWallpaperConfig.enable ?? true}
+		postListLayoutEnabled={siteConfig.postListLayout?.enable ?? true}
+	/>
 
-	<!-- 视觉小说封面块 -->
+	<FullscreenWallpaper config={fullscreenWallpaperConfig} />
+	<BackgroundPlayer />
+	<IconifyLoader />
+
+	<!-- 顶部导航（保留博客完整导航） -->
 	<div
-		class="relative w-full overflow-hidden rounded-(--radius-large) flex items-center justify-center min-h-[72vh]"
+		id="top-row"
+		class="z-50 pointer-events-none relative transition-all duration-700 max-w-(--layout-page-width) px-0 md:px-4 mx-auto"
 	>
-		<img
-			src={url("/images/albums/yuimi-lab/cover.webp")}
-			alt=""
-			class="absolute inset-0 w-full h-full object-cover object-center"
-			loading="eager"
-			decoding="async"
-		/>
-		<!-- 上下渐隐遮罩，保证文字可读 -->
 		<div
-			class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70"
-		></div>
-
-		<div
-			class="relative z-10 text-center px-6 py-16 flex flex-col items-center max-w-full"
+			id="navbar-wrapper"
+			class="pointer-events-auto sticky top-0 transition-all"
 		>
-			<p
-				class="text-xs sm:text-sm tracking-[0.35em] text-white/70 mb-5 select-none"
-			>
-				𝓕𝓲𝓻𝓮𝓯𝓵𝔂 · MIZUKI BLOG
-			</p>
-			<h1
-				class="text-5xl sm:text-7xl font-black text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)] leading-tight"
-			>
-				挚爱流萤
-			</h1>
-			<p class="mt-4 text-white/90 text-base sm:text-lg drop-shadow">
-				欢迎来到我的二次元小窝 (๑•̀ㅂ•́)و✧
-			</p>
-
-			<!-- 导航按钮组 -->
-			<div class="mt-10 flex flex-wrap justify-center gap-3">
-				{
-					coverBtns.map((btn) => (
-						<a
-							href={url(btn.url)}
-							class="group flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 backdrop-blur-sm border border-white/25 text-white text-sm font-bold hover:bg-(--primary) hover:border-(--primary) transition-all duration-300 active:scale-95"
-						>
-							<span class="text-white/60 group-hover:text-white/80 text-[0.65rem] tracking-widest">
-								{btn.name}
-							</span>
-							<span>{btn.label}</span>
-						</a>
-					))
-				}
-			</div>
-		</div>
-
-		<!-- 左下角小字：站点运行信息 -->
-		<div class="absolute bottom-4 left-5 z-10 text-left text-white/60 text-xs select-none">
-			<p id="home-date">…</p>
-			<p>站点已运行 <span id="home-days">…</span> 天</p>
+			<Navbar />
 		</div>
 	</div>
 
-	<!-- 最新文章 -->
-	<section class="mt-8">
-		<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
-			<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
-			<div class="flex items-baseline gap-2 min-w-0">
-				<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
-					最新文章
-				</h2>
-				<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
-					最近写下的碎碎念 (｡•̀ᴗ-)✧
-				</span>
+	<div id="main-grid" class="w-full relative">
+		<main id="swup-container">
+			<div id="content-wrapper" class="onload-animation transition-leaving">
+				<div
+					id="page-overlay-data"
+					data-title="挚爱流萤"
+					data-date=""
+					data-category=""
+					data-words=""
+					data-is-post="false"
+					data-is-home="true"
+					data-wallpaper-mode={siteConfig.wallpaperMode.defaultMode}
+					class="hidden"
+				></div>
+
+				<!-- ===== 全屏标题画面 ===== -->
+				<section
+					class="home-cover relative overflow-hidden flex items-center justify-center w-full"
+				>
+					<img
+						src={url("/images/albums/yuimi-lab/cover.webp")}
+						alt=""
+						class="home-cover-bg absolute inset-0 w-full h-full object-cover object-center"
+						loading="eager"
+						decoding="async"
+					/>
+					<div class="home-cover-veil absolute inset-0"></div>
+
+					<!-- 粒子层（JS 生成） -->
+					<div id="home-particles" class="home-particles absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+					<!-- 中央标题区 -->
+					<div class="relative z-10 text-center px-6 flex flex-col items-center">
+						<p class="home-eyebrow select-none">
+							𝓕𝓲𝓻𝓮𝓯𝓵𝔂 · MIZUKI BLOG
+						</p>
+						<h1 class="home-title">挚爱流萤</h1>
+						<p class="home-subtitle">
+							欢迎来到我的二次元小窝 (๑•̀ㅂ•́)و✧
+						</p>
+						<p class="home-state select-none">
+							FIREFLY / AWAKENING
+						</p>
+
+						<!-- 导航按钮组 -->
+						<div class="home-btns">
+							{
+								coverBtns.map((btn) => (
+									<a
+										href={url(btn.url)}
+										class="home-btn group flex items-center gap-2"
+									>
+										<span class="home-btn-key">{btn.name}</span>
+										<span>{btn.label}</span>
+									</a>
+								))
+							}
+						</div>
+					</div>
+
+					<!-- 左下角小字：日期 + 运行天数 -->
+					<div class="home-corner absolute bottom-5 left-6 z-10 select-none">
+						<p id="home-date">…</p>
+						<p>站点已运行 <span id="home-days">…</span> 天</p>
+					</div>
+				</section>
+
+				<!-- ===== 最新文章 ===== -->
+				<section class="home-posts relative z-10 max-w-(--layout-page-width) mx-auto px-2 md:px-4 py-10">
+					<div class="card-base px-6 sm:px-9 py-6 rounded-(--radius-large)">
+						<div class="flex items-center gap-2 mb-3 pb-2 border-b border-(--line-divider)">
+							<Icon name="material-symbols:auto-stories-rounded" class="text-(--primary) text-xl shrink-0" />
+							<div class="flex items-baseline gap-2 min-w-0">
+								<h2 class="text-lg font-bold text-neutral-900 dark:text-neutral-100 shrink-0">
+									最新文章
+								</h2>
+								<span class="text-xs text-neutral-500 dark:text-neutral-400 truncate">
+									最近写下的碎碎念 (｡•̀ᴗ-)✧
+								</span>
+							</div>
+						</div>
+
+						<div class="divide-y divide-(--line-divider)">
+							{
+								recentPosts.map((post) => (
+									<a
+										href={post.url}
+										class="group flex items-center gap-3 px-4 py-3 hover:bg-(--card-bg) transition-colors duration-200"
+									>
+										<span class="shrink-0 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
+											{fmtDate(post.data.published)}
+										</span>
+										<span class="grow min-w-0 font-medium text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
+											{post.data.title}
+										</span>
+										<Icon
+											name="material-symbols:arrow-outward-rounded"
+											class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+										/>
+									</a>
+								))
+							}
+						</div>
+
+						<div class="mt-4 text-center">
+							<a
+								href={url("/posts/")}
+								class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
+							>
+								查看全部文章
+								<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
+							</a>
+						</div>
+					</div>
+
+					<div class="footer col-span-full onload-animation hidden lg:block">
+						<Footer />
+					</div>
+				</section>
+
+				<div class="footer col-span-full onload-animation block lg:hidden">
+					<Footer />
+				</div>
 			</div>
-		</div>
+		</main>
+	</div>
 
-		<div class="rounded-xl border border-(--line-divider) divide-y divide-(--line-divider)">
-			{
-				recentPosts.map((post) => (
-					<a
-						href={post.url}
-						class="group flex items-center gap-3 px-4 py-3 hover:bg-(--card-bg) transition-colors duration-200"
-					>
-						<span class="shrink-0 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
-							{fmtDate(post.data.published)}
-						</span>
-						<span class="grow min-w-0 font-medium text-sm text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate">
-							{post.data.title}
-						</span>
-						<Icon
-							name="material-symbols:arrow-outward-rounded"
-							class="shrink-0 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
-						/>
-					</a>
-				))
-			}
-		</div>
-
-		<div class="mt-4 text-center">
-			<a
-				href={url("/posts/")}
-				class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-(--primary) text-white text-sm font-medium hover:opacity-90 transition-opacity"
-			>
-				查看全部文章
-				<Icon name="material-symbols:arrow-outward-rounded" class="text-base" />
-			</a>
-		</div>
-	</section>
+	<FloatingControls headings={[]} />
+	<div id="toc-container" class="hidden" />
 
 	<script define:vars={{ siteStartDate: siteConfig.siteStartDate }}>
-		// 显示当前日期与站点运行天数（轻量，无依赖）
+		// 当前日期 + 运行天数
 		const dateEl = document.getElementById("home-date");
 		const daysEl = document.getElementById("home-days");
 		if (dateEl) {
@@ -145,13 +209,190 @@ const fmtDate = (d: Date) => {
 		if (daysEl) {
 			const start = new Date(`${siteStartDate}T00:00:00+08:00`);
 			const now = new Date();
-			const days = Math.max(
-				1,
-				Math.floor(
-					(now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24),
-				) + 1,
+			daysEl.textContent = String(
+				Math.max(1, Math.floor((now.getTime() - start.getTime()) / 86400000) + 1),
 			);
-			daysEl.textContent = String(days);
+		}
+
+		// 生成飘浮粒子
+		const wrap = document.getElementById("home-particles");
+		if (wrap) {
+			const colors = ["255,182,193", "255,255,255", "173,216,230", "255,228,225"];
+			for (let i = 0; i < 18; i++) {
+				const p = document.createElement("i");
+				const size = 1 + Math.random() * 2.5;
+				const drift = (Math.random() - 0.5) * 80;
+				p.style.cssText = `
+					position:absolute; left:${Math.random() * 100}%; bottom:-12px;
+					width:${size}px; height:${size}px; border-radius:50%;
+					background:rgba(${colors[i % colors.length]},${0.25 + Math.random() * 0.5});
+					filter:blur(${Math.random() > 0.6 ? 1 : 0}px);
+					--drift:${drift.toFixed(1)}px;
+					animation:homeFloat ${(9 + Math.random() * 15).toFixed(1)}s linear ${(Math.random() * 12).toFixed(1)}s infinite;
+					opacity:0;
+				`;
+				wrap.appendChild(p);
+			}
 		}
 	</script>
-</MainGridLayout>
+</Layout>
+
+<style is:global>
+	/* ===== 首页专属全局覆盖：隐藏主题的顶部横幅与 banner 布局位移 ===== */
+	#home-cover-page-marker {
+		display: none;
+	}
+	body:has(.home-cover) .enable-banner #banner-wrapper {
+		display: none !important;
+	}
+	body:has(.home-cover) .enable-banner #top-row {
+		height: auto !important;
+	}
+	body:has(.home-cover) .enable-banner #main-grid {
+		transform: none !important;
+	}
+	body:has(.home-cover) .enable-banner #sidebar-sticky,
+	body:has(.home-cover) .enable-banner #left-sidebar-sticky,
+	body:has(.home-cover) .enable-banner #right-sidebar-sticky {
+		top: 1rem !important;
+	}
+
+	/* ===== 封面样式 ===== */
+	.home-cover {
+		min-height: calc(100vh - 3.5rem);
+	}
+	.home-cover-bg {
+		animation: homeBgSlow 24s ease-in-out infinite alternate;
+		transform: scale(1.05);
+	}
+	@keyframes homeBgSlow {
+		0% {
+			transform: scale(1.05) translateY(0);
+		}
+		100% {
+			transform: scale(1.12) translateY(-14px);
+		}
+	}
+	.home-cover-veil {
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.55) 0%,
+			rgba(0, 0, 0, 0.3) 40%,
+			rgba(0, 0, 0, 0.45) 75%,
+			rgba(0, 0, 0, 0.72) 100%
+		);
+	}
+	.home-eyebrow {
+		color: rgba(255, 255, 255, 0.75);
+		font-size: 0.75rem;
+		letter-spacing: 0.35em;
+		margin-bottom: 1.25rem;
+	}
+	.home-title {
+		color: #fff;
+		font-size: clamp(3rem, 9vw, 6.5rem);
+		font-weight: 900;
+		line-height: 1.1;
+		text-shadow: 0 4px 30px rgba(0, 0, 0, 0.55);
+		animation: homeTitleGlow 4s ease-in-out infinite;
+	}
+	@keyframes homeTitleGlow {
+		0%,
+		100% {
+			text-shadow: 0 4px 30px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 255, 255, 0.25);
+		}
+		50% {
+			text-shadow: 0 4px 30px rgba(0, 0, 0, 0.55), 0 0 46px rgba(255, 255, 255, 0.6);
+		}
+	}
+	.home-subtitle {
+		color: rgba(255, 255, 255, 0.92);
+		font-size: 1rem;
+		margin-top: 1.1rem;
+		text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+	}
+	@media (width >= 640px) {
+		.home-subtitle {
+			font-size: 1.15rem;
+		}
+	}
+	.home-state {
+		margin-top: 1.6rem;
+		font-size: 0.72rem;
+		letter-spacing: 0.28em;
+		color: rgba(255, 255, 255, 0.55);
+		text-transform: uppercase;
+		animation: homeStateBlink 3.4s steps(2) infinite;
+	}
+	@keyframes homeStateBlink {
+		0%,
+		100% {
+			opacity: 0.95;
+		}
+		50% {
+			opacity: 0.35;
+		}
+	}
+	.home-btns {
+		margin-top: 2.6rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.75rem;
+	}
+	.home-btn {
+		padding: 0.65rem 1.25rem;
+		border-radius: 0.75rem;
+		background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(6px);
+		-webkit-backdrop-filter: blur(6px);
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		color: #fff;
+		font-size: 0.875rem;
+		font-weight: 700;
+		transition: all 0.3s;
+	}
+	.home-btn:hover {
+		background: var(--primary);
+		border-color: var(--primary);
+		transform: translateY(-2px);
+	}
+	.home-btn-key {
+		font-size: 0.65rem;
+		letter-spacing: 0.14em;
+		color: rgba(255, 255, 255, 0.55);
+	}
+	.home-btn:hover .home-btn-key {
+		color: rgba(255, 255, 255, 0.85);
+	}
+	.home-corner {
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 0.72rem;
+		line-height: 1.5;
+	}
+
+	/* 粒子 */
+	.home-particles i {
+		pointer-events: none;
+	}
+	@keyframes homeFloat {
+		0% {
+			transform: translateY(0) translateX(0);
+			opacity: 0;
+		}
+		8% {
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(-108vh) translateX(var(--drift, 0px));
+			opacity: 0;
+		}
+	}
+
+	/* 移动端导航悬浮时的封面高度补偿 */
+	@media (width < 640px) {
+		.home-cover {
+			min-height: calc(100vh - 3rem);
+		}
+	}
+</style>
