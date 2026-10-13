@@ -153,14 +153,6 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:notifications-rounded",
 		},
 
-		// 写作（站内编辑器入口，带密码保护，仅站长可进）
-		{
-			name: "写作",
-			url: "/editor-gate/",
-			icon: "material-symbols:edit-note-rounded",
-			external: false,
-		},
-
 		// 个人内容页面
 		{
 			name: "我的",
@@ -245,6 +237,11 @@ export const navBarConfig: NavBarConfig = {
 					name: "动态",
 					url: "/dynamic/",
 					icon: "material-symbols:dynamic-feed-rounded",
+				},
+				{
+					name: "写作",
+					url: "/editor-gate/",
+					icon: "material-symbols:edit-note-rounded",
 				},
 				{
 					name: "项目",

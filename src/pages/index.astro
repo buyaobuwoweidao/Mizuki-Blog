@@ -4,7 +4,6 @@ import FloatingControls from "@components/control/FloatingControls.astro";
 import BackgroundPlayer from "@components/features/BackgroundPlayer.astro";
 import IconifyLoader from "@components/misc/IconifyLoader.astro";
 import FullscreenWallpaper from "@components/misc/FullscreenWallpaper.astro";
-import Navbar from "@components/organisms/navigation/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
 import GridScripts from "@layouts/partials/GridScripts.astro";
 
@@ -42,19 +41,6 @@ const coverBtns = [
 	<FullscreenWallpaper config={fullscreenWallpaperConfig} />
 	<BackgroundPlayer />
 	<IconifyLoader />
-
-	<!-- 顶部导航（保留博客完整导航，悬浮于封面上方） -->
-	<div
-		id="top-row"
-		class="z-50 pointer-events-none absolute top-0 left-0 right-0 transition-all duration-700 max-w-(--layout-page-width) px-0 md:px-4 mx-auto"
-	>
-		<div
-			id="navbar-wrapper"
-			class="pointer-events-auto transition-all"
-		>
-			<Navbar />
-		</div>
-	</div>
 
 	<div id="main-grid" class="w-full relative">
 		<main id="swup-container">
