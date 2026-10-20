@@ -112,4 +112,39 @@ export const skillsData: Skill[] = [
 		experience: { years: 0, months: 6 },
 		color: "#ff4d6d",
 	},
+	{
+		id: "drone",
+		name: "无人机操控",
+		description:
+			"会操控无人机飞行，懂航拍视角与基础飞行安全，了解实名登记、禁飞区与高度限制等合规知识。",
+		icon: "mdi:drone",
+		category: "other",
+		level: "intermediate",
+		experience: { years: 0, months: 6 },
+		color: "#00a3ff",
+	},
+	{
+		id: "ai-tools",
+		name: "开源 AI 工具折腾",
+		description:
+			"喜欢折腾各类开源 AI 工具：本地模型、语音合成、转写……装好就跑，跑完就玩 (ᐡ •͈ ·̫ •͈ ᐡ)",
+		icon: "tabler:sparkles",
+		category: "tools",
+		level: "beginner",
+		experience: { years: 0, months: 8 },
+		projects: ["ollama-local-ai", "deepseek-harness"],
+		color: "#a855f7",
+	},
+	{
+		id: "mc-ecosystem",
+		name: "Minecraft 生态折腾",
+		description:
+			"常玩整合包，会配模组、光影与启动器，下载资源、绕行镜像都门儿清。",
+		icon: "mdi:minecraft",
+		category: "other",
+		level: "intermediate",
+		experience: { years: 1, months: 6 },
+		projects: ["pcl2-launcher"],
+		color: "#54b435",
+	},
 ];

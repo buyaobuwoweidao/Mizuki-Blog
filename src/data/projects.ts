@@ -92,6 +92,45 @@ export const projectsData: Project[] = [
 		tags: ["友链", "计划中"],
 		showImage: false,
 	},
+	{
+		id: "ollama-local-ai",
+		title: "Ollama 本地模型折腾",
+		description:
+			"把开源大模型跑在本地：Ollama 一键部署，命令行直接聊，不烧 token 还离线可用——折腾本地 AI 的省钱救星 (≧▽≦)",
+		image: "",
+		category: "other",
+		techStack: ["Ollama", "Python"],
+		status: "in-progress",
+		startDate: "2026-10",
+		tags: ["AI", "本地模型", "Ollama"],
+		showImage: false,
+	},
+	{
+		id: "pcl2-launcher",
+		title: "PCL2 启动器折腾",
+		description:
+			"Minecraft 国产开源启动器 PCL2：多线程下载速度起飞，整合包模组一把梭，日常下资源全靠它。",
+		image: "",
+		category: "other",
+		techStack: ["PCL2", "Java"],
+		status: "completed",
+		startDate: "2025-01",
+		tags: ["Minecraft", "启动器", "PCL2"],
+		showImage: false,
+	},
+	{
+		id: "deepseek-harness",
+		title: "DeepSeek Harness 客户端",
+		description:
+			"本地使用的 DeepSeek 客户端，折腾插件配置、版本匹配与多模型切换——本地大模型聊天的一站式小窝。",
+		image: "",
+		category: "desktop",
+		techStack: ["DeepSeek", "插件系统"],
+		status: "in-progress",
+		startDate: "2026-08",
+		tags: ["AI", "DeepSeek", "客户端", "折腾"],
+		showImage: false,
+	},
 ];
 
 // Get project statistics
